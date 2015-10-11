@@ -24,7 +24,156 @@ body {
     font-kerning: normal;
 }
 
+.T_e_X {
+    display: inline-block;
+    vertical-align: -0.5ex;
+    text-transform: uppercase;
+    margin-left: -0.18em;
+    margin-right: -0.12em;
+    margin-bottom: -0.5ex;
+}
+
+h1 {
+    font-weight:normal;
+    font-size: 170%;
+    text-align: center;
+    margin: 0.5em 0 0.5em 0;
+}
+h1.subtitle {
+    font-size: 145%;
+    padding-left: 0.2em;
+    margin-left: -0.5em;
+}
+
+#authors {
+    text-align: center;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 120%;
+}
+#date {
+    text-align:center;
+    font-size: 120%;
+    margin:0.5em 0 0.5em 0;
+}
+
+#abstract {
+    margin-left: 4em;
+    margin-right: 4em;
+}
+#abstract h6 {
+    text-align: center;
+    font-size: 100%;
+    font-weight:bold;
+}
+#abstract p {
+    text-indent:2em;
+}
+
+h2, h3, h4 {
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+h2 {
+    counter-increment: section;
+    font-size:140%;
+}
+h2::before {
+    content: counter(section);
+    margin-right: 1em;
+}
+h3 {
+    counter-increment: subsection;
+    font-size:120%;
+}
+h3::before {
+    content: counter(section) "." counter(subsection);
+    margin-right: 1em;
+}
+h4 {
+    counter-increment: subsubsection;
+    font-size:100%;
+}
+h4::before {
+    content: counter(section) "." counter(subsection) "." counter(subsubsection);
+    margin-right: 1em;
+}
+
+/* http://www.w3.org/Style/Examples/007/indent.en.html */
+p     { text-indent: 0;  margin-bottom: 0; }
+p + p { text-indent: 1.5em; margin-top: 0; }
+p *   { text-indent: 0; }
+
+span[data-note] {
+    position: relative;
+    color: #00f;
+    cursor: help;
+}
+
+span[data-note]::before {
+    content: "*";
+}
+
+span[data-note]:hover::after {
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/%3A%3Aafter */
+    content: attr(data-note);
+    position: absolute;
+    left: 0;
+    top: 24px;
+    z-index: 1;
+    display: block;
+    text-align: justify;
+    min-width: 20em;
+    /* http://cbracco.me/a-simple-css-tooltip/ */
+    margin-bottom: 5px;
+    margin-left: -10em;
+    padding: 7px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+}
+
+figure {
+    text-align: center;
+}
+figure figcaption {
+    counter-increment: figure;
+    font-size: 90%;
+}
+figure figcaption::before {
+    content: "Figure " counter(figure) ":";
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+/* http://blog.teamtreehouse.com/customize-ordered-lists-pseudo-element */
+#bibliography {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#bibliography::before {
+    content: "References";
+    display: block;
+    font-size: 140%;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+#bibliography li {
+    counter-increment: bibliography;
+    margin-bottom: 10px;
+}
+#bibliography li::before {
+    content: "[" counter(bibliography) "]";
+    margin-right: 1em;
+    font-weight: bold;
+}
+
 img {
     max-width: 100%;
-    height:auto;
+    height: auto;
 }

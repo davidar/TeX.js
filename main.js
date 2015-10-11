@@ -10,7 +10,7 @@ function loadCSS(path) {
     document.getElementsByTagName("head")[0].appendChild(link);
 }
 
-function wrapBodyWithDiv(className){ // http://stackoverflow.com/a/1577863
+function wrapBodyWithDiv(className) { // http://stackoverflow.com/a/1577863
     var div = document.createElement("div");
     div.setAttribute("class", className);
     while(document.body.firstChild)
@@ -18,20 +18,32 @@ function wrapBodyWithDiv(className){ // http://stackoverflow.com/a/1577863
     document.body.appendChild(div);
 }
 
+function currentDate() {
+    var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+    var date = new Date();
+    return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
+}
 
 wrapBodyWithDiv("TeXpage");
 
 loadCSS("main.css");
 
-require(["Hyphenator/Hyphenator"], function(){
+(function() {
+    var elem = document.getElementById("date");
+    if(elem && elem.classList.contains("today"))
+        elem.innerHTML = currentDate();
+})();
+
+require(["Hyphenator/Hyphenator"], function() {
     Hyphenator.config({
         classname:'TeXpage',
+        donthyphenateclassname:'math',
         defaultlanguage:'en',
         intermediatestate:'visible',
         storagetype:'none'});
     Hyphenator.run();
 });
 
-require(["MathJax"], function(MathJax){
-    MathJax.config("MML_HTMLorMML");
+require(["MathJax"], function(MathJax) {
+    MathJax.config("TeX-AMS-MML_HTMLorMML");
 });
