@@ -1,0 +1,30 @@
+@import "texgyrebonum/font-face.css";
+
+body {
+    font-size: 100%;
+    line-height: 1.45em;
+    background-color: #eee;
+}
+
+.TeXpage {
+    width: 40em;
+    padding: 6em;
+    padding-top: 4em;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    font-family: "TeX Gyre Bonum", serif;
+    text-align: justify;
+    /* http://thenewcode.com/547/Make-Your-Web-Pages-More-Legible-With-Ligatures-and-Kerning-Pairs */
+    -webkit-font-variant-ligatures: common-ligatures; /* for iOS and Safari 6 */
+    font-variant-ligatures: common-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
+    -webkit-font-feature-settings: "kern";
+    font-feature-settings: "kern";
+    font-kerning: normal;
+}
+
+img {
+    max-width: 100%;
+    height:auto;
+}
