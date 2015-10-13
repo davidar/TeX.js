@@ -24,15 +24,17 @@ function currentDate() {
     return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
 }
 
-wrapBodyWithDiv("TeXpage");
 
 loadCSS("main.css");
 
-(function() {
-    var elem = document.getElementById("date");
-    if(elem && elem.classList.contains("today"))
-        elem.innerHTML = currentDate();
-})();
+require(['domReady'], function(domReady) {
+    domReady(function() {
+        wrapBodyWithDiv("TeXpage");
+        var date = document.getElementById("date");
+        if(date && date.classList.contains("today"))
+            date.innerHTML = currentDate();
+    });
+});
 
 require(["Hyphenator/Hyphenator"], function() {
     Hyphenator.config({
@@ -44,6 +46,6 @@ require(["Hyphenator/Hyphenator"], function() {
     Hyphenator.run();
 });
 
-require(["MathJax"], function(MathJax) {
-    MathJax.config("TeX-AMS-MML_HTMLorMML");
-});
+require(["./MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"]);
+
+require(["//hypothes.is/embed.js"]);
