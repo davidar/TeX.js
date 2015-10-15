@@ -41,7 +41,7 @@ loadCSS("main.css");
 
 require(['domReady'], function(domReady) {
     domReady(function() {
-        wrapBodyWithDiv("TeXpage");
+        //wrapBodyWithDiv("TeXpage");
         var date = document.getElementById("date");
         if(date && date.classList.contains("today"))
             date.innerHTML = currentDate();
