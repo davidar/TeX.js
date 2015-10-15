@@ -16,19 +16,17 @@ function loadCSS(path) {
     document.getElementsByTagName("head")[0].appendChild(link);
 }
 
-function loadJS(path) {
-    // requirejs chokes on querystrings...
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = dirname($0) + '/' + path;
-    document.getElementsByTagName("head")[0].appendChild(script);
-}
-
 function wrapBodyWithDiv(className) { // http://stackoverflow.com/a/1577863
     var div = document.createElement("div");
     div.setAttribute("class", className);
-    while(document.body.firstChild)
-        div.appendChild(document.body.firstChild);
+    while(document.body.children.length > 1) {
+        var child = document.body.firstChild;
+        if(child.id === "loading") {
+            loading = child;
+        } else {
+            div.appendChild(child);
+        }
+    }
     document.body.appendChild(div);
 }
 
@@ -40,7 +38,6 @@ function currentDate() {
 
 
 loadCSS("main.css");
-loadJS("MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML");
 
 require(['domReady'], function(domReady) {
     domReady(function() {
@@ -61,4 +58,16 @@ require(["Hyphenator/Hyphenator"], function() {
     Hyphenator.run();
 });
 
+require([dirname($0) + "/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"], function() {
+    MathJax.Hub.Register.StartupHook("End", function () {
+        document.getElementById("loading").style.display = "none";
+    });
+});
+
 require(["//hypothes.is/embed.js"]);
+
+(function(loading) {
+    loading.setAttribute("id", "loading");
+    loading.innerHTML = '<div id="loading-icon"><object type="image/svg+xml" data="' + dirname($0) + '/animated-logo.svg"></object></div>';
+    document.body.appendChild(loading);
+})(document.createElement("div"));
