@@ -37,7 +37,7 @@ function currentDate() {
 }
 
 
-loadCSS("main.css");
+//loadCSS("main.css");
 
 require(['domReady'], function(domReady) {
     domReady(function() {
@@ -70,4 +70,5 @@ require(["//hypothes.is/embed.js"]);
     loading.setAttribute("id", "loading");
     loading.innerHTML = '<div id="loading-icon"><object type="image/svg+xml" data="' + dirname($0) + '/animated-logo.svg"></object></div>';
     document.body.appendChild(loading);
+    document.getElementById("TeXpage").style.display = "block";
 })(document.createElement("div"));

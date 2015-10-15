@@ -24,6 +24,7 @@ body {
 }
 
 .TeXpage {
+    display: none; /* while loading */
     width: 40em;
     padding: 6em;
     padding-top: 4em;
