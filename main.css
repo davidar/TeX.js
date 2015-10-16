@@ -122,6 +122,15 @@ p     { text-indent: 0;  margin-bottom: 0; }
 p + p { text-indent: 1.5em; margin-top: 0; }
 p *   { text-indent: 0; }
 
+/* match hypothes.is colours */
+a {
+    color: #bd1c2b;
+    text-decoration: none;
+}
+a:hover {
+    color: #84141e;
+}
+
 span[data-note] {
     position: relative;
     color: #00f;
