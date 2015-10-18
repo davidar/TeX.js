@@ -165,6 +165,13 @@ span[data-note]:hover::after {
 
 figure {
     text-align: center;
+    transition: all 1s ease;
+}
+figure:hover {
+    transform: scale(2);
+    background-color: white;
+    box-shadow: 0 0 100px black;
+    z-index: 50;
 }
 figure figcaption {
     counter-increment: figure;
