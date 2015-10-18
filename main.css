@@ -171,6 +171,7 @@ span[data-note]:hover::after {
 }
 
 figure {
+    counter-increment: figure;
     text-align: center;
     transition: all 1s ease;
 }
@@ -178,10 +179,10 @@ figure:hover {
     transform: scale(2);
     background-color: white;
     box-shadow: 0 0 100px black;
-    z-index: 50;
+    position: relative;
+    z-index: 100;
 }
 figure figcaption {
-    counter-increment: figure;
     font-size: 90%;
 }
 figure figcaption::before {

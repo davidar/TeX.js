@@ -1,0 +1,1625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths=""?>
+<!-- %v1 Nico starts template and outline of paper -->
+<!-- %“documentclass[twocolumn,showpacs,preprintnumbers,amsmath,amssymb]–revtex4˝ -->
+<!-- %“documentclass[twocolumn,eqsecnum,aps,prc,]–revtex4˝ -->
+<?latexml class="revtex4" options="letterpaper,twocolumn,showpacs,amsmath,amssymb,prl,superscriptaddress,groupedaddress"?>
+<?latexml package="graphicx"?>
+<?latexml package="dcolumn"?>
+<?latexml package="bm"?>
+<?latexml package="macros"?>
+<!-- %“DeclareGraphicsRule–.tif˝–png˝–.png˝–‘convert #1 ‘dirname #1‘/‘basename #1 .tif‘.png˝ -->
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML" class="ltx_authors_1line">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <resource src="ltx-article.css" type="text/css"/>
+  <title>A New Limit on Time-Reversal Violation in Beta Decay</title>
+  <creator role="author">
+    <personname>H.P. Mumm</personname>
+    <contact role="affiliation">National Institute of Standards and Technology, Gaithersburg, MD 20899</contact>
+    <contact role="affiliation">CENPA and Physics Department, University of Washington, Seattle, WA 98195</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>T.E. Chupp</personname>
+    <contact role="affiliation">Physics Department, University of Michigan, Ann Arbor, MI, 48104</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>R.L. Cooper</personname>
+    <contact role="affiliation">Physics Department, University of Michigan, Ann Arbor, MI, 48104</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>K.P. Coulter</personname>
+    <contact role="affiliation">Physics Department, University of Michigan, Ann Arbor, MI, 48104</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>S.J. Freedman</personname>
+    <contact role="affiliation">Physics Department, University of California at Berkeley and Lawrence Berkeley National Laboratory, Berkeley, CA 94720</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>B.K. Fujikawa</personname>
+    <contact role="affiliation">Physics Department, University of California at Berkeley and Lawrence Berkeley National Laboratory, Berkeley, CA 94720</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>A. García</personname>
+    <contact role="affiliation">CENPA and Physics Department, University of Washington, Seattle, WA 98195</contact>
+    <contact role="affiliation">Department of Physics, University of Notre Dame, Notre Dame, IN 46556</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>G.L. Jones</personname>
+    <contact role="affiliation">Physics Department, Hamilton College, Clinton, NY 13323</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>J.S. Nico</personname>
+    <contact role="affiliation">National Institute of Standards and Technology, Gaithersburg, MD 20899</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>A.K. Thompson</personname>
+    <contact role="affiliation">National Institute of Standards and Technology, Gaithersburg, MD 20899</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>C.A. Trull</personname>
+    <contact role="affiliation">Physics Department, Tulane University, New Orleans, LA 70118</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>J.F. Wilkerson</personname>
+    <contact role="affiliation">Department of Physics and Astronomy, University of North Carolina, Chapel Hill, NC 27599</contact>
+    <contact role="affiliation">CENPA and Physics Department, University of Washington, Seattle, WA 98195</contact>
+  </creator>
+  <creator role="author" before="  ">
+    <personname>F.E. Wietfeldt</personname>
+    <contact role="affiliation">Physics Department, Tulane University, New Orleans, LA 70118</contact>
+  </creator>
+  <date role="creation">October 10, 2015</date>
+  <abstract name="Abstract">
+    <!-- %The standard electroweak model predicts negligible violation of time-reversal symmetry in light quark processes. -->
+    <p>We report the results of an improved determination of the triple correlation <Math mode="inline" xml:id="m1" tex="D{\bf P}\cdot(\bf{p}_{e}\times\bf{p}_{v})" text="(D * P) cdot (p _ e * p _ v)"><XMath><XMApp><XMTok name="cdot" role="MULOP">⋅</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok><XMTok role="UNKNOWN" font="bold">P</XMTok></XMApp><XMDual><XMRef idref="XM1"/><XMWrap><XMTok role="OPEN" stretchy="false">(</XMTok><XMApp xml:id="XM1"><XMTok meaning="times" role="MULOP">×</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok role="UNKNOWN" font="bold">e</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok role="UNKNOWN" font="bold">v</XMTok></XMApp></XMApp><XMTok role="CLOSE" stretchy="false">)</XMTok></XMWrap></XMDual></XMApp></XMath></Math> that can be used to limit possible time-reversal invariance in the beta decay of polarized neutrons and constrain extensions to the Standard Model. Our result is <Math mode="inline" xml:id="m2" tex="D=(-0.96\pm 1.89(stat)\pm 1.01(sys))\times 10^{-4}" text="D = ((- 0.96) plus-or-minus 1.89 * s * t * a * t plus-or-minus 1.01 * s * y * s) * 10 ^ (- 4)"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok><XMApp><XMTok meaning="times" role="MULOP">×</XMTok><XMDual><XMRef idref="XM4"/><XMWrap><XMTok role="OPEN" stretchy="false">(</XMTok><XMApp xml:id="XM4"><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="0.96" role="NUMBER">0.96</XMTok></XMApp><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok meaning="1.89" role="NUMBER">1.89</XMTok><XMDual><XMRef idref="XM2"/><XMWrap><XMTok role="OPEN" stretchy="false">(</XMTok><XMApp xml:id="XM2"><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok role="UNKNOWN" font="italic">s</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok><XMTok role="UNKNOWN" font="italic">a</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok></XMApp><XMTok role="CLOSE" stretchy="false">)</XMTok></XMWrap></XMDual></XMApp><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok meaning="1.01" role="NUMBER">1.01</XMTok><XMDual><XMRef idref="XM3"/><XMWrap><XMTok role="OPEN" stretchy="false">(</XMTok><XMApp xml:id="XM3"><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok role="UNKNOWN" font="italic">s</XMTok><XMTok role="UNKNOWN" font="italic">y</XMTok><XMTok role="UNKNOWN" font="italic">s</XMTok></XMApp><XMTok role="CLOSE" stretchy="false">)</XMTok></XMWrap></XMDual></XMApp></XMApp><XMTok role="CLOSE" stretchy="false">)</XMTok></XMWrap></XMDual><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post3"/><XMTok meaning="10" role="NUMBER">10</XMTok><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="4" role="NUMBER">4</XMTok></XMApp></XMApp></XMApp></XMApp></XMath></Math>. The corresponding phase between <Math mode="inline" xml:id="m3" tex="g_{A}" text="g _ A"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">g</XMTok><XMTok role="UNKNOWN" font="italic">A</XMTok></XMApp></XMath></Math> and <Math mode="inline" xml:id="m4" tex="g_{V}" text="g _ V"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">g</XMTok><XMTok role="UNKNOWN" font="italic">V</XMTok></XMApp></XMath></Math> is <Math mode="inline" xml:id="m5" tex="\phi_{AV}=180.013^{\circ}\pm 0.028^{\circ}" text="phi _ (A * V) = 180.013 ^ compose plus-or-minus 0.028 ^ compose"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok name="phi" role="UNKNOWN" font="italic">ϕ</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok role="UNKNOWN" font="italic">A</XMTok><XMTok role="UNKNOWN" font="italic">V</XMTok></XMApp></XMApp><XMApp><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post3"/><XMTok meaning="180.013" role="NUMBER">180.013</XMTok><XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok></XMApp><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post3"/><XMTok meaning="0.028" role="NUMBER">0.028</XMTok><XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok></XMApp></XMApp></XMApp></XMath></Math> (68% confidence level). This result represents the most sensitive measurement of <Math mode="inline" xml:id="m6" tex="D" text="D"><XMath><XMTok role="UNKNOWN" font="italic">D</XMTok></XMath></Math> in nuclear beta decay. <!-- %The measurement technique, data analysis, and systematic uncertainties are discussed. --></p>
+  </abstract>
+  <classification scheme="pacs">24.80.1y, 11.30.Er, 12.15.Ji, 13.30.Ce</classification>
+  <note role="preprint">APS/123-QED</note>
+  <!-- %“title–New limit on the “D“ coefficient in polarized neutron decay˝ 
+     %**** String Line 25 ****
+     %It is always “today, today,
+     %but any date may be explicitly specified
+     %PACS, the Physics and Astronomy Classification Scheme.-->
+  <para xml:id="p1">
+    <p>The existence of charge-parity (CP) symmetry violation in nature is particularly important in that it is necessary to explain the preponderance of matter over antimatter in the universe <cite>(<bibref bibrefs="SAK91" separator=";" show="Number" yyseparator=","/>)</cite>. Thus far, CP violation has been observed only in the K and B meson systems <cite>(<bibref bibrefs="CHR64,AUB01,ABE01" separator=";" show="Number" yyseparator=","/>)</cite> and can be entirely accounted for by a phase in the Cabbibo-Kobayashi-Maskawa matrix in the electroweak Lagrangian. This phase is insufficient to account for the known baryon asymmetry in the context of Big Bang cosmology <cite>(<bibref bibrefs="RIO99" separator=";" show="Number" yyseparator=","/>)</cite>, so there is good reason to search for CP violation in other systems. As CP and time-reversal (T) violation can be related to each other through the CPT theorem, experimental limits on electric dipole moments and T-odd observables in nuclear beta decay place strict constraints on some, but not all, possible sources of new CP violation.
+<!-- %**** String Line 50 **** --></p>
+  </para>
+  <figure frefnum="Figure 1" placement="t" refnum="1" xml:id="S0.F1" labels="LABEL:fig:DetGeom">
+    <graphics candidates="/home/david/Dropbox/Projects/texjs/1104.2778/Detector3D_new_final.eps" graphic="Detector3D_new_final" options="width=451.6875pt" xml:id="S0.F1.g1"/>
+    <!-- %“includegraphics[width=6.5in]–figs/DetGeom˝ -->
+    <toccaption><tag close=" ">1</tag>A schematic of the emiT detector illustrating the alternating electron and proton detector segments. The darker shaded proton detectors indicate the the paired-ring at <Math mode="inline" xml:id="S0.F1.m1" tex="z=\pm 10" text="z = plus-or-minus 10"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok role="UNKNOWN" font="italic">z</XMTok><XMApp><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok><XMTok meaning="10" role="NUMBER">10</XMTok></XMApp></XMApp></XMath></Math> cm. The cross section view illustrates, in an exaggerated manner, the effect of the magnetic field on the particle trajectories and average opening angle. A P<Math mode="inline" xml:id="S0.F1.m2" tex="{}_{2}" text="_2"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="4"><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp></XMath></Math>E<Math mode="inline" xml:id="S0.F1.m3" tex="{}_{3}" text="_3"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="4"><XMTok meaning="3" role="NUMBER">3</XMTok></XMApp></XMath></Math> coincidence event is shown.</toccaption>
+    <caption><tag close=": ">Figure 1</tag>A schematic of the emiT detector illustrating the alternating electron and proton detector segments. The darker shaded proton detectors indicate the the paired-ring at <Math mode="inline" xml:id="S0.F1.m4" tex="z=\pm 10" text="z = plus-or-minus 10"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok role="UNKNOWN" font="italic">z</XMTok><XMApp><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok><XMTok meaning="10" role="NUMBER">10</XMTok></XMApp></XMApp></XMath></Math> cm. The cross section view illustrates, in an exaggerated manner, the effect of the magnetic field on the particle trajectories and average opening angle. A P<Math mode="inline" xml:id="S0.F1.m5" tex="{}_{2}" text="_2"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="4"><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp></XMath></Math>E<Math mode="inline" xml:id="S0.F1.m6" tex="{}_{3}" text="_3"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="4"><XMTok meaning="3" role="NUMBER">3</XMTok></XMApp></XMath></Math> coincidence event is shown.</caption>
+  </figure>
+  <para xml:id="p2">
+    <p>The decay probability distribution for neutron beta decay, <Math mode="inline" xml:id="p2.m1" tex="dW" text="d * W"><XMath><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok role="UNKNOWN" font="italic">d</XMTok><XMTok role="UNKNOWN" font="italic">W</XMTok></XMApp></XMath></Math>, can be written in terms of the beam polarization <Math mode="inline" xml:id="p2.m2" tex="\bf{P}" text="P"><XMath><XMTok role="UNKNOWN" font="bold">P</XMTok></XMath></Math> and the momenta (energies) of the electron <Math mode="inline" xml:id="p2.m3" tex="{\bf p}_{e}" text="p _ e"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok></XMApp></XMath></Math> (<Math mode="inline" xml:id="p2.m4" tex="E_{e}" text="E _ e"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">E</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok></XMApp></XMath></Math>) and antineutrino <Math mode="inline" xml:id="p2.m5" tex="{\bf p}_{\nu}" text="p _ nu"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok></XMApp></XMath></Math> (<Math mode="inline" xml:id="p2.m6" tex="E_{\nu}" text="E _ nu"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">E</XMTok><XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok></XMApp></XMath></Math>) as <cite>(<bibref bibrefs="JAC57" separator=";" show="Number" yyseparator=","/>)</cite> <!-- %was first described by Jackson, Treiman, and Wyld~“cite–JAC57˝in 1957 as --></p>
+    <equationgroup class="ltx_eqn_eqnarray" xml:id="A0.EGx1">
+      <equation labels="LABEL:eq:Jackson" xml:id="S0.E1" refnum="1" frefnum="(1)">
+        <MathFork>
+          <Math xml:id="S0.E1.m4" tex="\displaystyle dW\propto 1+a\frac{{\bf p}_{e}\cdot{\bf p}_{\nu}}{E_{e}E_{\nu}}+%&#10;b\frac{{m}_{e}}{E_{e}}+    {\bf P}\cdot\left(A\frac{{\bf p}_{e}}{E_{e}}+B\frac%&#10;{{\bf p}_{\nu}}{E_{\nu}}+D\frac{{\bf p}_{e}\times{\bf p}_{\nu}}{E_{e}E_{\nu}}%&#10;\right)." text="d * W proportional-to 1 + a * ((p _ e cdot p _ nu) / (E _ e * E _ nu)) + b * (m _ e / E _ e) + (     * P) cdot (A * (p _ e / E _ e) + B * (p _ nu / E _ nu) + D * ((p _ e * p _ nu) / (E _ e * E _ nu)))">
+            <XMath>
+              <XMApp punctuation=".">
+                <XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">d</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">W</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                  <XMTok meaning="1" role="NUMBER">1</XMTok>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok role="UNKNOWN" font="italic">a</XMTok>
+                    <XMApp>
+                      <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+                      <XMApp>
+                        <XMTok name="cdot" role="MULOP">⋅</XMTok>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                          <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                          <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                          <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                          <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                        </XMApp>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                          <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                          <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                          <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                          <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                    <XMTok role="UNKNOWN" font="italic">b</XMTok>
+                    <XMApp>
+                      <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                        <XMTok role="UNKNOWN" font="italic">m</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                        <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMApp>
+                    <XMTok name="cdot" role="MULOP">⋅</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok role="UNKNOWN">    </XMTok>
+                      <XMTok role="UNKNOWN" font="bold">P</XMTok>
+                    </XMApp>
+                    <XMDual>
+                      <XMRef idref="XM5"/>
+                      <XMWrap>
+                        <XMTok role="OPEN">(</XMTok>
+                        <XMApp xml:id="XM5">
+                          <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok role="UNKNOWN" font="italic">A</XMTok>
+                            <XMApp>
+                              <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                                <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                                <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok role="UNKNOWN" font="italic">B</XMTok>
+                            <XMApp>
+                              <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                                <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                                <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok role="UNKNOWN" font="italic">D</XMTok>
+                            <XMApp>
+                              <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+                              <XMApp>
+                                <XMTok meaning="times" role="MULOP">×</XMTok>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                  <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                                  <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                  <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                                  <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                                </XMApp>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                  <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                                  <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                  <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                                  <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                                </XMApp>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="CLOSE">)</XMTok>
+                      </XMWrap>
+                    </XMDual>
+                  </XMApp>
+                </XMApp>
+              </XMApp>
+            </XMath>
+          </Math>
+          <MathBranch>
+            <tr>
+              <td align="left" colspan="3">
+                <Math mode="inline" tex="\displaystyle dW\propto 1+a\frac{{\bf p}_{e}\cdot{\bf p}_{\nu}}{E_{e}E_{\nu}}+%&#10;b\frac{{m}_{e}}{E_{e}}+" xml:id="S0.Ex1.m1" text="d * W proportional-to 1 + a * ((p _ e cdot p _ nu) / (E _ e * E _ nu)) + limit-from@(b * (m _ e / E _ e), +)">
+                  <XMath>
+                    <XMApp>
+                      <XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">d</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">W</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                        <XMTok meaning="1" role="NUMBER">1</XMTok>
+                        <XMApp>
+                          <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                          <XMTok role="UNKNOWN" font="italic">a</XMTok>
+                          <XMApp>
+                            <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+                            <XMApp>
+                              <XMTok name="cdot" role="MULOP">⋅</XMTok>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                                <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                                <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                                <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                                <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                              </XMApp>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                                <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                                <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                                <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                                <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok meaning="limit-from"/>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok role="UNKNOWN" font="italic">b</XMTok>
+                            <XMApp>
+                              <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                                <XMTok role="UNKNOWN" font="italic">m</XMTok>
+                                <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                              </XMApp>
+                              <XMApp>
+                                <XMTok role="SUBSCRIPTOP" scriptpos="post8"/>
+                                <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                                <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                  </XMath>
+                </Math>
+              </td>
+              <td/>
+              <td/>
+            </tr>
+            <tr>
+              <td align="right"/>
+              <td align="center"/>
+              <td align="left">
+                <Math mode="inline" tex="\displaystyle    {\bf P}\cdot\left(A\frac{{\bf p}_{e}}{E_{e}}+B\frac{{\bf p}_{%&#10;\nu}}{E_{\nu}}+D\frac{{\bf p}_{e}\times{\bf p}_{\nu}}{E_{e}E_{\nu}}\right)." xml:id="S0.E1.m3" text="(     * P) cdot (A * (p _ e / E _ e) + B * (p _ nu / E _ nu) + D * ((p _ e * p _ nu) / (E _ e * E _ nu)))">
+                  <XMath>
+                    <XMApp punctuation=".">
+                      <XMTok name="cdot" role="MULOP">⋅</XMTok>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMTok role="UNKNOWN">    </XMTok>
+                        <XMTok role="UNKNOWN" font="bold">P</XMTok>
+                      </XMApp>
+                      <XMDual>
+                        <XMRef idref="XM6"/>
+                        <XMWrap>
+                          <XMTok role="OPEN">(</XMTok>
+                          <XMApp xml:id="XM6">
+                            <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok role="UNKNOWN" font="italic">A</XMTok>
+                              <XMApp>
+                                <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                  <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                                  <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                  <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                                  <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                                </XMApp>
+                              </XMApp>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok role="UNKNOWN" font="italic">B</XMTok>
+                              <XMApp>
+                                <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                  <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                                  <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                  <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                                  <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                                </XMApp>
+                              </XMApp>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                              <XMTok role="UNKNOWN" font="italic">D</XMTok>
+                              <XMApp>
+                                <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+                                <XMApp>
+                                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                                  <XMApp>
+                                    <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                    <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                                    <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                                  </XMApp>
+                                  <XMApp>
+                                    <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                    <XMTok role="UNKNOWN" font="bold">p</XMTok>
+                                    <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                                  </XMApp>
+                                </XMApp>
+                                <XMApp>
+                                  <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                  <XMApp>
+                                    <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                    <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                                    <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                                  </XMApp>
+                                  <XMApp>
+                                    <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                                    <XMTok role="UNKNOWN" font="italic">E</XMTok>
+                                    <XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok>
+                                  </XMApp>
+                                </XMApp>
+                              </XMApp>
+                            </XMApp>
+                          </XMApp>
+                          <XMTok role="CLOSE">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                  </XMath>
+                </Math>
+              </td>
+            </tr>
+          </MathBranch>
+        </MathFork>
+      </equation>
+    </equationgroup>
+    <!-- %“begin–eqnarray˝ 
+     %“label–eq:Jackson˝
+     %“lefteqn–dW “propto 1+ a“frac–“vec–p˝˙–e˝“cdot“vec–p˝˙–“nu˝˝ –E˙–e˝E˙–“nu˝˝+ b“frac––m˝˙–e˝˝ –E˙–e˝˝ +˝&&“nonumber““
+     %&&“hspace–.5 in˝–“frac–“vec–“left¡J“right¿˝˝–J˝˝ “cdot “left( A“frac–“vec–p˝˙–e˝˝ –E˙–e˝˝+ B“frac–“vec–p˝˙–“nu˝˝ –E˙–“nu˝˝ + D“frac–“vec–p˝˙–e˝ “times %“vec–p˝˙–“nu˝˝–E˙–e˝E˙–“nu˝˝ “right).
+     %“end–eqnarray˝-->
+  </para>
+  <para xml:id="p3" class="ltx_noindent">
+    <p>A contribution of the parity-even triple correlation <Math mode="inline" xml:id="p3.m1" tex="D{\bf P}\cdot({\bf p}_{e}\times{\bf p}_{\nu})" text="(D * P) cdot (p _ e * p _ nu)"><XMath><XMApp><XMTok name="cdot" role="MULOP">⋅</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok><XMTok role="UNKNOWN" font="bold">P</XMTok></XMApp><XMDual><XMRef idref="XM7"/><XMWrap><XMTok role="OPEN" stretchy="false">(</XMTok><XMApp xml:id="XM7"><XMTok meaning="times" role="MULOP">×</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok></XMApp></XMApp><XMTok role="CLOSE" stretchy="false">)</XMTok></XMWrap></XMDual></XMApp></XMath></Math> above the level of calculable final-state interactions (FSI) implies T-violation. <!-- %The most sensitive measurements to date are in  $^–19˝$Ne and neutron decay and are consistent with $D=0$ “cite–CAL85,SOL04,LIS00˝. 
+     %only about a factor of three above electromagnetic final-state effects. The most recent measurements
+     %Previous measurements in $^–19˝$Ne decay, $D=(1“pm6)“times 10^–-4˝$~“cite–CAL85˝, and in neutron decay, $D=(-2.8“pm7.1)“times 10^–-4˝$~“cite–SOL04˝ and $(-6“pm13)“times 10^–-4˝$~“cite–LIS00˝ are consistent with T symmetry.  ,
+     %The current world average is $D=(-4“pm6)“times 10^–-4˝$~“cite–PDG:2010˝, while the FSI, with a Standard Model (SM) contribution calculable to 1“%, are of order $10^–-5˝$~“cite–CAL67,Ando2009˝.  Thus improved measurements of $D$ probe new sources of T-violation.-->The PDG average of recent measurements is <Math mode="inline" xml:id="p3.m2" tex="D=(-4\pm 6)\times 10^{-4}" text="D = ((- 4) plus-or-minus 6) * 10 ^ (- 4)"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok><XMApp><XMTok meaning="times" role="MULOP">×</XMTok><XMDual><XMRef idref="XM8"/><XMWrap><XMTok role="OPEN" stretchy="false">(</XMTok><XMApp xml:id="XM8"><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="4" role="NUMBER">4</XMTok></XMApp><XMTok meaning="6" role="NUMBER">6</XMTok></XMApp><XMTok role="CLOSE" stretchy="false">)</XMTok></XMWrap></XMDual><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok meaning="10" role="NUMBER">10</XMTok><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="4" role="NUMBER">4</XMTok></XMApp></XMApp></XMApp></XMApp></XMath></Math> <cite>(<bibref bibrefs="PDG:2010,LIS00,SOL04" separator=";" show="Number" yyseparator=","/>)</cite>, while the FSI for the neutron are <Math mode="inline" xml:id="p3.m3" tex="\sim 10^{-5}" text="absent similar-to 10 ^ (- 5)"><XMath><XMApp><XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok><XMTok meaning="absent"/><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok meaning="10" role="NUMBER">10</XMTok><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="5" role="NUMBER">5</XMTok></XMApp></XMApp></XMApp></XMath></Math> <cite>(<bibref bibrefs="CAL67,Ando2009" separator=";" show="Number" yyseparator=","/>)</cite>. <!-- %Thus improved measurements of $D$ probe new sources of CP and T-violation. -->Complementary limits can be set on other T-violating correlations, and recently a limit on <Math mode="inline" xml:id="p3.m4" tex="R" text="R"><XMath><XMTok role="UNKNOWN" font="italic">R</XMTok></XMath></Math> has been published <cite>(<bibref bibrefs="Kozela:2009ni" separator=";" show="Number" yyseparator=","/>)</cite>.
+<!-- %**** String Line 75 **** 
+     %FSI in the neutron system, the Standard Model (SM) contribution of which is calculable to 1“%, are $“approx 10^–-5˝$, well below the sensitivity of current experiments~“cite–CAL67,Ando2009˝.-->Various theoretical models that extend the SM, such as left-right symmetric theories, leptoquarks, and certain exotic fermions could give rise to observable effects that are as large as the present experimental limits <cite>(<bibref bibrefs="HER98" separator=";" show="Number" yyseparator=","/>)</cite>. Calculations performed within the Minimal Supersymmetric Model, however, predict <Math mode="inline" xml:id="p3.m5" tex="D\lesssim 10^{-7}" text="D less-than-or-similar-to 10 ^ (- 7)"><XMath><XMApp><XMTok meaning="less-than-or-similar-to" name="lesssim" role="RELOP">≲</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok meaning="10" role="NUMBER">10</XMTok><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="7" role="NUMBER">7</XMTok></XMApp></XMApp></XMApp></XMath></Math> <cite>(<bibref bibrefs="Drees2003" separator=";" show="Number" yyseparator=","/>)</cite>.<!-- %, well below the sensitivity of our measurement. --></p>
+  </para>
+  <para xml:id="p4">
+    <p>In the neutron rest frame, the triple correlation can be expressed as <Math mode="inline" xml:id="p4.m1" tex="D{\bf P}\cdot({\bf p}_{p}\times{\bf p}_{e})" text="(D * P) cdot (p _ p * p _ e)"><XMath><XMApp><XMTok name="cdot" role="MULOP">⋅</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok><XMTok role="UNKNOWN" font="bold">P</XMTok></XMApp><XMDual><XMRef idref="XM9"/><XMWrap><XMTok role="OPEN" stretchy="false">(</XMTok><XMApp xml:id="XM9"><XMTok meaning="times" role="MULOP">×</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok role="UNKNOWN" font="italic">p</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok></XMApp></XMApp><XMTok role="CLOSE" stretchy="false">)</XMTok></XMWrap></XMDual></XMApp></XMath></Math>, where <Math mode="inline" xml:id="p4.m2" tex="{\bf p}_{p}" text="p _ p"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok role="UNKNOWN" font="italic">p</XMTok></XMApp></XMath></Math> is the proton momentum.
+Thus one can extract <Math mode="inline" xml:id="p4.m3" tex="D" text="D"><XMath><XMTok role="UNKNOWN" font="italic">D</XMTok></XMath></Math> from the spin dependence of proton-electron coincidences in
+the decay of cold polarized neutrons.
+<!-- %The decaying neutron is approximately at rest ($“vec p˙n/“vec p˙p “approx 0.001$). The effect of the small neutron velocity is to shift the proton velocity vector slightly in the detector frame, effectively changing the solid angle of the proton detectors. This can be understood as a slight longitudinal shift in the relative proton-electron detector positions. The analysis methods used are insensitive to such shifts; therefore, one may treat the neutron as though it is at rest and use momentum conservation to rewrite the triple correlation in terms of $“vec p˙p$. 
+     %“section–Apparatus and Data˝
+     %The apparatus was mounted at the NG-6 fundamental physics end-station at the Center for Neutron Research at the National Institute of Standards and Technology~“cite–MUM04˝. The detector, shown schematically in Fig.~“ref–fig:DetGeom˝, consisted of an octagonal array of four electron-detection planes and four proton-detection planes concentric with the longitudinally polarized beam.  The octagonal geometry was chosen from various detector arrangements based on Monte Carlo simulation to maximize sensitivity to $D$~“cite–WAS94, LIS00˝. % with respect to most systematic effects~“cite–LIS00˝.-->Our measurement was carried out at the National Institute of Standards and Technology Center for Neutron Research <cite>(<bibref bibrefs="MUM04" separator=";" show="Number" yyseparator=","/>)</cite>. The detector, shown schematically in Fig. <ref labelref="LABEL:fig:DetGeom"/>, consisted of an octagonal array of four electron-detection planes and four proton-detection planes concentric with a longitudinally polarized beam. The beam, with a neutron capture fluence rate at the detector of <Math mode="inline" xml:id="p4.m4" tex="1.7\times 10^{8}" text="1.7 * 10 ^ 8"><XMath><XMApp><XMTok meaning="times" role="MULOP">×</XMTok><XMTok meaning="1.7" role="NUMBER">1.7</XMTok><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok meaning="10" role="NUMBER">10</XMTok><XMTok meaning="8" role="NUMBER">8</XMTok></XMApp></XMApp></XMath></Math> cm<Math mode="inline" xml:id="p4.m5" tex="{}^{-2}" text="^- 2"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="2"><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp></XMApp></XMath></Math> s<Math mode="inline" xml:id="p4.m6" tex="{}^{-1}" text="^- 1"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="2"><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="1" role="NUMBER">1</XMTok></XMApp></XMApp></XMath></Math>, was defined using a series of <Math mode="inline" xml:id="p4.m7" tex="{}^{6}" text="^6"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="2"><XMTok meaning="6" role="NUMBER">6</XMTok></XMApp></XMath></Math>LiF apertures and polarized to <Math mode="inline" xml:id="p4.m8" tex="&gt;91\%" text="absent &gt; 91percent"><XMath><XMApp><XMTok meaning="greater-than" role="RELOP">&gt;</XMTok><XMTok meaning="absent"/><XMApp><XMTok meaning="percent" role="POSTFIX">%</XMTok><XMTok meaning="91" role="NUMBER">91</XMTok></XMApp></XMApp></XMath></Math> (95% C.L.) by a double-sided bender-type supermirror <cite>(<bibref bibrefs="MUM04" separator=";" show="Number" yyseparator=","/>)</cite>. A 560 <Math mode="inline" xml:id="p4.m9" tex="\mu" text="mu"><XMath><XMTok name="mu" role="UNKNOWN" font="italic">μ</XMTok></XMath></Math>T guide field maintained the polarization direction throughout the fiducial volume and a current-sheet spin-flipper was used to reverse the neutron spin direction every 10 s. The symmetric octagonal geometry was chosen to maximize sensitivity to <Math mode="inline" xml:id="p4.m10" tex="D" text="D"><XMath><XMTok role="UNKNOWN" font="italic">D</XMTok></XMath></Math> while approximately canceling systematic effects stemming from detector efficiency variations or coupling to the spin correlations <Math mode="inline" xml:id="p4.m11" tex="A" text="A"><XMath><XMTok role="UNKNOWN" font="italic">A</XMTok></XMath></Math> and <Math mode="inline" xml:id="p4.m12" tex="B" text="B"><XMath><XMTok role="UNKNOWN" font="italic">B</XMTok></XMath></Math> <cite>(<bibref bibrefs="WAS94,LIS00" separator=";" show="Number" yyseparator=","/>)</cite>. <!-- %and solid-angle variations as well as from beam and polarization misalignments. 
+     %, and additional “Li-glass shielding significantly reduced background radiation from neutron capture.-->Each of the four proton segments consisted of a <Math mode="inline" xml:id="p4.m13" tex="2\times 8" text="2 * 8"><XMath><XMApp><XMTok meaning="times" role="MULOP">×</XMTok><XMTok meaning="2" role="NUMBER">2</XMTok><XMTok meaning="8" role="NUMBER">8</XMTok></XMApp></XMath></Math> array of silicon surface-barrier detectors (SBDs) with an active layer 300 mm<Math mode="inline" xml:id="p4.m14" tex="{}^{2}" text="^2"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="2"><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp></XMath></Math><Math mode="inline" xml:id="p4.m15" tex="\times" text="*"><XMath><XMTok meaning="times" role="MULOP">×</XMTok></XMath></Math> 300 <Math mode="inline" xml:id="p4.m16" tex="\mu" text="mu"><XMath><XMTok name="mu" role="UNKNOWN" font="italic">μ</XMTok></XMath></Math>m. Each SBD was contained within an acceleration and focusing cell consisting of a 94% transmitting grounded wire-mesh box through which the recoil protons entered. Each SBD, situated within a field-shaping cylindrical tube, was held at a fixed voltage in the range <Math mode="inline" xml:id="p4.m17" tex="-25" text="- 25"><XMath><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="25" role="NUMBER">25</XMTok></XMApp></XMath></Math> kV to <Math mode="inline" xml:id="p4.m18" tex="-32" text="- 32"><XMath><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="32" role="NUMBER">32</XMTok></XMApp></XMath></Math> kV. The sensitive regions of the beta detectors were plastic scintillator measuring 50 cm by 8.4 cm by 0.64 cm thick, with photomultiplier tube (PMT) readout at both ends. This thickness is sufficient to stop electrons at the decay endpoint energy of 782 keV. <!-- %Scintillation photons were detected by photomultiplier tubes (PMTs) at both ends of the slab. -->The proton and beta detectors were periodically calibrated <text font="italic">in situ</text> with gamma and beta sources respectively. Details of the apparatus are presented elsewhere <cite>(<bibref bibrefs="MUM03,MUM04,LIS00" separator=";" show="Number" yyseparator=","/>)</cite>.</p>
+  </para>
+  <para xml:id="p5">
+    <p>Data were acquired in a series of runs from October 2002 through December 2003. Typical count rates were 3 s<Math mode="inline" xml:id="p5.m1" tex="{}^{-1}" text="^- 1"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="2"><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="1" role="NUMBER">1</XMTok></XMApp></XMApp></XMath></Math> and 100 s<Math mode="inline" xml:id="p5.m2" tex="{}^{-1}" text="^- 1"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="2"><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="1" role="NUMBER">1</XMTok></XMApp></XMApp></XMath></Math> for single proton and beta detectors, respectively, while the coincidence rate for the entire array was typically 25 s<Math mode="inline" xml:id="p5.m3" tex="{}^{-1}" text="^- 1"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="2"><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="1" role="NUMBER">1</XMTok></XMApp></XMApp></XMath></Math>.
+<!-- %The average coincidence rate per pair of detectors was 0.55“,s$^–-1˝$, giving about 25“,s$^–-1˝$ for the entire array., 
+     %These events were isolated from the raw data as follows.-->Of the raw events, 12% were eliminated by filtering on various operational parameters (e.g. coil currents) and by requiring equal counting time in each spin-flip state. <!-- %PMT gain drifts necessitated the use of a software threshold of 90~keV, sufficiently above the hardware threshold to eliminate the effect of these drifts. -->A beta-energy software threshold of 90 keV eliminated detection efficiency drifts due to changes in PMT gain coupled with the hardware threshold.
+This was the largest single cut, eliminating 14% of the raw events. A requirement that a single beta be detected in coincidence with each proton eliminated 7% of events. All cuts were varied to test for systematic effects.</p>
+  </para>
+  <figure frefnum="Figure 2" placement="t" refnum="2" xml:id="S0.F2" labels="LABEL:fg:TOF">
+    <graphics candidates="/home/david/Dropbox/Projects/texjs/1104.2778/2D_final2_color.eps" graphic="2D_final2_color" options="width=252.945pt" xml:id="S0.F2.g1"/>
+    <toccaption><tag close=" ">2</tag>Intensity log plot of SBD-scintillator coincidence data showing proton energy vs delay time. Events near <Math mode="inline" xml:id="S0.F2.m1" tex="\Delta t=0" text="Delta * t = 0"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok name="Delta" role="UNKNOWN">Δ</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok></XMApp><XMTok meaning="0" role="NUMBER">0</XMTok></XMApp></XMath></Math> are prompt coincidences due primarily to beam-related backgrounds.</toccaption>
+    <caption><tag close=": ">Figure 2</tag>Intensity log plot of SBD-scintillator coincidence data showing proton energy vs delay time. Events near <Math mode="inline" xml:id="S0.F2.m2" tex="\Delta t=0" text="Delta * t = 0"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok name="Delta" role="UNKNOWN">Δ</XMTok><XMTok role="UNKNOWN" font="italic">t</XMTok></XMApp><XMTok meaning="0" role="NUMBER">0</XMTok></XMApp></XMath></Math> are prompt coincidences due primarily to beam-related backgrounds.</caption>
+    <!-- %**** String Line 100 **** -->
+  </figure>
+  <para xml:id="p6">
+    <p>The remaining coincidence events were divided into two timing windows: a preprompt window from -12.3 <Math mode="inline" xml:id="p6.m1" tex="\mu" text="mu"><XMath><XMTok name="mu" role="UNKNOWN" font="italic">μ</XMTok></XMath></Math>s to -0.75 <Math mode="inline" xml:id="p6.m2" tex="\mu" text="mu"><XMath><XMTok name="mu" role="UNKNOWN" font="italic">μ</XMTok></XMath></Math>s that was used to determine the background from random coincidences, <!-- %, a ‘prompt’ window used for systematic studies from -0.75 $“mu$s to 0.12 $“mu$s, -->and the decay window from -0.5 <Math mode="inline" xml:id="p6.m3" tex="\mu" text="mu"><XMath><XMTok name="mu" role="UNKNOWN" font="italic">μ</XMTok></XMath></Math>s to 6.0 <Math mode="inline" xml:id="p6.m4" tex="\mu" text="mu"><XMath><XMTok name="mu" role="UNKNOWN" font="italic">μ</XMTok></XMath></Math>s as shown in Fig. <ref labelref="LABEL:fg:TOF"/>. The recoil proton has an endpoint of 750 eV. On average it is delayed by <Math mode="inline" xml:id="p6.m5" tex="\sim" text="similar-to"><XMath><XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok></XMath></Math> 0.5 <Math mode="inline" xml:id="p6.m6" tex="\mu" text="mu"><XMath><XMTok name="mu" role="UNKNOWN" font="italic">μ</XMTok></XMath></Math>s. <!-- %he proton-energy timing spectrum is shown in Figure~“ref–fg:TOF˝.%This window was extended beyond the optimum from a statistical standpoint due to a desire to avoid constraining the phase space in a way that could potentially enhance systematic effects. 
+     %The preprompt background energy spectrum was subtracted on a bin-by-bin basis from the proton spectrum in the decay window.  %This spectrum included a small contamination of minimum ionizing prompt events.-->The average signal-to-background ratio was <Math mode="inline" xml:id="p6.m7" tex="\sim" text="similar-to"><XMath><XMTok meaning="similar-to" name="sim" role="RELOP">∼</XMTok></XMath></Math> 30/1. <!-- %Of the background events 93“% were decay events with an undetected electron.  The remainder were primarily backgrounds related to the neutron beam (4“%) and ions accelerated by the high voltage system (2“%). -->The energy-loss spectrum produced by minimum ionizing particles in 300 <Math mode="inline" xml:id="p6.m8" tex="\mu" text="mu"><XMath><XMTok name="mu" role="UNKNOWN" font="italic">μ</XMTok></XMath></Math>m of silicon is peaked at approximately 100 keV and, being well separated from the proton energy spectrum, yielded an estimated contamination below 0.1%. <!-- %Table~“ref–tb:Systematics˝ includes small corrections from these effects. -->The final data set consisted of approximately 300 million accepted coincidence events.</p>
+  </para>
+  <!-- %Figure~“ref–fig:TOF˝ shows the proton energy versus the electron-proton coincidence time. The data set was very clean with a clear separation of the cosmic Landau peak in the higher energy proton data. 
+     %The preprompt background was found to be flat to xx“% and flip-state independent to xxe-4 over the full extent of the 11.55 $“mu$s window.  This justified the assumption that this background extended through the  decay window.  Furthermore, no evidence of a significant time varying background was seen in either high-voltage-off or beam-off runs.
+     %Each proton energy spectrum was accumulated for an average of one day and then integrated from a sharp software threshold to 50 keV.  The software threshold varied from channel to channel due to variations in surface barrier performance but was always set above the hardware threshold and was the same for both flip-states.  The integrated spectra determined the number of coincidence events seen for each electron-proton detector pair and for each flip-state.  Each spectrum was also simultaneously fit to a tailed gaussian for studies of systematic effects.-->
+  <para xml:id="p7">
+    <p>A detailed Monte Carlo simulation was used to estimate a number of systematic effects. The program <text font="smallcaps">Penelope</text> <cite>(<bibref bibrefs="penelope" separator=";" show="Number" yyseparator=","/>)</cite>, which has been tested against data in a variety of circumstances of relevance to neutron decay <cite>(<bibref bibrefs="martin06" separator=";" show="Number" yyseparator=","/>)</cite>, was embedded within a custom tracking code. All surfaces visible to decay particles were included. The Monte Carlo was based on the measured beam distribution upstream and downstream of the fiducial volume <cite>(<bibref bibrefs="MUM04" separator=";" show="Number" yyseparator=","/>)</cite> and incorporated the magnetic field and electron energy threshold. A separate Monte Carlo based on the package SIMION <cite>(<bibref bibrefs="SIMION" separator=";" show="Number" yyseparator=","/>)</cite>, incorporating the detailed geometry of the proton cells, was used to model the proton detection response function.</p>
+  </para>
+  <!-- %**** String Line 125 **** 
+     %“begin–figure˝[t]
+     %“includegraphics[width=3.in]–figs/TOF˝
+     %“caption–Log plot of surface barrier-scintillator coincidence data from a typical 4-h run showing proton energy vs delay time. Events near $“delta t=0$ are prompt coincidences due primarily to beam-related backgrounds. The very low background rate is apparent.˝
+     %“label–fig:TOF˝
+     %“end–figure˝
+     %“section–Method of Measurement˝
+     %In principle $D$ can be extracted from any proton-electron detector pair.-->
+  <para xml:id="p8">
+    <p>Achieving the desired sensitivity to <Math mode="inline" xml:id="p8.m1" tex="D" text="D"><XMath><XMTok role="UNKNOWN" font="italic">D</XMTok></XMath></Math> in the presence of the much larger spin-asymmetries due to <Math mode="inline" xml:id="p8.m2" tex="A" text="A"><XMath><XMTok role="UNKNOWN" font="italic">A</XMTok></XMath></Math> and <Math mode="inline" xml:id="p8.m3" tex="B" text="B"><XMath><XMTok role="UNKNOWN" font="italic">B</XMTok></XMath></Math> depends critically on the measurement symmetry. To the extent that this symmetry is broken, corrections must be applied to the measured result. These corrections are listed in Table <ref labelref="LABEL:tb:Systematics"/> and are discussed below. To extract <Math mode="inline" xml:id="p8.m4" tex="D" text="D"><XMath><XMTok role="UNKNOWN" font="italic">D</XMTok></XMath></Math>, coincident events were first combined into approximately efficiency-independent asymmetries</p>
+  </para>
+  <!-- %“begin–equation˝ 
+     %w^–“alpha“eta˝=“frac–N^–“alpha“eta˝˙“uparrow-N^–“alpha“eta˝˙“downarrow˝–N^–“alpha“eta˝˙“uparrow+N^–“alpha“eta˝˙“downarrow˝ +“mathcal–B˝“hat–z˝“cdot“tilde–“bf K˝^–“alpha“eta˝˙D,
+     %“end–equation˝-->
+  <para xml:id="p9">
+    <equation frefnum="(2)" refnum="2" xml:id="S0.E2" labels="LABEL:eqn:wdef">
+      <Math mode="display" xml:id="S0.E2.m1" tex="w^{p_{i}e_{j}}=\frac{N^{p_{i}e_{j}}_{+}-N^{p_{i}e_{j}}_{-}}{N^{p_{i}e_{j}}_{+}%&#10;+N^{p_{i}e_{j}}_{-}}," text="w ^ (p _ i * e _ j) = ((N ^ (p _ i * e _ j)) _ + - (N ^ (p _ i * e _ j)) _ -) / ((N ^ (p _ i * e _ j)) _ + + (N ^ (p _ i * e _ j)) _ -)">
+        <XMath>
+          <XMApp punctuation=",">
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok role="UNKNOWN" font="italic">w</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">j</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+            <XMApp>
+              <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+              <XMApp>
+                <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                    <XMTok role="UNKNOWN" font="italic">N</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                        <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                        <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">j</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                    <XMTok role="UNKNOWN" font="italic">N</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                        <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                        <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">j</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                </XMApp>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                    <XMTok role="UNKNOWN" font="italic">N</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                        <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                        <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">j</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post3"/>
+                    <XMTok role="UNKNOWN" font="italic">N</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                        <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                      </XMApp>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post4"/>
+                        <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                        <XMTok role="UNKNOWN" font="italic">j</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>
+    </equation>
+  </para>
+  <para xml:id="p10" class="ltx_noindent">
+    <p>where <Math mode="inline" xml:id="p10.m1" tex="N^{p_{i}e_{j}}_{+}" text="(N ^ (p _ i * e _ j)) _ +"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">N</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">j</XMTok></XMApp></XMApp></XMApp><XMTok meaning="plus" role="ADDOP">+</XMTok></XMApp></XMath></Math> is the integrated number of coincident events in proton detector <Math mode="inline" xml:id="p10.m2" tex="i=1...64" text="i = 1...64"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok><XMTok meaning="1...64" role="NUMBER">1...64</XMTok></XMApp></XMath></Math>, beta detector <Math mode="inline" xml:id="p10.m3" tex="j=1...4" text="j = 1...4"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok role="UNKNOWN" font="italic">j</XMTok><XMTok meaning="1...4" role="NUMBER">1...4</XMTok></XMApp></XMath></Math>, with neutron spin + (<Math mode="inline" xml:id="p10.m4" tex="-" text="-"><XMath><XMTok meaning="minus" role="ADDOP">-</XMTok></XMath></Math>) aligned (anti-aligned) with the guide field. For uniform polarization, <Math mode="inline" xml:id="p10.m5" tex="{\bf P}" text="P"><XMath><XMTok role="UNKNOWN" font="bold">P</XMTok></XMath></Math>, the asymmetries, <Math mode="inline" xml:id="p10.m6" tex="w^{p_{i}e_{j}}" text="w ^ (p _ i * e _ j)"><XMath><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">w</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">j</XMTok></XMApp></XMApp></XMApp></XMath></Math>, can be written in terms of decay correlations as</p>
+  </para>
+  <!-- %“begin–equation˝ 
+     %“label–wbyKdef˝
+     %w^–“alpha“eta˝“approx P“hat–“sigma˝“cdot(A“tilde–“bf K˝^–“alpha“eta˝˙A +B“tilde–“bf K˝^–“alpha“eta˝˙B+(D+“mathcal–B˝)“tilde–“bf K˝^–“alpha“eta˝˙D),
+     %**** String Line 150 ****
+     %“end–equation˝-->
+  <para xml:id="p11">
+    <equation frefnum="(3)" refnum="3" xml:id="S0.E3" labels="LABEL:wbyKdef">
+      <Math mode="display" xml:id="S0.E3.m1" tex="w^{p_{i}e_{j}}\approx{\bf P}\cdot(A\tilde{\bf K}^{p_{i}e_{j}}_{A}+B\tilde{\bf K%&#10;}^{p_{i}e_{j}}_{B}+D\tilde{\bf K}^{p_{i}e_{j}}_{D})," text="w ^ (p _ i * e _ j) approximately-equals P cdot (A * ((tilde@(K)) ^ (p _ i * e _ j)) _ A + B * ((tilde@(K)) ^ (p _ i * e _ j)) _ B + D * ((tilde@(K)) ^ (p _ i * e _ j)) _ D)">
+        <XMath>
+          <XMApp punctuation=",">
+            <XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok role="UNKNOWN" font="italic">w</XMTok>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                </XMApp>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                  <XMTok role="UNKNOWN" font="italic">j</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+            <XMApp>
+              <XMTok name="cdot" role="MULOP">⋅</XMTok>
+              <XMTok role="UNKNOWN" font="bold">P</XMTok>
+              <XMDual>
+                <XMRef idref="XM10"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="XM10">
+                    <XMTok meaning="plus" role="ADDOP">+</XMTok>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok role="UNKNOWN" font="italic">A</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                          <XMApp>
+                            <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                            <XMTok role="UNKNOWN" font="bold">K</XMTok>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                              <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                              <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                              <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                              <XMTok role="UNKNOWN" font="italic">j</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="UNKNOWN" font="italic">A</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok role="UNKNOWN" font="italic">B</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                          <XMApp>
+                            <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                            <XMTok role="UNKNOWN" font="bold">K</XMTok>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                              <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                              <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                              <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                              <XMTok role="UNKNOWN" font="italic">j</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="UNKNOWN" font="italic">B</XMTok>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok role="UNKNOWN" font="italic">D</XMTok>
+                      <XMApp>
+                        <XMTok role="SUBSCRIPTOP" scriptpos="post2"/>
+                        <XMApp>
+                          <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                          <XMApp>
+                            <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+                            <XMTok role="UNKNOWN" font="bold">K</XMTok>
+                          </XMApp>
+                          <XMApp>
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                              <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                              <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                            </XMApp>
+                            <XMApp>
+                              <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                              <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                              <XMTok role="UNKNOWN" font="italic">j</XMTok>
+                            </XMApp>
+                          </XMApp>
+                        </XMApp>
+                        <XMTok role="UNKNOWN" font="italic">D</XMTok>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>
+    </equation>
+  </para>
+  <para xml:id="p12" class="ltx_noindent">
+    <p>where the <Math mode="inline" xml:id="p12.m1" tex="\bf K" text="K"><XMath><XMTok role="UNKNOWN" font="bold">K</XMTok></XMath></Math>’s are obtained from Eqn. <ref labelref="LABEL:eq:Jackson"/> by integrating the normalized kinematic terms over the phase space of the decay, the neutron beam volume, and the acceptance of the indicated detectors <cite>(<bibref bibrefs="LIS00" separator=";" show="Number" yyseparator=","/>)</cite>. <Math mode="inline" xml:id="p12.m2" tex="\tilde{\bf K}_{A}\propto\langle{\bf p}_{e}/E_{e}\rangle" text="(tilde@(K)) _ A proportional-to delimited-⟨⟩@(p _ e / E _ e)"><XMath><XMApp><XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="bold">K</XMTok></XMApp><XMTok role="UNKNOWN" font="italic">A</XMTok></XMApp><XMDual><XMApp><XMTok meaning="delimited-⟨⟩"/><XMRef idref="XM11"/></XMApp><XMWrap><XMTok name="langle" role="OPEN" stretchy="false">⟨</XMTok><XMApp xml:id="XM11"><XMTok mathstyle="inline" meaning="divide" role="MULOP">/</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">E</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok></XMApp></XMApp><XMTok name="rangle" role="CLOSE" stretchy="false">⟩</XMTok></XMWrap></XMDual></XMApp></XMath></Math> and <Math mode="inline" xml:id="p12.m3" tex="\tilde{\bf K}_{B}\propto\langle{\bf p}_{\nu}/E_{\nu}\rangle" text="(tilde@(K)) _ B proportional-to delimited-⟨⟩@(p _ nu / E _ nu)"><XMath><XMApp><XMTok meaning="proportional-to" name="propto" role="RELOP">∝</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="bold">K</XMTok></XMApp><XMTok role="UNKNOWN" font="italic">B</XMTok></XMApp><XMDual><XMApp><XMTok meaning="delimited-⟨⟩"/><XMRef idref="XM12"/></XMApp><XMWrap><XMTok name="langle" role="OPEN" stretchy="false">⟨</XMTok><XMApp xml:id="XM12"><XMTok mathstyle="inline" meaning="divide" role="MULOP">/</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">E</XMTok><XMTok name="nu" role="UNKNOWN" font="italic">ν</XMTok></XMApp></XMApp><XMTok name="rangle" role="CLOSE" stretchy="false">⟩</XMTok></XMWrap></XMDual></XMApp></XMath></Math> are primarily transverse to the detector axis but have roughly equal longitudinal components for coincidence events involving the two beta detectors opposite from the indicated proton detector (E<Math mode="inline" xml:id="p12.m4" tex="{}_{2}" text="_2"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="2"><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp></XMath></Math> and E<Math mode="inline" xml:id="p12.m5" tex="{}_{3}" text="_3"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="2"><XMTok meaning="3" role="NUMBER">3</XMTok></XMApp></XMath></Math> for P<Math mode="inline" xml:id="p12.m6" tex="{}_{2}" text="_2"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="2"><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp></XMath></Math> as shown in Fig. <ref labelref="LABEL:fig:DetGeom"/>). The <Math mode="inline" xml:id="p12.m7" tex="\tilde{\bf K}_{D}" text="(tilde@(K)) _ D"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="bold">K</XMTok></XMApp><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math>’s, however, are primarily along the detector axis and are opposite in sign for the two beta detectors. Thus for each proton detector we can choose an appropriate combination of detector pairs that is sensitive to the <Math mode="inline" xml:id="p12.m8" tex="D" text="D"><XMath><XMTok role="UNKNOWN" font="italic">D</XMTok></XMath></Math>-correlation but that largely cancels the parity-violating <Math mode="inline" xml:id="p12.m9" tex="A" text="A"><XMath><XMTok role="UNKNOWN" font="italic">A</XMTok></XMath></Math> and <Math mode="inline" xml:id="p12.m10" tex="B" text="B"><XMath><XMTok role="UNKNOWN" font="italic">B</XMTok></XMath></Math> correlations. One such combination is</p>
+  </para>
+  <para xml:id="p13">
+    <equation frefnum="(4)" refnum="4" xml:id="S0.E4" labels="LABEL:eqn:vdef">
+      <Math mode="display" xml:id="S0.E4.m1" tex="v^{p_{i}}=\frac{1}{2}(w^{p_{i}e_{R}}-w^{p_{i}e_{L}})," text="v ^ (p _ i) = (1 / 2) * (w ^ (p _ i * e _ R) - w ^ (p _ i * e _ L))">
+        <XMath>
+          <XMApp punctuation=",">
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+              <XMTok role="UNKNOWN" font="italic">v</XMTok>
+              <XMApp>
+                <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                <XMTok role="UNKNOWN" font="italic">i</XMTok>
+              </XMApp>
+            </XMApp>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">⁢</XMTok>
+              <XMApp>
+                <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+                <XMTok meaning="1" role="NUMBER">1</XMTok>
+                <XMTok meaning="2" role="NUMBER">2</XMTok>
+              </XMApp>
+              <XMDual>
+                <XMRef idref="XM13"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="XM13">
+                    <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                      <XMTok role="UNKNOWN" font="italic">w</XMTok>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                          <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                          <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                          <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                          <XMTok role="UNKNOWN" font="italic">R</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                      <XMTok role="UNKNOWN" font="italic">w</XMTok>
+                      <XMApp>
+                        <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                          <XMTok role="UNKNOWN" font="italic">p</XMTok>
+                          <XMTok role="UNKNOWN" font="italic">i</XMTok>
+                        </XMApp>
+                        <XMApp>
+                          <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                          <XMTok role="UNKNOWN" font="italic">e</XMTok>
+                          <XMTok role="UNKNOWN" font="italic">L</XMTok>
+                        </XMApp>
+                      </XMApp>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>
+    </equation>
+  </para>
+  <para xml:id="p14" class="ltx_noindent">
+    <p>where <Math mode="inline" xml:id="p14.m1" tex="e_{R}" text="e _ R"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">R</XMTok></XMApp></XMath></Math> and <Math mode="inline" xml:id="p14.m2" tex="e_{L}" text="e _ L"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">L</XMTok></XMApp></XMath></Math> label the electron-detector at approximately 135<Math mode="inline" xml:id="p14.m3" tex="{}^{\circ}" text="^compose"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="2"><XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok></XMApp></XMath></Math> giving a positive and negative cross-product <Math mode="inline" xml:id="p14.m4" tex="{\bf p}_{p}\times{\bf p}_{e}" text="p _ p * p _ e"><XMath><XMApp><XMTok meaning="times" role="MULOP">×</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok role="UNKNOWN" font="italic">p</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok></XMApp></XMApp></XMath></Math> respectively (P<Math mode="inline" xml:id="p14.m5" tex="{}_{2}" text="_2"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="2"><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp></XMath></Math>E<Math mode="inline" xml:id="p14.m6" tex="{}_{3}" text="_3"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="2"><XMTok meaning="3" role="NUMBER">3</XMTok></XMApp></XMath></Math> vs P<Math mode="inline" xml:id="p14.m7" tex="{}_{2}" text="_2"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="2"><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp></XMath></Math>E<Math mode="inline" xml:id="p14.m8" tex="{}_{2}" text="_2"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="2"><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp></XMath></Math> as shown in Fig. <ref labelref="LABEL:fig:DetGeom"/>).
+<!-- %Note that the pairing used for our previous result based on relative angle, e.g. $v^“alpha=“frac–1˝–2˝(w^–“alpha 1, “beta 2˝ - w^–“alpha 2, “beta 3˝)$, was not used for systematic reasons as explained below. -->Proton cells at the detector ends accept decays with larger longitudinal components of <Math mode="inline" xml:id="p14.m9" tex="\tilde{\bf K}_{A}" text="(tilde@(K)) _ A"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="bold">K</XMTok></XMApp><XMTok role="UNKNOWN" font="italic">A</XMTok></XMApp></XMath></Math> and are more sensitive to a range of effects that break the detector symmetry. <!-- %required for this cancellation. 
+     %Assuming that the polarization is uniform and  $v˙T^“alpha$ is the same for all proton cells the transverse asymmetries cancel  proton cells with the same $—z^“alpha—$ in opposite paddles.-->We therefore define <Math mode="inline" xml:id="p14.m10" tex="\bar{v}" text="bar@(v)"><XMath><XMApp><XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok><XMTok role="UNKNOWN" font="italic">v</XMTok></XMApp></XMath></Math> as the average of the values of <Math mode="inline" xml:id="p14.m11" tex="v" text="v"><XMath><XMTok role="UNKNOWN" font="italic">v</XMTok></XMath></Math> from the sixteen proton-cells at the same <Math mode="inline" xml:id="p14.m12" tex="|z|" text="absolute-value@(z)"><XMath><XMDual><XMApp><XMTok meaning="absolute-value"/><XMRef idref="XM14"/></XMApp><XMWrap><XMTok role="VERTBAR" stretchy="false">|</XMTok><XMTok role="UNKNOWN" xml:id="XM14" font="italic">z</XMTok><XMTok role="VERTBAR" stretchy="false">|</XMTok></XMWrap></XMDual></XMath></Math>, i.e. <Math mode="inline" xml:id="p14.m13" tex="z=\pm" text="z = plus-or-minus"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok role="UNKNOWN" font="italic">z</XMTok><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok></XMApp></XMath></Math>2, <Math mode="inline" xml:id="p14.m14" tex="\pm" text="plus-or-minus"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok></XMath></Math>6, <Math mode="inline" xml:id="p14.m15" tex="\pm" text="plus-or-minus"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok></XMath></Math>10, and <Math mode="inline" xml:id="p14.m16" tex="\pm" text="plus-or-minus"><XMath><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok></XMath></Math>14 cm. Each set of detectors corresponds to a paired-ring with the same symmetry as the full detector, e.g. the shaded detectors in Fig. <ref labelref="LABEL:fig:DetGeom"/>. We then define</p>
+  </para>
+  <para xml:id="p15">
+    <equation frefnum="(5)" refnum="5" xml:id="S0.E5" labels="LABEL:eq:tildeD">
+      <Math mode="display" xml:id="S0.E5.m1" tex="\tilde{D}=\frac{\bar{v}}{P\bar{K}_{D}}," text="tilde@(D) = bar@(v) / (P * (bar@(K)) _ D)">
+        <XMath>
+          <XMApp punctuation=",">
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMApp>
+              <XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok>
+              <XMTok role="UNKNOWN" font="italic">D</XMTok>
+            </XMApp>
+            <XMApp>
+              <XMTok mathstyle="display" meaning="divide" role="MULOP"/>
+              <XMApp>
+                <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                <XMTok role="UNKNOWN" font="italic">v</XMTok>
+              </XMApp>
+              <XMApp>
+                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                <XMTok role="UNKNOWN" font="italic">P</XMTok>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post3"/>
+                  <XMApp>
+                    <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                    <XMTok role="UNKNOWN" font="italic">K</XMTok>
+                  </XMApp>
+                  <XMTok role="UNKNOWN" font="italic">D</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>
+    </equation>
+  </para>
+  <para xml:id="p16" class="ltx_noindent">
+    <p>where <Math mode="inline" xml:id="p16.m1" tex="\bar{K}_{D}=0.378" text="(bar@(K)) _ D = 0.378"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMApp><XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok><XMTok role="UNKNOWN" font="italic">K</XMTok></XMApp><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp><XMTok meaning="0.378" role="NUMBER">0.378</XMTok></XMApp></XMath></Math> is the average of <Math mode="inline" xml:id="p16.m2" tex="{\hat{z}}\cdot(\tilde{\bf K}^{p_{i}e_{R}}_{D}-\tilde{\bf K}^{p_{i}e_{L}}_{D})" text="hat@(z) cdot (((tilde@(K)) ^ (p _ i * e _ R)) _ D - ((tilde@(K)) ^ (p _ i * e _ L)) _ D)"><XMath><XMApp><XMTok name="cdot" role="MULOP">⋅</XMTok><XMApp><XMTok name="hat" role="OVERACCENT" stretchy="false">^</XMTok><XMTok role="UNKNOWN" font="italic">z</XMTok></XMApp><XMDual><XMRef idref="XM15"/><XMWrap><XMTok role="OPEN" stretchy="false">(</XMTok><XMApp xml:id="XM15"><XMTok meaning="minus" role="ADDOP">-</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="bold">K</XMTok></XMApp><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">R</XMTok></XMApp></XMApp></XMApp><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="bold">K</XMTok></XMApp><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">L</XMTok></XMApp></XMApp></XMApp><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMApp><XMTok role="CLOSE" stretchy="false">)</XMTok></XMWrap></XMDual></XMApp></XMath></Math> determined by Monte Carlo. The experiment provides four independent measurements corresponding to each of the four paired-rings. The systematic corrections to <Math mode="inline" xml:id="p16.m3" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math> presented in Table I yield our final value for <Math mode="inline" xml:id="p16.m4" tex="D" text="D"><XMath><XMTok role="UNKNOWN" font="italic">D</XMTok></XMath></Math>. <!-- %values of $—z—$.  % Combining all 64 proton cells in a simple average, $“tilde D=–1“over 64˝“sum˙–“alpha=1˝^–64˝v^“alpha$ is nearly equivalent because the statistical weight of each superslice is nearly equal. 
+     %**** String Line 175 ****-->Eqn. <ref labelref="LABEL:eq:tildeD"/> is based on the following: 1) accurate background corrections,
+2) uniform proton and electron detection efficiencies, 3) cylindrical symmetry of the neutron beam and polarization, and 4) accurate determination of <Math mode="inline" xml:id="p16.m5" tex="\bar{K}_{D}" text="(bar@(K)) _ D"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMApp><XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok><XMTok role="UNKNOWN" font="italic">K</XMTok></XMApp><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math>, <Math mode="inline" xml:id="p16.m6" tex="P" text="P"><XMath><XMTok role="UNKNOWN" font="italic">P</XMTok></XMath></Math>, and spin state. <!-- %Systematic effects arising due to imperfections in each of these categories are summarized in Table~“ref–tb:Systematics˝ and discussed below.  %The largest of these are due to asymmetries of the detector and beam and are of order $1“times 10^–-4˝$. --></p>
+  </para>
+  <table frefnum="Table 1" placement="t" refnum="1" xml:id="S0.T1" labels="LABEL:tb:Systematics">
+    <toccaption class="ltx_align_left">
+      <tag close=" ">
+        <text fontsize="90%">1</text>
+      </tag>
+      <text fontsize="90%">Systematic corrections and combined standard uncertainties (68% confidence level).
+Values should be multiplied by </text>
+      <Math mode="inline" xml:id="S0.T1.m1" tex="10^{-4}" text="10 ^ (- 4)">
+        <XMath>
+          <XMApp>
+            <XMTok role="SUPERSCRIPTOP" scriptpos="post4"/>
+            <XMTok meaning="10" role="NUMBER">10</XMTok>
+            <XMApp>
+              <XMTok meaning="minus" role="ADDOP">-</XMTok>
+              <XMTok meaning="4" role="NUMBER">4</XMTok>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>
+      <text fontsize="90%">.
+</text>
+    </toccaption>
+    <caption class="ltx_align_left" fontsize="90%"><tag close=": ">Table 1</tag>Systematic corrections and combined standard uncertainties (68% confidence level).
+Values should be multiplied by <Math mode="inline" xml:id="S0.T1.m2" tex="10^{-4}" text="10 ^ (- 4)"><XMath><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post4"/><XMTok meaning="10" role="NUMBER" fontsize="111%">10</XMTok><XMApp><XMTok meaning="minus" role="ADDOP" fontsize="111%">-</XMTok><XMTok meaning="4" role="NUMBER" fontsize="111%">4</XMTok></XMApp></XMApp></XMath></Math>.
+</caption>
+    <tabular vattach="middle" class="ltx_centering ltx_align_left">
+      <thead>
+        <tr>
+          <td align="left" border="t" thead="true">
+            <text fontsize="90%">Source</text>
+          </td>
+          <td align="left" border="t" thead="true">
+            <text fontsize="90%">Correction</text>
+          </td>
+          <td align="left" border="t" thead="true">
+            <text fontsize="90%">Uncertainty</text>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="left" border="tt" thead="true">
+            <text fontsize="90%">Background asymmetry</text>
+          </td>
+          <td align="left" border="tt">
+            <text fontsize="90%"> </text>
+            <Math mode="inline" xml:id="S0.T1.m3" tex="0" text="0">
+              <XMath>
+                <XMTok meaning="0" role="NUMBER">0</XMTok>
+              </XMath>
+            </Math>
+            <Math mode="inline" xml:id="S0.T1.m4" tex="{}^{\rm a}" text="^a">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMTok role="UNKNOWN">a</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left" border="tt">
+            <Math mode="inline" xml:id="S0.T1.m5" tex="0.30" text="0.30">
+              <XMath>
+                <XMTok meaning="0.30" role="NUMBER">0.30</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">Background subtraction</text>
+          </td>
+          <td align="left">
+            <text fontsize="90%"> </text>
+            <Math mode="inline" xml:id="S0.T1.m6" tex="0.03" text="0.03">
+              <XMath>
+                <XMTok meaning="0.03" role="NUMBER">0.03</XMTok>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m7" tex="0.003" text="0.003">
+              <XMath>
+                <XMTok meaning="0.003" role="NUMBER">0.003</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">Electron backscattering</text>
+          </td>
+          <td align="left">
+            <text fontsize="90%"> </text>
+            <Math mode="inline" xml:id="S0.T1.m8" tex="0.11" text="0.11">
+              <XMath>
+                <XMTok meaning="0.11" role="NUMBER">0.11</XMTok>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m9" tex="0.03" text="0.03">
+              <XMath>
+                <XMTok meaning="0.03" role="NUMBER">0.03</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">Proton backscattering</text>
+          </td>
+          <td align="left">
+            <text fontsize="90%"> </text>
+            <Math mode="inline" xml:id="S0.T1.m10" tex="0" text="0">
+              <XMath>
+                <XMTok meaning="0" role="NUMBER">0</XMTok>
+              </XMath>
+            </Math>
+            <Math mode="inline" xml:id="S0.T1.m11" tex="{}^{\rm a}" text="^a">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMTok role="UNKNOWN">a</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m12" tex="0.03" text="0.03">
+              <XMath>
+                <XMTok meaning="0.03" role="NUMBER">0.03</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">Beta threshold</text>
+          </td>
+          <td align="left">
+            <text fontsize="90%"> </text>
+            <Math mode="inline" xml:id="S0.T1.m13" tex="0.04" text="0.04">
+              <XMath>
+                <XMTok meaning="0.04" role="NUMBER">0.04</XMTok>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m14" tex="0.10" text="0.10">
+              <XMath>
+                <XMTok meaning="0.10" role="NUMBER">0.10</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">Proton threshold</text>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m15" tex="-0.29" text="- 0.29">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok meaning="0.29" role="NUMBER">0.29</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m16" tex="0.41" text="0.41">
+              <XMath>
+                <XMTok meaning="0.41" role="NUMBER">0.41</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">Beam expansion, magnetic field</text>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m17" tex="-1.50" text="- 1.50">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok meaning="1.50" role="NUMBER">1.50</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m18" tex="0.40" text="0.40">
+              <XMath>
+                <XMTok meaning="0.40" role="NUMBER">0.40</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">Polarization non-uniformity</text>
+          </td>
+          <td align="left">
+            <text fontsize="90%"> </text>
+            <Math mode="inline" xml:id="S0.T1.m19" tex="0" text="0">
+              <XMath>
+                <XMTok meaning="0" role="NUMBER">0</XMTok>
+              </XMath>
+            </Math>
+            <Math mode="inline" xml:id="S0.T1.m20" tex="{}^{\rm a}" text="^a">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMTok role="UNKNOWN">a</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m21" tex="0.10" text="0.10">
+              <XMath>
+                <XMTok meaning="0.10" role="NUMBER">0.10</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">ATP - misalignment</text>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m22" tex="-0.07" text="- 0.07">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok meaning="0.07" role="NUMBER">0.07</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m23" tex="0.72" text="0.72">
+              <XMath>
+                <XMTok meaning="0.72" role="NUMBER">0.72</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">ATP - Twist</text>
+          </td>
+          <td align="left">
+            <text fontsize="90%"> </text>
+            <Math mode="inline" xml:id="S0.T1.m24" tex="0" text="0">
+              <XMath>
+                <XMTok meaning="0" role="NUMBER">0</XMTok>
+              </XMath>
+            </Math>
+            <Math mode="inline" xml:id="S0.T1.m25" tex="{}^{\rm a}" text="^a">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMTok role="UNKNOWN">a</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m26" tex="0.24" text="0.24">
+              <XMath>
+                <XMTok meaning="0.24" role="NUMBER">0.24</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">Spin-correlated flux</text>
+            <Math mode="inline" xml:id="S0.T1.m27" tex="{}^{\rm b}" text="^b">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMTok role="UNKNOWN">b</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <text fontsize="90%"> </text>
+            <Math mode="inline" xml:id="S0.T1.m28" tex="0" text="0">
+              <XMath>
+                <XMTok meaning="0" role="NUMBER">0</XMTok>
+              </XMath>
+            </Math>
+            <Math mode="inline" xml:id="S0.T1.m29" tex="{}^{\rm a}" text="^a">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMTok role="UNKNOWN">a</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m30" tex="3\times 10^{-6}" text="3 * 10 ^ (- 6)">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="3" role="NUMBER">3</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMApp>
+                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok meaning="6" role="NUMBER">6</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">Spin-correlated pol.</text>
+          </td>
+          <td align="left">
+            <text fontsize="90%"> </text>
+            <Math mode="inline" xml:id="S0.T1.m31" tex="0" text="0">
+              <XMath>
+                <XMTok meaning="0" role="NUMBER">0</XMTok>
+              </XMath>
+            </Math>
+            <Math mode="inline" xml:id="S0.T1.m32" tex="{}^{\rm a}" text="^a">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMTok role="UNKNOWN">a</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m33" tex="5\times 10^{-4}" text="5 * 10 ^ (- 4)">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="times" role="MULOP">×</XMTok>
+                  <XMTok meaning="5" role="NUMBER">5</XMTok>
+                  <XMApp>
+                    <XMTok role="SUPERSCRIPTOP" scriptpos="post10"/>
+                    <XMTok meaning="10" role="NUMBER">10</XMTok>
+                    <XMApp>
+                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok meaning="4" role="NUMBER">4</XMTok>
+                    </XMApp>
+                  </XMApp>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <text fontsize="90%">Polarization</text>
+            <Math mode="inline" xml:id="S0.T1.m34" tex="{}^{\rm c}" text="^c">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMTok role="UNKNOWN">c</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left"/>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m36" tex="0.04" text="0.04">
+              <XMath>
+                <XMTok meaning="0.04" role="NUMBER">0.04</XMTok>
+              </XMath>
+            </Math>
+            <Math mode="inline" xml:id="S0.T1.m37" tex="{}^{\rm d}" text="^d">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMTok role="UNKNOWN">d</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" thead="true">
+            <Math mode="inline" xml:id="S0.T1.m38" tex="\bar{K}_{D}" text="(bar@(K)) _ D">
+              <XMath>
+                <XMApp>
+                  <XMTok role="SUBSCRIPTOP" scriptpos="post10"/>
+                  <XMApp>
+                    <XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok>
+                    <XMTok role="UNKNOWN" font="italic">K</XMTok>
+                  </XMApp>
+                  <XMTok role="UNKNOWN" font="italic">D</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+            <Math mode="inline" xml:id="S0.T1.m39" tex="{}^{\rm c}" text="^c">
+              <XMath>
+                <XMApp role="FLOATSUPERSCRIPT" scriptpos="10">
+                  <XMTok role="UNKNOWN">c</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left"/>
+          <td align="left">
+            <Math mode="inline" xml:id="S0.T1.m41" tex="0.05" text="0.05">
+              <XMath>
+                <XMTok meaning="0.05" role="NUMBER">0.05</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" border="t" thead="true">
+            <text fontsize="90%">Total systematic corrections</text>
+          </td>
+          <td align="left" border="t">
+            <Math mode="inline" xml:id="S0.T1.m42" tex="-1.68" text="- 1.68">
+              <XMath>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok meaning="1.68" role="NUMBER">1.68</XMTok>
+                </XMApp>
+              </XMath>
+            </Math>
+          </td>
+          <td align="left" border="t">
+            <Math mode="inline" xml:id="S0.T1.m43" tex="1.01" text="1.01">
+              <XMath>
+                <XMTok meaning="1.01" role="NUMBER">1.01</XMTok>
+              </XMath>
+            </Math>
+          </td>
+        </tr>
+      </tbody>
+    </tabular>
+    <!-- %**** String Line 225 **** 
+     %$-$ Uncertainty column denotes upper limit““-->
+    <p class="ltx_align_left">
+      <Math mode="inline" xml:id="S0.T1.m44" tex="{}^{\rm a}" text="^a">
+        <XMath>
+          <XMApp role="FLOATSUPERSCRIPT" scriptpos="3">
+            <XMTok role="UNKNOWN">a</XMTok>
+          </XMApp>
+        </XMath>
+      </Math>
+      <text fontsize="90%"> Zero indicates no correction applied. <Math mode="inline" xml:id="S0.T1.m45" tex="{}^{\rm b}" text="^b"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMTok role="UNKNOWN" fontsize="111%">b</XMTok></XMApp></XMath></Math> Includes spin-flip time, cycle asymmetry, and flux variation. <Math mode="inline" xml:id="S0.T1.m46" tex="{}^{\rm c}" text="^c"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMTok role="UNKNOWN" fontsize="111%">c</XMTok></XMApp></XMath></Math> Included in the definition of <Math mode="inline" xml:id="S0.T1.m47" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false" fontsize="111%">~</XMTok><XMTok role="UNKNOWN" font="italic" fontsize="111%">D</XMTok></XMApp></XMath></Math>. <Math mode="inline" xml:id="S0.T1.m48" tex="{}^{\rm d}" text="^d"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="3"><XMTok role="UNKNOWN" fontsize="111%">d</XMTok></XMApp></XMath></Math> Assumed polarization uncertainty of 0.05. <break/></text>
+    </p>
+  </table>
+  <!-- %These effects are listed in Table~“ref–tb:Systematics˝.% All but $K˙D$ contribute as 
+     %“begin–equation˝
+     %“tilde D “approx “frac–“delta“eta˝–“eta˝P“tilde D“hat–“sigma˝“cdot A(K˙–A˝^–“alpha R˝-K˙–A˝^–“alpha L˝),
+     %“label–eq:PolVari˝
+     %“end–equation˝
+     %“noindent where $“delta“eta/“eta$ represents the spin-state dependent variation of the quantity in question.  Monte Carlo calculations in combination with polarization measurements place an upper limit of $P“hat–“sigma˝“cdot AK˙–A˝^–“alpha R˝ ¡ 0.002$.  The ratio $“delta“phi/“phi ¡ 0.004 $ can be determined by comparing continuous measurements of the neutron fluence to the expected statistical distribution.   Variations in flip cycle timing and in the response time of the spin flipper are negligible.  Finally the spin-flipper efficiency is estimated to be greater than 95“% implying $“delta P/P ¡ 0.05$.-->
+  <para xml:id="p17">
+    <p>Backgrounds not properly accounted for contribute two systematic errors: 1) multiplicative errors due to dilution of the asymmetries, and 2) spin-dependent backgrounds <!-- %or secondaries -->that can lead to a false <Math mode="inline" xml:id="p17.m1" tex="D" text="D"><XMath><XMTok role="UNKNOWN" font="italic">D</XMTok></XMath></Math>. <!-- %, such as electron backscattering. %Additive effects due to backscattering, random coincidences and leakage of prompt coincidences are largely cancelled in averaging the proton-cells into the super-slice. -->Errors in background subtraction, as well as possible spin-dependent asymmetries in this background, have a small effect. <!-- %given in Table~“ref–tb:Systematics˝. 
+     %**** String Line 250 ****-->The multiplicative correction to the value of <Math mode="inline" xml:id="p17.m2" tex="w^{p_{i}e_{j}}" text="w ^ (p _ i * e _ j)"><XMath><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">w</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">j</XMTok></XMApp></XMApp></XMApp></XMath></Math> due to backscattered electrons was determined using the Monte Carlo. <!-- %to predict backscattering probabilities.% and generate a correction to the measured $w$’s. -->The uncertainty given in Table <ref labelref="LABEL:tb:Systematics"/> reflects the 20% uncertainty assigned to the backscattering fractions due to limitations of the detector and beam model and due to limited knowledge of backscattering at energies below a few hundred keV. Proton backscattering, though observable, produces a negligible effect on <Math mode="inline" xml:id="p17.m3" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math>. <!-- %The electron backscattering contribution is  $D˙–eBS˝=(+0.1“pm 0.03)“times 10^–-5˝$. --></p>
+  </para>
+  <para xml:id="p18">
+    <p>In principle, the values of <Math mode="inline" xml:id="p18.m1" tex="w^{p_{i}e_{j}}" text="w ^ (p _ i * e _ j)"><XMath><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">w</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">j</XMTok></XMApp></XMApp></XMApp></XMath></Math> are independent of the absolute efficiencies of the proton and electron detectors; however, they do depend on any energy dependence of the efficiencies through the factors <Math mode="inline" xml:id="p18.m2" tex="\langle{\bf p}_{e}/E_{e}\rangle" text="delimited-⟨⟩@(p _ e / E _ e)"><XMath><XMDual><XMApp><XMTok meaning="delimited-⟨⟩"/><XMRef idref="XM16"/></XMApp><XMWrap><XMTok name="langle" role="OPEN" stretchy="false">⟨</XMTok><XMApp xml:id="XM16"><XMTok mathstyle="inline" meaning="divide" role="MULOP">/</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="bold">p</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">E</XMTok><XMTok role="UNKNOWN" font="italic">e</XMTok></XMApp></XMApp><XMTok name="rangle" role="CLOSE" stretchy="false">⟩</XMTok></XMWrap></XMDual></XMath></Math>.
+Spatial variation of the efficiencies breaks the symmetry assumed in combining proton-cell data into paired-rings. Beta energy thresholds were observed to vary less than 20 keV across the detector, implying the almost negligible correction given in Table <ref labelref="LABEL:tb:Systematics"/>. Proton detector efficiency variations, however, were more significant. Lower energy proton thresholds varied across the detector and over the course of the experiment.
+These thresholds combined with the spin-dependence of the accelerated proton energy spectra can result in <!-- %spin-dependence of $“langle“beta˙e^–“alpha “eta˝“rangle$ and a -->significant deviations in the values of <Math mode="inline" xml:id="p18.m3" tex="w^{p_{i}e_{j}}" text="w ^ (p _ i * e _ j)"><XMath><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">w</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">j</XMTok></XMApp></XMApp></XMApp></XMath></Math>, though the effect on the the value of <Math mode="inline" xml:id="p18.m4" tex="v^{p_{i}}" text="v ^ (p _ i)"><XMath><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">v</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp></XMApp></XMath></Math> is largely mitigated because the low-energy portion of the proton energy spectrum is roughly the same for the <Math mode="inline" xml:id="p18.m5" tex="e_{R}" text="e _ R"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">R</XMTok></XMApp></XMath></Math> and <Math mode="inline" xml:id="p18.m6" tex="e_{L}" text="e _ L"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">L</XMTok></XMApp></XMath></Math> coincidence pairs. <!-- %in the difference of $“beta˙e$’s because the low-energy portion of the proton energy spectrum is nearly equally affected for  both $R$- and $L$-electron detectors. -->To estimate the proton-threshold-nonuniformity effect on <Math mode="inline" xml:id="p18.m7" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math>, spin-dependent proton energy spectra were generated by Monte Carlo for all proton-detector-electron-detector pairings and convoluted with model detector response functions based on fits to the average proton-SBD spectra. The average fit parameters were varied over a range characteristic of the observed variations during the run.
+<!-- %However, because individual spectra varied somewhat during the course of the experiment, the fit parameters (spin-independent widths and spin-dependent centroids) were varied over a range characteristic of the observed variations. -->Representative thresholds were then applied to determine the effect on <Math mode="inline" xml:id="p18.m8" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math>. An alternative and consistent estimate was derived by correcting the values of <Math mode="inline" xml:id="p18.m9" tex="w^{p_{i}e_{j}}" text="w ^ (p _ i * e _ j)"><XMath><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">w</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">e</XMTok><XMTok role="UNKNOWN" font="italic">j</XMTok></XMApp></XMApp></XMApp></XMath></Math> on a day-by-day basis using the spectrum centroid shift and empirically determined functional form of the spectrum at the threshold.</p>
+  </para>
+  <para xml:id="p19">
+    <p>Beam expansion from a radius of 2.5 cm to 2.75 cm combined with the magnetic field breaks the symmetry of the detector because the average proton-electron opening angle for each proton-electron detector pair is modified. Monte Carlo calculations using measured upstream and downstream density profile maps were used to calculate the correction given in Table <ref labelref="LABEL:tb:Systematics"/>. Possible inaccuracies in the determination of the beam density were estimated and their implications explored with the Monte Carlo code. <!-- %The total correction is listed in Table~“ref–tb:Systematics˝. %As a systematic check, the maps were shifted by the estimated precision of the map registration; $“pm$2~mm in both $x$ and $y$.  Similarly, they were independently rotated by $“pm$87~mrad.  Finally a linear polarization gradient was incorporated.    All cases were statistically consistent, thus we use the value obtained from the nominal model as our systematic correction.  The uncertainty in Table~“ref–tb:Systematics˝ comes from the statistical uncertainty of the Monte Carlo only. -->The effect on the value of <Math mode="inline" xml:id="p19.m1" tex="v^{p_{i}}" text="v ^ (p _ i)"><XMath><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">v</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp></XMApp></XMath></Math> as a function of position is illustrated in Fig. <ref labelref="LABEL:fg:BeamShape"/>.</p>
+  </para>
+  <figure frefnum="Figure 3" placement="htpb" refnum="3" xml:id="S0.F3" labels="LABEL:fg:BeamShape">
+    <graphics candidates="/home/david/Dropbox/Projects/texjs/1104.2778/vsbySliceEvenOddMCcylReversed.eps" graphic="vsbySliceEvenOddMCcylReversed" options="width=245.718pt" xml:id="S0.F3.g1" class="ltx_centering"/>
+    <toccaption class="ltx_centering"><tag close=" ">3</tag>Solid (open) squares show the values of <Math mode="inline" xml:id="S0.F3.m1" tex="v" text="v"><XMath><XMTok role="UNKNOWN" font="italic">v</XMTok></XMath></Math> averaged over the four planes for proton cells on the even (odd) side of the proton detection plane (the side with P<Math mode="inline" xml:id="S0.F3.m2" tex="{}_{2}" text="_2"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="4"><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp></XMath></Math> vs P<Math mode="inline" xml:id="S0.F3.m3" tex="{}_{1}" text="_1"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="4"><XMTok meaning="1" role="NUMBER">1</XMTok></XMApp></XMath></Math> in Fig. <ref labelref="LABEL:fig:DetGeom"/>). Monte Carlo results are indicated by lines. The broken symmetry, due to the combination of the magnetic field and beam expansion, is evident in the shift in the crossing point from the detector center.
+</toccaption>
+    <caption class="ltx_centering"><tag close=": ">Figure 3</tag>Solid (open) squares show the values of <Math mode="inline" xml:id="S0.F3.m4" tex="v" text="v"><XMath><XMTok role="UNKNOWN" font="italic">v</XMTok></XMath></Math> averaged over the four planes for proton cells on the even (odd) side of the proton detection plane (the side with P<Math mode="inline" xml:id="S0.F3.m5" tex="{}_{2}" text="_2"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="4"><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp></XMath></Math> vs P<Math mode="inline" xml:id="S0.F3.m6" tex="{}_{1}" text="_1"><XMath><XMApp role="FLOATSUBSCRIPT" scriptpos="4"><XMTok meaning="1" role="NUMBER">1</XMTok></XMApp></XMath></Math> in Fig. <ref labelref="LABEL:fig:DetGeom"/>). Monte Carlo results are indicated by lines. The broken symmetry, due to the combination of the magnetic field and beam expansion, is evident in the shift in the crossing point from the detector center.
+</caption>
+  </figure>
+  <para xml:id="p20">
+    <p>For a symmetric beam, contributions to <Math mode="inline" xml:id="p20.m1" tex="v^{p_{i}}" text="v ^ (p _ i)"><XMath><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">v</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp></XMApp></XMath></Math> due to transverse polarization cancel for opposing proton planes; however small azimuthal beam asymmetries can affect this cancellation. This asymmetric-beam transverse-polarization (ATP) effect is proportional to both <Math mode="inline" xml:id="p20.m2" tex="\sin\theta_{P}" text="sine@(theta _ P)"><XMath><XMApp><XMTok meaning="sine" role="TRIGFUNCTION">sin</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="theta" role="UNKNOWN" font="italic">θ</XMTok><XMTok role="UNKNOWN" font="italic">P</XMTok></XMApp></XMApp></XMath></Math>, the angle of the average neutron-spin orientation with respect to the detector axis, and <Math mode="inline" xml:id="p20.m3" tex="\sin(\phi_{P}-\phi^{p_{i}})" text="sine@(phi _ P - phi ^ (p _ i))"><XMath><XMDual><XMApp><XMRef idref="XM17"/><XMRef idref="XM18"/></XMApp><XMApp><XMTok meaning="sine" role="TRIGFUNCTION" xml:id="XM17">sin</XMTok><XMWrap><XMTok role="OPEN" stretchy="false">(</XMTok><XMApp xml:id="XM18"><XMTok meaning="minus" role="ADDOP">-</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="phi" role="UNKNOWN" font="italic">ϕ</XMTok><XMTok role="UNKNOWN" font="italic">P</XMTok></XMApp><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok name="phi" role="UNKNOWN" font="italic">ϕ</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp></XMApp></XMApp><XMTok role="CLOSE" stretchy="false">)</XMTok></XMWrap></XMApp></XMDual></XMath></Math>, where <Math mode="inline" xml:id="p20.m4" tex="\phi^{p_{i}}" text="phi ^ (p _ i)"><XMath><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok name="phi" role="UNKNOWN" font="italic">ϕ</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp></XMApp></XMath></Math> is the effective azimuthal position of the proton cell, and <Math mode="inline" xml:id="p20.m5" tex="\phi_{P}" text="phi _ P"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="phi" role="UNKNOWN" font="italic">ϕ</XMTok><XMTok role="UNKNOWN" font="italic">P</XMTok></XMApp></XMath></Math> is the azimuthal direction of the neutron polarization.
+<!-- %Non-zero transverse components of Equation~“ref–wbyKdef˝ arise in the experiment  due to polarization misalignment, $“theta˙P$, with respect to the detector axis and are proportional to both $“sin“theta˙P$, and $“sin(“phi˙P-“phi^“alpha)$, where  $“phi^“alpha$ is the effective azimuthal position of the proton cell.  It is therefore convenient to separately consider longitudinal-polarization and transverse-polarization components of Equation~“ref–eqn:vdef˝, which we denote as $v^“alpha = v^“alpha˙z + v^“alpha˙T$. % and can be expressed as 
+     %**** String Line 275 ****
+     %“begin–equation˝
+     %v^“alpha˙T = “sin(“phi˙P-“phi^“alpha),
+     %“label–eq:deltaT˝
+     %“end–equation˝
+     %“noindent where  $“phi^“alpha$ is the effective azimuthal position of the proton cell.  Transverse-polarization calibration runs with $“theta˙P=90^“circ$ and varying values of $“phi˙P$  were used to determine  the transverse polarization asymmetries.
+     %For an asymmetric beam the $v˙T^“alpha$’s vary across the detector and couple with the transverse polarization to produce a contribution to $“tilde D$ (ATP effect).-->To study this effect transverse-polarization calibration runs with <Math mode="inline" xml:id="p20.m6" tex="\theta_{P}=90^{\circ}" text="theta _ P = 90 ^ compose"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="theta" role="UNKNOWN" font="italic">θ</XMTok><XMTok role="UNKNOWN" font="italic">P</XMTok></XMApp><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok meaning="90" role="NUMBER">90</XMTok><XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok></XMApp></XMApp></XMath></Math> and several values of <Math mode="inline" xml:id="p20.m7" tex="\phi_{P}" text="phi _ P"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="phi" role="UNKNOWN" font="italic">ϕ</XMTok><XMTok role="UNKNOWN" font="italic">P</XMTok></XMApp></XMath></Math> were taken over the course of the experiment. In these runs the ATP effect was amplified by <Math mode="inline" xml:id="p20.m8" tex="\approx 200" text="absent approximately-equals 200"><XMath><XMApp><XMTok meaning="approximately-equals" name="approx" role="RELOP">≈</XMTok><XMTok meaning="absent"/><XMTok meaning="200" role="NUMBER">200</XMTok></XMApp></XMath></Math>. <!-- %For each run,  the amplitude and the offset are determined by  fitting the data to a sinusoid; the average offset for all calibration runs with $“theta˙P=90^“circ$ is $¡v¿=0.457“pm 0.013$, where the uncertainty is the standard deviation  of the eleven amplitudes.  %Ideally one scales this result, at the appropriate $“phi˙P$, by sin$“theta˙P$ determined by the amplitude of the oscillation seen in the production data runs, however, for these runs $“theta˙P$ is small, thus the asymmetric beam shape also contributes to the $“phi^“alpha$ dependence of the $v$’s. -->The values of <Math mode="inline" xml:id="p20.m9" tex="\sin\theta_{P}" text="sine@(theta _ P)"><XMath><XMApp><XMTok meaning="sine" role="TRIGFUNCTION">sin</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="theta" role="UNKNOWN" font="italic">θ</XMTok><XMTok role="UNKNOWN" font="italic">P</XMTok></XMApp></XMApp></XMath></Math> and <Math mode="inline" xml:id="p20.m10" tex="\phi_{P}" text="phi _ P"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="phi" role="UNKNOWN" font="italic">ϕ</XMTok><XMTok role="UNKNOWN" font="italic">P</XMTok></XMApp></XMath></Math> for the experiment were determined using the calibration runs and Monte Carlo corrections for the beam density variations.
+<!-- %The Monte Carlo simulations based on the measured beam distributions  yield a range for both sin$“theta˙P$ and $“phi˙P$. -->To estimate the effect, the extreme value of sin<Math mode="inline" xml:id="p20.m11" tex="\theta_{P}=12.8\times 10^{-3}" text="theta _ P = 12.8 * 10 ^ (- 3)"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="theta" role="UNKNOWN" font="italic">θ</XMTok><XMTok role="UNKNOWN" font="italic">P</XMTok></XMApp><XMApp><XMTok meaning="times" role="MULOP">×</XMTok><XMTok meaning="12.8" role="NUMBER">12.8</XMTok><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok meaning="10" role="NUMBER">10</XMTok><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="3" role="NUMBER">3</XMTok></XMApp></XMApp></XMApp></XMApp></XMath></Math> and the range of <Math mode="inline" xml:id="p20.m12" tex="-31.5^{\circ}&lt;\phi_{P}&lt;112.2^{\circ}" text="- 31.5 ^ compose less phi _ P less 112.2 ^ compose"><XMath><XMApp><XMTok meaning="multirelation"/><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok meaning="31.5" role="NUMBER">31.5</XMTok><XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok></XMApp></XMApp><XMTok meaning="less-than" role="RELOP">&lt;</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="phi" role="UNKNOWN" font="italic">ϕ</XMTok><XMTok role="UNKNOWN" font="italic">P</XMTok></XMApp><XMTok meaning="less-than" role="RELOP">&lt;</XMTok><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok meaning="112.2" role="NUMBER">112.2</XMTok><XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok></XMApp></XMApp></XMath></Math> were used. The uncertainty is due to uncertainties in the angles <Math mode="inline" xml:id="p20.m13" tex="\theta_{P}" text="theta _ P"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="theta" role="UNKNOWN" font="italic">θ</XMTok><XMTok role="UNKNOWN" font="italic">P</XMTok></XMApp></XMath></Math> and <Math mode="inline" xml:id="p20.m14" tex="\phi_{P}" text="phi _ P"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="phi" role="UNKNOWN" font="italic">ϕ</XMTok><XMTok role="UNKNOWN" font="italic">P</XMTok></XMApp></XMath></Math>. The effect of nonuniform beam polarization is also given in Table <ref labelref="LABEL:tb:Systematics"/>. Time-dependent variations in flux, polarization, and the spin-flipper, as well as the uncertainty in the instrumental constant <Math mode="inline" xml:id="p20.m15" tex="\bar{K}_{D}" text="(bar@(K)) _ D"><XMath><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMApp><XMTok name="bar" role="OVERACCENT" stretchy="false">¯</XMTok><XMTok role="UNKNOWN" font="italic">K</XMTok></XMApp><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math>, can be shown to produce asymmetries proportional to <Math mode="inline" xml:id="p20.m16" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math>. These effects are listed in Table <ref labelref="LABEL:tb:Systematics"/>.</p>
+  </para>
+  <!-- %“begin–figure˝[htpb] 
+     %“begin–centering˝
+     %“includegraphics[width=3.4 truein]–DATPNewBeamMapCorr.jpg˝
+     %“caption–False $“tilde D˙–ATP˝$ as a function of $“phi˙P$ for sin$“theta˙P=8.5“times10^–-3˝$. The red squares are the offsets from sinusoid fits of calibration-run data, and the green circles are the superslice results.  The solid line, given by $1.29“times 10^–-4˝“sin(“phi˙P-203^“circ)$ is the Monte Carlo prediction of $“tilde D˙–ATP˝$. The band indicates the range of $“phi˙P$ for the experiment determined from the data.
+     %“label–fg:DATP˝˝
+     %“end–centering˝
+     %“end–figure˝
+     %$$
+     %v˙T^–Data˝=(2.96“pm 0.16)“times 10^–-3˝ “quad “phi˙P=(-26.2“pm 3.4)^“circ.
+     %$$
+     %The polarization misalignment determined by the ratio of amplitudes $v˙T^–Data˝/v˙T^–90˝$ is
+     %**** String Line 300 ****
+     %$$
+     %“sin“theta˙P=(6.7“pm 3.7)“times 10^–-3˝.
+     %$$
+     %The offsets from the calibration runs  and a Monte Carlo simulation of the effect scaled by $“theta˙P$ are shown in Figure~“ref–fg:DATP˝. The consistency with the measured sinusoid offsets from calibration runs  is a strong confirmation of the accuracy of Monte Carlo simulations. The band in Figure~“ref–fg:DATP˝ shows the range of $“phi˙P$ for the run, which was used to determine the transverse-polarization correction to $“tilde D$ listed in Table~“ref–tb:Systematics˝. The uncertainty is due to the uncertainties on the angles $“theta˙P$ and $“phi˙P$.-->
+  <para xml:id="p21">
+    <p>Correlations of <Math mode="inline" xml:id="p21.m1" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math> with a variety of experimental parameters were studied by varying the cuts and by breaking the data up into subsets taken under different conditions of proton acceleration voltage and number of live SBDs as shown in Fig. <ref labelref="LABEL:fg:DSuperSliceSubsets"/>.
+<!-- %Although each of the sixteen proton cells in a super-ring have fairly high efficiency for proton-electron coincidences, individual SBDs functioned poorly for extended periods. The consistency of the data-set was investigated by breaking the data up  into thirteen  subsets taken under different conditions of proton acceleration voltage, number of live SBDs, and magnetic field.  The results for the subsets are shown  in  Figure~“ref–fg:DSuperSliceSubsets˝. -->A linear correlation of <Math mode="inline" xml:id="p21.m2" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math> with high-voltage, revealed by the cuts study, yields <Math mode="inline" xml:id="p21.m3" tex="\chi^{2}=5.6" text="chi ^ 2 = 5.6"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok name="chi" role="UNKNOWN" font="italic">χ</XMTok><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp><XMTok meaning="5.6" role="NUMBER">5.6</XMTok></XMApp></XMath></Math> with 11 DOF compared to 10.4 for 12 DOF for no correlation. The acceleration-voltage dependence of the focusing properties was extensively studied by Monte Carlo with no expected effect, and we intrepret the 2.1 sigma slope as a statistical fluctuation.
+<!-- %The $“chi^2$ for the weighted average of all subsets is 10.44 for 12 degrees of freedom. 
+     %A linear correlation of $“tilde D$ with HV for the data subsets had a chi^2 of 5.6 for 11 degrees of freedom compared to 10.5 for 12 degrees of freedom for no correlation.  Monte Carlo studies of the acceleration-voltage dependence of the focusing properties within the cells show no expected effects, and we interpreted the 2.1-sigma slope as a fluctuation. We therefore combine data for the entire run to determine the numbers of counts for each proton-cell-electron detector pair to determine D for each set of 16 proton cells. The weighted average for the four separate sets of proton cells is 0.72 ± 1.89 with ?2 = 0.73 for 3 degrees of freedom.--></p>
+  </para>
+  <para xml:id="p22">
+    <p>To improve the symmetry of the the detector, we combine counts for the entire run to determine the values of <Math mode="inline" xml:id="p22.m1" tex="v^{p_{i}}" text="v ^ (p _ i)"><XMath><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok role="UNKNOWN" font="italic">v</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post3"/><XMTok role="UNKNOWN" font="italic">p</XMTok><XMTok role="UNKNOWN" font="italic">i</XMTok></XMApp></XMApp></XMath></Math> and to extract <Math mode="inline" xml:id="p22.m2" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math> for each paired-ring. A blind analysis was performed by adding a constant hidden factor to Eqn. <ref labelref="LABEL:eqn:wdef"/>. The blind was only removed once all analyses of systematic effects were complete and had been combined into a final result. The weighted average of <Math mode="inline" xml:id="p22.m3" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math> for the four paired-rings is <Math mode="inline" xml:id="p22.m4" tex="0.72\pm 1.89" text="0.72 plus-or-minus 1.89"><XMath><XMApp><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok><XMTok meaning="0.72" role="NUMBER">0.72</XMTok><XMTok meaning="1.89" role="NUMBER">1.89</XMTok></XMApp></XMath></Math> with <Math mode="inline" xml:id="p22.m5" tex="\chi^{2}=0.73" text="chi ^ 2 = 0.73"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok name="chi" role="UNKNOWN" font="italic">χ</XMTok><XMTok meaning="2" role="NUMBER">2</XMTok></XMApp><XMTok meaning="0.73" role="NUMBER">0.73</XMTok></XMApp></XMath></Math> for 3 DOF.</p>
+  </para>
+  <figure frefnum="Figure 4" placement="htdp" refnum="4" xml:id="S0.F4" labels="LABEL:fg:DSuperSliceSubsets">
+    <graphics candidates="/home/david/Dropbox/Projects/texjs/1104.2778/DbyRunUnblinded.eps" graphic="DbyRunUnblinded" options="width=238.491pt" xml:id="S0.F4.g1"/>
+    <toccaption><tag close=" ">4</tag>Results for <Math mode="inline" xml:id="S0.F4.m1" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math> by run subset. Uncertainties are statistical. The fully functioning paired-rings used for each subset are indicated: 1-4 indicates all paired-rings were used.</toccaption>
+    <caption><tag close=": ">Figure 4</tag>Results for <Math mode="inline" xml:id="S0.F4.m2" tex="\tilde{D}" text="tilde@(D)"><XMath><XMApp><XMTok name="tilde" role="OVERACCENT" stretchy="false">~</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok></XMApp></XMath></Math> by run subset. Uncertainties are statistical. The fully functioning paired-rings used for each subset are indicated: 1-4 indicates all paired-rings were used.</caption>
+  </figure>
+  <!-- %Note that the paired-ring symmetry requirement means that data shown here do not represent the full data-set.  The  weighted average of all subsets is $0.58“pm2.14$ with $“chi^2=10.44$ for 12 degrees of freedom. -->
+  <para xml:id="p23">
+    <p>The result including all corrections from Table <ref labelref="LABEL:tb:Systematics"/> is</p>
+    <equation xml:id="S0.Ex2">
+      <Math mode="display" xml:id="S0.Ex2.m1" tex="D=(-0.96\pm 1.89(stat)\pm 1.01(sys))\times 10^{-4}." text="D = ((- 0.96) plus-or-minus 1.89 * s * t * a * t plus-or-minus 1.01 * s * y * s) * 10 ^ (- 4)">
+        <XMath>
+          <XMApp punctuation=".">
+            <XMTok meaning="equals" role="RELOP">=</XMTok>
+            <XMTok role="UNKNOWN" font="italic">D</XMTok>
+            <XMApp>
+              <XMTok meaning="times" role="MULOP">×</XMTok>
+              <XMDual>
+                <XMRef idref="XM21"/>
+                <XMWrap>
+                  <XMTok role="OPEN" stretchy="false">(</XMTok>
+                  <XMApp xml:id="XM21">
+                    <XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok>
+                    <XMApp>
+                      <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                      <XMTok meaning="0.96" role="NUMBER">0.96</XMTok>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="1.89" role="NUMBER">1.89</XMTok>
+                      <XMDual>
+                        <XMRef idref="XM19"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMApp xml:id="XM19">
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok role="UNKNOWN" font="italic">s</XMTok>
+                            <XMTok role="UNKNOWN" font="italic">t</XMTok>
+                            <XMTok role="UNKNOWN" font="italic">a</XMTok>
+                            <XMTok role="UNKNOWN" font="italic">t</XMTok>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                    <XMApp>
+                      <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                      <XMTok meaning="1.01" role="NUMBER">1.01</XMTok>
+                      <XMDual>
+                        <XMRef idref="XM20"/>
+                        <XMWrap>
+                          <XMTok role="OPEN" stretchy="false">(</XMTok>
+                          <XMApp xml:id="XM20">
+                            <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                            <XMTok role="UNKNOWN" font="italic">s</XMTok>
+                            <XMTok role="UNKNOWN" font="italic">y</XMTok>
+                            <XMTok role="UNKNOWN" font="italic">s</XMTok>
+                          </XMApp>
+                          <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                        </XMWrap>
+                      </XMDual>
+                    </XMApp>
+                  </XMApp>
+                  <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                </XMWrap>
+              </XMDual>
+              <XMApp>
+                <XMTok role="SUPERSCRIPTOP" scriptpos="post2"/>
+                <XMTok meaning="10" role="NUMBER">10</XMTok>
+                <XMApp>
+                  <XMTok meaning="minus" role="ADDOP">-</XMTok>
+                  <XMTok meaning="4" role="NUMBER">4</XMTok>
+                </XMApp>
+              </XMApp>
+            </XMApp>
+          </XMApp>
+        </XMath>
+      </Math>
+    </equation>
+    <!-- %“noindent The phase implied between $g˙A$ and $g˙V$ is $“phi˙–AV˝ = 180.013^“circ“pm0.028^“circ$. -->
+  </para>
+  <!-- %**** String Line 325 **** -->
+  <para xml:id="p24" class="ltx_noindent">
+    <p>Our result represents the most sensitive measurement of the <Math mode="inline" xml:id="p24.m1" tex="D" text="D"><XMath><XMTok role="UNKNOWN" font="italic">D</XMTok></XMath></Math> coefficient in nuclear beta decay.
+Assuming purely vector and axial-vector currents, <Math mode="inline" xml:id="p24.m2" tex="\phi_{AV}=180.013^{\circ}\pm 0.028^{\circ}" text="phi _ (A * V) = 180.013 ^ compose plus-or-minus 0.028 ^ compose"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMApp><XMTok role="SUBSCRIPTOP" scriptpos="post2"/><XMTok name="phi" role="UNKNOWN" font="italic">ϕ</XMTok><XMApp><XMTok meaning="times" role="MULOP">⁢</XMTok><XMTok role="UNKNOWN" font="italic">A</XMTok><XMTok role="UNKNOWN" font="italic">V</XMTok></XMApp></XMApp><XMApp><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok meaning="180.013" role="NUMBER">180.013</XMTok><XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok></XMApp><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok meaning="0.028" role="NUMBER">0.028</XMTok><XMTok meaning="compose" name="circ" role="MULOP">∘</XMTok></XMApp></XMApp></XMApp></XMath></Math> which is the best direct determination of a possible CP-violating phase between the axial and vector currents in nuclear beta decay. Previously the most sensitive measurement was in <Math mode="inline" xml:id="p24.m3" tex="{}^{19}" text="^19"><XMath><XMApp role="FLOATSUPERSCRIPT" scriptpos="2"><XMTok meaning="19" role="NUMBER">19</XMTok></XMApp></XMath></Math>Ne, with <Math mode="inline" xml:id="p24.m4" tex="D=(1\pm 6)\times 10^{-4}" text="D = (1 plus-or-minus 6) * 10 ^ (- 4)"><XMath><XMApp><XMTok meaning="equals" role="RELOP">=</XMTok><XMTok role="UNKNOWN" font="italic">D</XMTok><XMApp><XMTok meaning="times" role="MULOP">×</XMTok><XMDual><XMRef idref="XM22"/><XMWrap><XMTok role="OPEN" stretchy="false">(</XMTok><XMApp xml:id="XM22"><XMTok meaning="plus-or-minus" name="pm" role="ADDOP">±</XMTok><XMTok meaning="1" role="NUMBER">1</XMTok><XMTok meaning="6" role="NUMBER">6</XMTok></XMApp><XMTok role="CLOSE" stretchy="false">)</XMTok></XMWrap></XMDual><XMApp><XMTok role="SUPERSCRIPTOP" scriptpos="post2"/><XMTok meaning="10" role="NUMBER">10</XMTok><XMApp><XMTok meaning="minus" role="ADDOP">-</XMTok><XMTok meaning="4" role="NUMBER">4</XMTok></XMApp></XMApp></XMApp></XMApp></XMath></Math> <cite>(<bibref bibrefs="CAL85" separator=";" show="Number" yyseparator=","/>)</cite>.</p>
+  </para>
+  <!-- %Prior to this measurement the most sensitive measurement of $D$ was in  $^–19˝$Ne, with $D=(1“pm6)“times 10^–-4˝$~“cite–CAL85˝. %, where the FSI $“approx 2.6“times10^–-4˝p/p˙–max˝$ are an order of magnitude larger“cite–CAL85˝. 
+     %only about a factor of three above electromagnetic final-state effects. The most recent measurements
+     %Previous measurements in $^–19˝$Ne decay, $D=(1“pm6)“times 10^–-4˝$~“cite–CAL85˝,
+     %Thus our result represents the most sensitive measurement of the $D$-coefficient in nuclear $“beta$-decay and improves constraints on CP-violation in leptoquark  and certain exotic fermion extensions to the SM.  %The current effort also provides a clear path forward in reducing systematic effects.  Most importantly, this requires reducing the magnitude of the neutron guide field.
+     %We note, however, that while FSI for $^–19˝$Ne are $2.6“times10^–-4˝p/p˙–max˝$~“cite–CAL85˝-->
+  <para xml:id="p25">
+    <p>The authors acknowledge the support of the National Institute of Standards and Technology, U.S. Department of Commerce, in providing the neutron facilities used in this work. This research was made possible in part by grants from the U.S. Department of Energy Office of Nuclear Physics (DE-FG02-97ER41020, DE-AC02-05CH11231,
+and DE-FG02-97ER41041) and the National Science Foundation (PHY-0555432, PHY-0855694, PHY-0555474, and PHY-0855310).</p>
+  </para>
+  <!-- %“bibliography–emiTRef˝ -->
+  <bibliography xml:id="bib">
+    <title>References</title>
+    <biblist>
+      <bibitem key="SAK91" xml:id="bib.bib1">
+        <bibtag role="number">1</bibtag>
+        <bibtag role="refnum">(1)</bibtag>
+        <bibblock>
+A. Sakharov, Sov. Phys. Usp. <text font="bold">34</text>, 417 (1991).
+</bibblock>
+      </bibitem>
+      <bibitem key="CHR64" xml:id="bib.bib2">
+        <bibtag role="number">2</bibtag>
+        <bibtag role="refnum">(2)</bibtag>
+        <bibblock>
+J. H. Christenson <text font="italic">et al.</text>, Phys. Rev. Lett. <text font="bold">13</text>, 138 (1964).
+</bibblock>
+      </bibitem>
+      <bibitem key="AUB01" xml:id="bib.bib3">
+        <bibtag role="number">3</bibtag>
+        <bibtag role="refnum">(3)</bibtag>
+        <bibblock>
+B. Aubert <text font="italic">et al.</text>, Phys. Rev. Lett. <text font="bold">87</text>, 091801 (2001).
+</bibblock>
+      </bibitem>
+      <bibitem key="ABE01" xml:id="bib.bib4">
+        <bibtag role="number">4</bibtag>
+        <bibtag role="refnum">(4)</bibtag>
+        <bibblock>
+K. Abe <text font="italic">et al.</text>, Phys. Rev. Lett. <text font="bold">87</text>, 091802 (2001).
+</bibblock>
+      </bibitem>
+      <bibitem key="RIO99" xml:id="bib.bib5">
+        <bibtag role="number">5</bibtag>
+        <bibtag role="refnum">(5)</bibtag>
+        <bibblock>
+A. Riotto and M. Trodden, Ann. Rev. Nucl. Part. Sci. <text font="bold">49</text>, 35 (1999).
+</bibblock>
+      </bibitem>
+      <bibitem key="JAC57" xml:id="bib.bib6">
+        <bibtag role="number">6</bibtag>
+        <bibtag role="refnum">(6)</bibtag>
+        <bibblock>
+J. Jackson, S. Treiman, and H. Wyld, Phys. Rev. <text font="bold">106</text>, 517 (1957).
+</bibblock>
+      </bibitem>
+      <bibitem key="PDG:2010" xml:id="bib.bib7">
+        <bibtag role="number">7</bibtag>
+        <bibtag role="refnum">(7)</bibtag>
+        <bibblock>
+K. Nakamura <text font="italic">et al.</text>, J. Phys. G <text font="bold">37</text>, 075021 (2010), (Particle Data
+Group).
+<!-- %**** emiTPRLv3.0.bbl Line 25 **** --></bibblock>
+      </bibitem>
+      <bibitem key="LIS00" xml:id="bib.bib8">
+        <bibtag role="number">8</bibtag>
+        <bibtag role="refnum">(8)</bibtag>
+        <bibblock>
+L. J. Lising <text font="italic">et al.</text>, Phys. Rev. C <text font="bold">62</text>, 055501 (2000).
+</bibblock>
+      </bibitem>
+      <bibitem key="SOL04" xml:id="bib.bib9">
+        <bibtag role="number">9</bibtag>
+        <bibtag role="refnum">(9)</bibtag>
+        <bibblock>
+T. Soldner <text font="italic">et al.</text>, Phys. Lett. B <text font="bold">581</text>, 49 (2004).
+</bibblock>
+      </bibitem>
+      <bibitem key="CAL67" xml:id="bib.bib10">
+        <bibtag role="number">10</bibtag>
+        <bibtag role="refnum">(10)</bibtag>
+        <bibblock>
+C. G. Callan and S. B. Treiman, Phys. Rev. <text font="bold">162</text>, 1494 (1967).
+</bibblock>
+      </bibitem>
+      <bibitem key="Ando2009" xml:id="bib.bib11">
+        <bibtag role="number">11</bibtag>
+        <bibtag role="refnum">(11)</bibtag>
+        <bibblock>
+S. Ando, J. McGovern, and T. Sato, Phys. Lett. B <text font="bold">677</text>, 109 (2009).
+</bibblock>
+      </bibitem>
+      <bibitem key="Kozela:2009ni" xml:id="bib.bib12">
+        <bibtag role="number">12</bibtag>
+        <bibtag role="refnum">(12)</bibtag>
+        <bibblock>
+A. Kozela <text font="italic">et al.</text>, Phys. Rev. Lett. <text font="bold">102</text>, 172301 (2009).
+</bibblock>
+      </bibitem>
+      <bibitem key="HER98" xml:id="bib.bib13">
+        <bibtag role="number">13</bibtag>
+        <bibtag role="refnum">(13)</bibtag>
+        <bibblock>
+P. Herczeg, in <text font="italic">Proc. of the 6th Int. PASCOS-98</text>, edited by P. Nath (World
+Scientific, Singapore, 1998).
+</bibblock>
+      </bibitem>
+      <bibitem key="Drees2003" xml:id="bib.bib14">
+        <bibtag role="number">14</bibtag>
+        <bibtag role="refnum">(14)</bibtag>
+        <bibblock>
+M. Drees and M. Rauch, Eur. Phys. J. C <text font="bold">29</text>, 573 (2003).
+</bibblock>
+      </bibitem>
+      <bibitem key="MUM04" xml:id="bib.bib15">
+        <bibtag role="number">15</bibtag>
+        <bibtag role="refnum">(15)</bibtag>
+        <bibblock>
+H. P. Mumm <text font="italic">et al.</text>, Rev. Sci. Instrum. <text font="bold">75</text>, 5343 (2004).
+<!-- %**** emiTPRLv3.0.bbl Line 50 **** --></bibblock>
+      </bibitem>
+      <bibitem key="WAS94" xml:id="bib.bib16">
+        <bibtag role="number">16</bibtag>
+        <bibtag role="refnum">(16)</bibtag>
+        <bibblock>
+E. G. Wasserman, Ph.D. thesis, Harvard University, 1994.
+</bibblock>
+      </bibitem>
+      <bibitem key="MUM03" xml:id="bib.bib17">
+        <bibtag role="number">17</bibtag>
+        <bibtag role="refnum">(17)</bibtag>
+        <bibblock>
+H. P. Mumm, Ph.D. thesis, University of Washington, 2004.
+</bibblock>
+      </bibitem>
+      <bibitem key="penelope" xml:id="bib.bib18">
+        <bibtag role="number">18</bibtag>
+        <bibtag role="refnum">(18)</bibtag>
+        <bibblock>
+J. Sempau <text font="italic">et al.</text>, Nucl. Instrum. Meth. B <text font="bold">132</text>, 377 (1997).
+</bibblock>
+      </bibitem>
+      <bibitem key="martin06" xml:id="bib.bib19">
+        <bibtag role="number">19</bibtag>
+        <bibtag role="refnum">(19)</bibtag>
+        <bibblock>
+J. Martin <text font="italic">et al.</text>, Phys. Rev. C <text font="bold">73</text>, 015501 (2006).
+</bibblock>
+      </bibitem>
+      <bibitem key="SIMION" xml:id="bib.bib20">
+        <bibtag role="number">20</bibtag>
+        <bibtag role="refnum">(20)</bibtag>
+        <bibblock>
+D. A. Dahl, Int. J. Mass Spectrom. <text font="bold">200</text>, 3 (2000).
+</bibblock>
+      </bibitem>
+      <bibitem key="CAL85" xml:id="bib.bib21">
+        <bibtag role="number">21</bibtag>
+        <bibtag role="refnum">(21)</bibtag>
+        <bibblock>
+F. Calaprice, in <text font="italic">Hyperfine Interactions</text> (Springer, Netherlands, 1985),
+Vol. 22.
+</bibblock>
+      </bibitem>
+    </biblist>
+  </bibliography>
+  <!-- %“begin–bibliography˝ -->
+</document>
