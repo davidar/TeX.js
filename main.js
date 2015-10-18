@@ -60,7 +60,10 @@ require(["Hyphenator/Hyphenator"], function() {
 
 require([dirname($0) + "/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"], function() {
     MathJax.Hub.Register.StartupHook("End", function () {
-        document.getElementById("loading").style.display = "none";
+        document.getElementById("loading").className = "done";
+        setTimeout(function() {
+            document.getElementById("loading").style.display = "none";
+        }, 1000);
     });
 });
 

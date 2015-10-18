@@ -5,6 +5,9 @@ body {
     line-height: 1.45em;
     background-color: #eee;
 }
+body.rainbow {
+    background: linear-gradient(to bottom, #fff8f8, #f8fff8, #f8f8ff, #fff8f8);
+}
 
 #loading {
     width: 100%;
@@ -15,12 +18,16 @@ body {
     display: block;
     z-index: 99;
     background-color: #eee;
+    transition: all 1s ease;
 }
 #loading-icon {
     position: absolute;
     top: 40%;
     left: 45%;
     z-index: 100;
+}
+#loading.done {
+    opacity: 0;
 }
 
 .TeXpage {
