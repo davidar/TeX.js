@@ -15,11 +15,11 @@
     <p>This page introduces <em>T<span class="T_e_X">e</span>X.js</em>, a JavaScript library for performing high-quality typesetting within web browsers. It is designed to require only basic familiarity with Hyper-Text Markup Language (HTML) from the author &mdash; no knowledge about JavaScript or Cascading Style Sheets (CSS) is necessary. Although not as sophisticated as the T<span class="T_e_X">e</span>X typesetting engine, the output produced is of much higher quality than that which can be obtained by unstyled HTML.</p>
 </div>
 
-<h2>Introduction</h2>
+<h2 class="num">Introduction</h2>
 <p>The T<span class="T_e_X">e</span>X typesetting system was released by Donald Knuth in the late 1970s, as one of the first programs for producing high-quality digital typography. In the following decade, Tim Berners-Lee initiated the World Wide Web project, releasing it to the public in the early 1990s.
 <p>Over thirty years after its release, T<span class="T_e_X">e</span>X remains the state-of-the-art for professionally publishing technical articles, whilst being accessible enough to be used directly by authors. On the other hand, although the Web became a phenomenal success for distributing and linking documents over the Internet, typographical quality was sorely lacking (see Figure 1) &mdash; a problem which remained unresolved for a number of decades after its introduction.
 
-<figure id="F1">
+<figure id="F1" class="num">
 <img src="WorldWideWeb_FSF_GNU.png" width="1024" height="768" alt="WorldWideWeb screenshot">
 <figcaption><em>WorldWideWeb</em>, the first web browser. <a href="https://commons.wikimedia.org/wiki/File:WorldWideWeb_FSF_GNU.png">Source</a></figcaption>
 </figure>
@@ -28,46 +28,47 @@
 
 <p>Fortunately, this situation has improved markedly in recent years, particularly with the introduction of CSS level 3. This has allowed web designers to compensate for the poor level of typography provided in web browsers by default. The aim of the T<span class="T_e_X">e</span>X.js project is to combine all of these individual libraries in such a way that authors merely need to include a single extra line in their HTML documents in order to take advantage of modern web typography.
 
-<h2>Usage</h2>
+<h2 class="num">Usage</h2>
 
 <p>T<span class="T_e_X">e</span>X.js is still experimental and not yet ready for public use. Please visit the <a href="https://github.com/davidar/TeX.js">GitHub project</a> for more information.
 
-<h2>Examples</h2>
+<h2 class="num">Examples</h2>
 
 <ul>
-<li><a href="./demo/1104.2778/">A New Limit on Time-Reversal Violation in Beta Decay</a>
+<li><a href="./arXiv/1104.2778/">A New Limit on Time-Reversal Violation in Beta Decay</a>
+<li><a href="./arXiv/1505.04714/">The Applications of Probability to Cryptography</a> by <a href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing</a>
 </ul>
 
-<h3>Lorem Ipsum</h3>
+<h3 class="num">Lorem Ipsum</h3>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<h4>Emphatic</h4>
+<h4 class="num">Emphatic</h4>
 
 <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em>
 
-<h4>Strong</h4>
+<h4 class="num">Strong</h4>
 
 <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong>
 
-<h4>Strong and Emphatic</h4>
+<h4 class="num">Strong and Emphatic</h4>
 
 <p><strong><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</em></strong>
 
-<h3>Equations</h3>
-<h4>The Lorenz Equations</h4>
+<h3 class="num">Equations</h3>
+<h4 class="num">The Lorenz Equations</h4>
 <div class="math">\[\begin{aligned}
 \dot{x} &amp; = \sigma(y-x) \\
 \dot{y} &amp; = \rho x - y - xz \\
 \dot{z} &amp; = -\beta z + xy
 \end{aligned}\]</div>
 
-<h4>The Cauchy-Schwarz Inequality</h4>
+<h4 class="num">The Cauchy-Schwarz Inequality</h4>
 <div class="math">\[
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 \]</div>
 
-<h4>A Cross Product Formula</h4>
+<h4 class="num">A Cross Product Formula</h4>
 <div class="math">\[
 \mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix}
     \mathbf{i}                    &amp; \mathbf{j}                    &amp; \mathbf{k} \\
@@ -75,26 +76,26 @@
     \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0
 \end{vmatrix}\]</div>
 
-<h4>The Binomial Distribution</h4>
+<h4 class="num">The Binomial Distribution</h4>
 <p>The probability of getting \(k\) heads when flipping \(n\) coins is: 
 <div class="math">\[
 P(E) = {n \choose k} p^k (1-p)^{ n-k}
 \]</div>
 
-<h4>An Identity of Ramanujan</h4>
+<h4 class="num">An Identity of Ramanujan</h4>
 <div class="math">\[
 \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
     1+\frac{e^{-2\pi}}{1+\frac{e^{-4\pi}}{1+\frac{e^{-6\pi}}{1+\frac{e^{-8\pi}}{1+\ldots}}}}
 \]</div>
 
-<h4>A Rogers-Ramanujan Identity</h4>
+<h4 class="num">A Rogers-Ramanujan Identity</h4>
 <div class="math">\[
 1+\frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
     \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})},
     \quad\quad\text{for }|q|&lt;1.
 \]</div>
 
-<h4>Maxwell's Equations</h4>
+<h4 class="num">Maxwell's Equations</h4>
 <div class="math">\[\begin{aligned}
 \nabla \times \vec{\mathbf{B}} - \frac1c\,\frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\
 \nabla \cdot  \vec{\mathbf{E}} &amp; = 4 \pi \rho \\

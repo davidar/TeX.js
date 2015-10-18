@@ -2,7 +2,6 @@
 
 body {
     font-size: 100%;
-    line-height: 1.45em;
     background-color: #eee;
 }
 body.rainbow {
@@ -94,32 +93,32 @@ h1.subtitle {
     text-indent:2em;
 }
 
-h2, h3, h4 {
+h2.num, h3.num, h4.num {
     font-weight: bold;
     margin-top: 1.5em;
     margin-bottom: 1em;
 }
-h2 {
+h2.num {
     counter-increment: section;
     font-size:140%;
 }
-h2::before {
+h2.num::before {
     content: counter(section);
     margin-right: 1em;
 }
-h3 {
+h3.num {
     counter-increment: subsection;
     font-size:120%;
 }
-h3::before {
+h3.num::before {
     content: counter(section) "." counter(subsection);
     margin-right: 1em;
 }
-h4 {
+h4.num {
     counter-increment: subsubsection;
     font-size:100%;
 }
-h4::before {
+h4.num::before {
     content: counter(section) "." counter(subsection) "." counter(subsubsection);
     margin-right: 1em;
 }
@@ -171,9 +170,12 @@ span[data-note]:hover::after {
 }
 
 figure {
-    counter-increment: figure;
     text-align: center;
     transition: all 1s ease;
+    font-size: 90%;
+}
+figure.num {
+    counter-increment: figure;
 }
 figure:hover {
     transform: scale(2);
@@ -182,10 +184,7 @@ figure:hover {
     position: relative;
     z-index: 100;
 }
-figure figcaption {
-    font-size: 90%;
-}
-figure figcaption::before {
+figure.num figcaption::before {
     content: "Figure " counter(figure) ":";
     margin-right: 1em;
     font-weight: bold;

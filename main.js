@@ -52,6 +52,7 @@ require(["Hyphenator/Hyphenator"], function() {
     Hyphenator.config({
         classname:'TeXpage',
         donthyphenateclassname:'math',
+        urlclassname:'url',
         defaultlanguage:'en',
         intermediatestate:'visible',
         storagetype:'none'});
