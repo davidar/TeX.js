@@ -1,8 +1,9 @@
 @import "texgyrebonum/font-face.css";
+@import "normalize.css/normalize.css";
+@import "typebase.css/typebase.css";
 
 body {
-    font-size: 100%;
-    background-color: #eee;
+    background-color: #f8f8f8;
 }
 body.rainbow {
     background: linear-gradient(to bottom, #fff8f8, #f8fff8, #f8f8ff, #fff8f8);
@@ -21,8 +22,10 @@ body.rainbow {
 }
 #loading-icon {
     position: absolute;
-    top: 40%;
-    left: 45%;
+    top: 50%;
+    left: 50%;
+    margin-left: -80px;
+    margin-top: -46px;
     z-index: 100;
 }
 #loading.done {
@@ -31,13 +34,15 @@ body.rainbow {
 
 .TeXpage {
     display: none; /* while loading */
-    width: 40em;
-    padding: 6em;
+    max-width: 850px;
+    padding-left: 1em;
+    padding-right: 2em;
     padding-top: 4em;
-    background-color: white;
+    background-color: #fcfcfc;
+    color: #222;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 1em white;
     font-family: "TeX Gyre Bonum", serif;
     text-align: justify;
     /* http://thenewcode.com/547/Make-Your-Web-Pages-More-Legible-With-Ligatures-and-Kerning-Pairs */
@@ -57,16 +62,23 @@ body.rainbow {
     margin-bottom: -0.5ex;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+}
+
 h1 {
-    font-weight:normal;
-    font-size: 170%;
+    font-weight: normal;
     text-align: center;
     margin: 0.5em 0 0.5em 0;
+    font-size: 2rem;
+    line-height: 3rem;
 }
 h1.subtitle {
     font-size: 145%;
     padding-left: 0.2em;
     margin-left: -0.5em;
+    margin-bottom: 1em;
+    line-height: 2rem;
 }
 
 #authors {
@@ -128,6 +140,8 @@ p     { text-indent: 0;  margin-bottom: 0; }
 p + p { text-indent: 1.5em; margin-top: 0; }
 p *   { text-indent: 0; }
 
+p.ltx_p { margin-top: 0; }
+
 /* match hypothes.is colours */
 a {
     color: #bd1c2b;
@@ -178,7 +192,7 @@ figure.num {
     counter-increment: figure;
 }
 figure:hover {
-    transform: scale(2);
+    transform: scale(1.414);
     background-color: white;
     box-shadow: 0 0 100px black;
     position: relative;
@@ -217,4 +231,18 @@ figure.num figcaption::before {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.nobr {
+    white-space: nowrap;
+}
+
+div.math {
+    overflow: auto;
+}
+
+/* responsiveness for phones */
+@media screen and (max-width:768px) {
+    body { font-size: 94%; }
+    #abstract { margin: 0; }
 }

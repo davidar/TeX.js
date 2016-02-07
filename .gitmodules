@@ -4,3 +4,9 @@
 [submodule "Hyphenator"]
 	path = Hyphenator
 	url = https://github.com/mnater/Hyphenator.git
+[submodule "typebase.css"]
+	path = typebase.css
+	url = https://github.com/devinhunt/typebase.css.git
+[submodule "normalize.css"]
+	path = normalize.css
+	url = https://github.com/necolas/normalize.css.git
