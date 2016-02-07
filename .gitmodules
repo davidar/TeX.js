@@ -1,6 +1,3 @@
-[submodule "MathJax"]
-	path = MathJax
-	url = https://github.com/davidar/MathJax.git
 [submodule "Hyphenator"]
 	path = Hyphenator
 	url = https://github.com/mnater/Hyphenator.git
