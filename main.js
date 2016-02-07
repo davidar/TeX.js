@@ -59,7 +59,7 @@ require(["Hyphenator/Hyphenator"], function() {
     Hyphenator.run();
 });
 
-require(["//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.0/MathJax.js?config=TeX-MML-AM_SVG"], function() {
+require(["//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG"], function() {
     MathJax.Hub.Register.StartupHook("End", function () {
         document.getElementById("loading").className = "done";
         setTimeout(function() {
