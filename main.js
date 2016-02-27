@@ -19,13 +19,9 @@ function loadCSS(path) {
 function wrapBodyWithDiv(className) { // http://stackoverflow.com/a/1577863
     var div = document.createElement("div");
     div.setAttribute("class", className);
-    while(document.body.children.length > 1) {
+    while(document.body.children.length > 0) {
         var child = document.body.firstChild;
-        if(child.id === "loading") {
-            loading = child;
-        } else {
-            div.appendChild(child);
-        }
+        div.appendChild(child);
     }
     document.body.appendChild(div);
 }
@@ -41,38 +37,39 @@ function currentDate() {
 
 require(['domReady'], function(domReady) {
     domReady(function() {
-        //wrapBodyWithDiv("TeXpage");
+        wrapBodyWithDiv("TeXpage");
         var date = document.getElementById("date");
         if(date && date.classList.contains("today"))
             date.innerHTML = currentDate();
+
+        require(["Hyphenator/Hyphenator"], function() {
+            Hyphenator.config({
+                classname:'TeXpage',
+                donthyphenateclassname:'math',
+                urlclassname:'url',
+                defaultlanguage:'en',
+                intermediatestate:'visible',
+                storagetype:'none'});
+            Hyphenator.run();
+        });
+
+        require(["//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG"], function() {
+            MathJax.Hub.Register.StartupHook("End", function () {
+                document.getElementById("loading").className = "done";
+                setTimeout(function() {
+                    document.getElementById("loading").style.display = "none";
+                }, 1000);
+            });
+        });
+
+        require(["//hypothes.is/embed.js"]);
+
+        (function(loading) {
+            loading.setAttribute("id", "loading");
+            loading.innerHTML = '<div id="loading-icon"><object type="image/svg+xml" data="' + dirname($0) + '/animated-logo.svg"></object></div>';
+            document.body.appendChild(loading);
+            document.body.style.display = "block";
+        })(document.createElement("div"));
+
     });
 });
-
-require(["Hyphenator/Hyphenator"], function() {
-    Hyphenator.config({
-        classname:'TeXpage',
-        donthyphenateclassname:'math',
-        urlclassname:'url',
-        defaultlanguage:'en',
-        intermediatestate:'visible',
-        storagetype:'none'});
-    Hyphenator.run();
-});
-
-require(["//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG"], function() {
-    MathJax.Hub.Register.StartupHook("End", function () {
-        document.getElementById("loading").className = "done";
-        setTimeout(function() {
-            document.getElementById("loading").style.display = "none";
-        }, 1000);
-    });
-});
-
-require(["//hypothes.is/embed.js"]);
-
-(function(loading) {
-    loading.setAttribute("id", "loading");
-    loading.innerHTML = '<div id="loading-icon"><object type="image/svg+xml" data="' + dirname($0) + '/animated-logo.svg"></object></div>';
-    document.body.appendChild(loading);
-    document.getElementById("TeXpage").style.display = "block";
-})(document.createElement("div"));

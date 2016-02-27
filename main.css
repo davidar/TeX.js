@@ -4,9 +4,7 @@
 
 body {
     background-color: #f8f8f8;
-}
-body.rainbow {
-    background: linear-gradient(to bottom, #fff8f8, #f8fff8, #f8f8ff, #fff8f8);
+    display: none; /* while loading */
 }
 
 #loading {
@@ -33,7 +31,6 @@ body.rainbow {
 }
 
 .TeXpage {
-    display: none; /* while loading */
     max-width: 850px;
     padding-left: 1em;
     padding-right: 2em;
