@@ -1,18 +1,8 @@
-var $0 = (function(scripts) {
-    // http://feather.elektrum.org/book/src.html
-    return scripts[scripts.length-1].src;
-})(document.getElementsByTagName('script'));
-
-function dirname(name) {
-    if(name.indexOf('/') === -1) return '.';
-    return name.substring(0, name.lastIndexOf('/'));
-}
-
 function loadCSS(path) {
     var link = document.createElement("link");
     link.type = "text/css";
     link.rel = "stylesheet";
-    link.href = dirname($0) + '/' + path;
+    link.href = path;
     document.getElementsByTagName("head")[0].appendChild(link);
 }
 
@@ -32,44 +22,63 @@ function currentDate() {
     return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
 }
 
+function TeXify(baseURL) {
+    loadCSS(baseURL + "main.css");
+    wrapBodyWithDiv("TeXpage");
+    var date = document.getElementById("date");
+    if(date && date.classList.contains("today"))
+        date.innerHTML = currentDate();
 
-//loadCSS("main.css");
+    require(["Hyphenator/Hyphenator"], function() {
+        Hyphenator.config({
+            classname:'TeXpage',
+            donthyphenateclassname:'math',
+            urlclassname:'url',
+            defaultlanguage:'en',
+            intermediatestate:'visible',
+            storagetype:'none'});
+        Hyphenator.run();
+    });
 
-require(['domReady'], function(domReady) {
+    require(["//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG"], function() {
+        MathJax.Hub.Register.StartupHook("End", function () {
+            document.getElementById("loading").className = "done";
+            setTimeout(function() {
+                document.getElementById("loading").style.display = "none";
+            }, 1000);
+        });
+    });
+
+    require(["//hypothes.is/embed.js"]);
+
+    (function(loading) {
+        loading.setAttribute("id", "loading");
+        loading.innerHTML = '<div id="loading-icon"><object type="image/svg+xml" data="' + baseURL + 'animated-logo.svg"></object></div>';
+        document.body.appendChild(loading);
+        document.body.style.display = "block";
+    })(document.createElement("div"));
+}
+
+require(['domReady', 'require'], function(domReady, _require) {
     domReady(function() {
-        wrapBodyWithDiv("TeXpage");
-        var date = document.getElementById("date");
-        if(date && date.classList.contains("today"))
-            date.innerHTML = currentDate();
-
-        require(["Hyphenator/Hyphenator"], function() {
-            Hyphenator.config({
-                classname:'TeXpage',
-                donthyphenateclassname:'math',
-                urlclassname:'url',
-                defaultlanguage:'en',
-                intermediatestate:'visible',
-                storagetype:'none'});
-            Hyphenator.run();
-        });
-
-        require(["//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG"], function() {
-            MathJax.Hub.Register.StartupHook("End", function () {
-                document.getElementById("loading").className = "done";
-                setTimeout(function() {
-                    document.getElementById("loading").style.display = "none";
-                }, 1000);
+        var baseURL = _require.toUrl('./');
+        if(window.readability) {
+            require([_require.toUrl("./readability/Readability.js")], function() {
+                var location = document.location;
+                var uri = {
+                    spec: location.href,
+                    host: location.host,
+                    prePath: location.protocol + "//" + location.host,
+                    scheme: location.protocol.substr(0, location.protocol.indexOf(":")),
+                    pathBase: location.protocol + "//" + location.host + location.pathname.substr(0, location.pathname.lastIndexOf("/") + 1)
+                };
+                var article = new Readability(uri, document).parse();
+                document.head.innerHTML = '<title>' + article.title + '</title>';
+                document.body.innerHTML = '<h1>' + article.title + '</h1>' + article.content;
+                TeXify(baseURL);
             });
-        });
-
-        require(["//hypothes.is/embed.js"]);
-
-        (function(loading) {
-            loading.setAttribute("id", "loading");
-            loading.innerHTML = '<div id="loading-icon"><object type="image/svg+xml" data="' + dirname($0) + '/animated-logo.svg"></object></div>';
-            document.body.appendChild(loading);
-            document.body.style.display = "block";
-        })(document.createElement("div"));
-
+        } else {
+            TeXify(baseURL);
+        }
     });
 });

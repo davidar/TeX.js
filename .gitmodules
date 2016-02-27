@@ -7,3 +7,6 @@
 [submodule "normalize.css"]
 	path = normalize.css
 	url = https://github.com/necolas/normalize.css.git
+[submodule "readability"]
+	path = readability
+	url = https://github.com/mozilla/readability
