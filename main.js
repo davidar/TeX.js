@@ -40,6 +40,12 @@ function TeXify(baseURL) {
         Hyphenator.run();
     });
 
+    var mathjaxConfig = document.createElement("script");
+    mathjaxConfig.type = "text/x-mathjax-config";
+    mathjaxConfig[(window.opera ? "innerHTML" : "text")] =
+        'MathJax.Hub.Config({ SVG: { linebreaks: { automatic: true, width: "75%" } } });';
+    document.head.appendChild(mathjaxConfig);
+
     require(["//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG"], function() {
         MathJax.Hub.Register.StartupHook("End", function () {
             document.getElementById("loading").className = "done";

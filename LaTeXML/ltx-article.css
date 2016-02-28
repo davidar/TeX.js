@@ -1,3 +1,4 @@
+@import "../LaTeXML.css";
 
 .ltx_title_document      { font-size:170%; text-align:center; margin:0.5em 0 0.5em 0; }
 .ltx_authors,
@@ -56,3 +57,8 @@ section > .ltx_title +.ltx_date +.ltx_para > .ltx_p {text-indent:0em; }
 .ltx_theorem .ltx_title + .ltx_para,
 .ltx_theorem .ltx_title + .ltx_para .ltx_p,
 .ltx_theorem .ltx_title + .ltx_p  { margin-top:0em; }
+
+/* responsiveness for phones */
+@media screen and (max-width:768px) {
+    .ltx_abstract { margin: 0; }
+}
