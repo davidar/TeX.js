@@ -4,7 +4,7 @@
 <title>TeX.js: Typesetting for the Web</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css" type="text/css">
-<script data-main="main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.min.js"></script>
+<script src="load.js"></script>
 </head>
 <body>
 <h1>T<span class="T_e_X">e</span>X.js</h1>
@@ -30,6 +30,15 @@
 <p>Fortunately, this situation has improved markedly in recent years, particularly with the introduction of CSS level 3. This has allowed web designers to compensate for the poor level of typography provided in web browsers by default. The aim of the T<span class="T_e_X">e</span>X.js project is to combine all of these individual libraries in such a way that authors merely need to include a single extra line in their HTML documents in order to take advantage of modern web typography.
 
 <h2 class="num">Usage</h2>
+
+<h3 class="num">Bookmarklet</h3>
+
+<ol>
+<li>Simply click-and-drag the following link to your bookmarks bar: <a class="bookmarklet" href="javascript:(%0A(function()%7Bwindow.readability%3Dtrue%3Bvar%20s%3Ddocument.createElement(%27script%27)%3Bs.setAttribute(%27src%27%2C%27%2F%2Fdavidar.io%2FTeX.js%2Fload.js%27)%3Bdocument.body.appendChild(s)%3B%7D)())" title="TeXify">T<span class="T_e_X">e</span>X<em>ify</em></a>
+<li>When visiting any webpage, re-style it by clicking the &ldquo;T<span class="T_e_X">e</span>X<em>ify</em>&rdquo; button in your bookmarks bar.
+</ol>
+
+<h3 class="num">Embedding</h3>
 
 <p>T<span class="T_e_X">e</span>X.js is still experimental and not yet ready for public use. Please visit the <a href="https://github.com/davidar/TeX.js">GitHub project</a> for more information.
 

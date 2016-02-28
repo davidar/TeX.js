@@ -238,6 +238,10 @@ div.math {
     overflow: auto;
 }
 
+.bookmarklet {
+    cursor: move;
+}
+
 /* responsiveness for phones */
 @media screen and (max-width:768px) {
     body { font-size: 94%; }
