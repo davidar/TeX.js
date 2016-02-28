@@ -42,11 +42,8 @@ body {
     box-shadow: 0 0 1em white;
     font-family: "TeX Gyre Bonum", serif;
     text-align: justify;
-    /* http://thenewcode.com/547/Make-Your-Web-Pages-More-Legible-With-Ligatures-and-Kerning-Pairs */
-    -webkit-font-variant-ligatures: common-ligatures; /* for iOS and Safari 6 */
-    font-variant-ligatures: common-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
-    -webkit-font-feature-settings: "kern";
-    font-feature-settings: "kern";
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "frac", "ordn";
     font-kerning: normal;
 }
 
@@ -57,6 +54,12 @@ body {
     margin-left: -0.18em;
     margin-right: -0.12em;
     margin-bottom: -0.5ex;
+}
+
+abbr {
+    font-variant-caps: all-small-caps;
+    font-feature-settings: "smcp", "c2sc";
+    letter-spacing: 0.05em;
 }
 
 h1, h2, h3, h4, h5, h6 {
