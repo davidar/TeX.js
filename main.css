@@ -16,6 +16,7 @@ body {
     display: block;
     z-index: 99;
     background-color: #eee;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 #loading-icon {
@@ -42,9 +43,12 @@ body {
     box-shadow: 0 0 1em white;
     font-family: "TeX Gyre Bonum", serif;
     text-align: justify;
-    font-variant-ligatures: common-ligatures;
-    font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "frac", "ordn";
-    font-kerning: normal;
+    -webkit-font-variant-ligatures: common-ligatures;
+            font-variant-ligatures: common-ligatures;
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "frac", "ordn";
+            font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "frac", "ordn";
+    -webkit-font-kerning: normal;
+            font-kerning: normal;
 }
 
 .T_e_X {
@@ -58,7 +62,8 @@ body {
 
 abbr {
     font-variant-caps: all-small-caps;
-    font-feature-settings: "smcp", "c2sc";
+    -webkit-font-feature-settings: "smcp", "c2sc";
+            font-feature-settings: "smcp", "c2sc";
     letter-spacing: 0.05em;
 }
 
@@ -175,8 +180,6 @@ span[data-note]:hover::after {
     margin-bottom: 5px;
     margin-left: -10em;
     padding: 7px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     background-color: #000;
     background-color: hsla(0, 0%, 20%, 0.9);
@@ -185,6 +188,7 @@ span[data-note]:hover::after {
 
 figure {
     text-align: center;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
     font-size: 90%;
 }
@@ -192,7 +196,8 @@ figure.num {
     counter-increment: figure;
 }
 figure:hover {
-    transform: scale(1.414);
+    -webkit-transform: scale(1.414);
+            transform: scale(1.414);
     background-color: white;
     box-shadow: 0 0 100px black;
     position: relative;
