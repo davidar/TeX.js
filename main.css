@@ -110,14 +110,16 @@ h1.subtitle {
     text-indent:2em;
 }
 
-h2.num, h3.num, h4.num {
+h2, h3, h4 {
     font-weight: bold;
     margin-top: 1.5em;
     margin-bottom: 1em;
 }
+h2 { font-size: 140% }
+h3 { font-size: 120% }
+
 h2.num {
     counter-increment: section;
-    font-size:140%;
 }
 h2.num::before {
     content: counter(section);
@@ -125,7 +127,6 @@ h2.num::before {
 }
 h3.num {
     counter-increment: subsection;
-    font-size:120%;
 }
 h3.num::before {
     content: counter(section) "." counter(subsection);
@@ -133,7 +134,6 @@ h3.num::before {
 }
 h4.num {
     counter-increment: subsubsection;
-    font-size:100%;
 }
 h4.num::before {
     content: counter(section) "." counter(subsection) "." counter(subsubsection);
