@@ -146,6 +146,7 @@ p + p { text-indent: 1.5em; margin-top: 0; }
 p *   { text-indent: 0; }
 
 p.ltx_p { margin-top: 0; }
+p.readability-styled + p { text-indent: 0; }
 
 /* match hypothes.is colours */
 a {
