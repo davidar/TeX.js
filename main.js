@@ -6,16 +6,6 @@ function loadCSS(path) {
     document.getElementsByTagName("head")[0].appendChild(link);
 }
 
-function wrapBodyWithDiv(className) { // http://stackoverflow.com/a/1577863
-    var div = document.createElement("div");
-    div.setAttribute("class", className);
-    while(document.body.children.length > 0) {
-        var child = document.body.firstChild;
-        div.appendChild(child);
-    }
-    document.body.appendChild(div);
-}
-
 function currentDate() {
     var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
     var date = new Date();
@@ -24,7 +14,20 @@ function currentDate() {
 
 function TeXify(baseURL) {
     loadCSS(baseURL + "main.css");
-    wrapBodyWithDiv("TeXpage");
+
+    // http://stackoverflow.com/a/1577863
+    var page = document.createElement("div");
+    page.setAttribute("class", "TeXpage");
+    while(document.body.children.length > 0) {
+        var child = document.body.firstChild;
+        page.appendChild(child);
+    }
+    var footer = document.createElement("div");
+    footer.setAttribute("id", "footer");
+    footer.innerHTML = '<a href="' + baseURL + '">T<span class="T_e_X">e</span>X.js</a>';
+    page.appendChild(footer);
+    document.body.appendChild(page);
+
     var date = document.getElementById("date");
     if(date && date.classList.contains("today"))
         date.innerHTML = currentDate();
