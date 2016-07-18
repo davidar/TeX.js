@@ -47,7 +47,6 @@ body {
     margin-right: auto;
     box-shadow: 0 0 1em white;
     font-family: "TeX Gyre Bonum", serif;
-    text-align: justify;
     -webkit-font-variant-ligatures: common-ligatures;
             font-variant-ligatures: common-ligatures;
     -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "frac", "ordn";
@@ -146,6 +145,11 @@ h4.num {
 h4.num::before {
     content: counter(section) "." counter(subsection) "." counter(subsubsection);
     margin-right: 1em;
+}
+
+p {
+    word-spacing: -2px;
+    text-align: justify;
 }
 
 /* http://www.w3.org/Style/Examples/007/indent.en.html */
