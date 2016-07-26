@@ -54,11 +54,16 @@ function TeXify(baseURL) {
             document.getElementById("loading").className = "done";
             setTimeout(function() {
                 document.getElementById("loading").style.display = "none";
+                window.onresize();
             }, 1000);
         });
     });
 
     require(["//hypothes.is/embed.js"]);
+    
+    require(["scrollProgress/dist/scrollProgress"], function(scrollProgress) {
+        scrollProgress.set({ color: '#84141e' });
+    });
 
     (function(loading) {
         loading.setAttribute("id", "loading");

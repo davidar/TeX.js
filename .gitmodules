@@ -10,3 +10,6 @@
 [submodule "readability"]
 	path = readability
 	url = https://github.com/mozilla/readability
+[submodule "scrollProgress"]
+	path = scrollProgress
+	url = https://github.com/jeremenichelli/scrollProgress
