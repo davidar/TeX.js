@@ -32,6 +32,27 @@ function TeXify(baseURL) {
     if(date && date.classList.contains("today"))
         date.innerHTML = currentDate();
 
+    var refNodes = document.getElementsByClassName("ltx_bibblock");
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://search.crossref.org/links", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onload = function() {
+        var results = JSON.parse(this.responseText).results;
+        for(var i = 0; i < results.length; i++) {
+            var result = results[i];
+            var refNode = refNodes[i];
+            if(result.match) {
+                var doi = result.doi.replace("http://dx.doi.org/", "");
+                var html = refNode.innerHTML;
+                refNode.innerHTML = '<a href="http://doai.io/' + doi + '">' + html + '</a>';
+            }
+        }
+    }
+    var refTexts = [];
+    for(var i = 0; i < refNodes.length; i++)
+        refTexts.push(refNodes[i].textContent);
+    xhr.send(JSON.stringify(refTexts));
+
     var html = document.body.innerHTML;
     document.body.innerHTML = html.replace(
         /\b([A-Z][A-Z0-9]{2,})(s?)\b/g, '<abbr>$1</abbr>$2');
