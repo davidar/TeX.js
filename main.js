@@ -32,6 +32,10 @@ function TeXify(baseURL) {
     if(date && date.classList.contains("today"))
         date.innerHTML = currentDate();
 
+    var html = document.body.innerHTML;
+    document.body.innerHTML = html.replace(
+        /\b([A-Z][A-Z0-9]{2,})(s?)\b/g, '<abbr>$1</abbr>$2');
+
     require(["Hyphenator/Hyphenator"], function() {
         Hyphenator.config({
             classname:'TeXpage',
