@@ -13,3 +13,6 @@
 [submodule "scrollProgress"]
 	path = scrollProgress
 	url = https://github.com/jeremenichelli/scrollProgress
+[submodule "contents"]
+	path = contents
+	url = https://github.com/gajus/contents.git

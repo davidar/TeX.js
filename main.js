@@ -69,6 +69,20 @@ function TeXify(baseURL) {
         scrollProgress.set({ color: '#84141e' });
     });
 
+    require(["contents/dist/browser/contents"], function() {
+        var nav = document.createElement("nav");
+        nav.setAttribute("id", "toc");
+        document.body.appendChild(nav);
+
+        var contents = gajus.Contents({ articles: document.querySelectorAll('h2,h3,h4,h5') });
+        nav.appendChild(contents.list());
+
+        var openTOC = document.createElement("div");
+        openTOC.setAttribute("id", "open-toc");
+        openTOC.innerHTML = '<a href="#toc" class="open-menu">&#x2630;</a>';
+        document.body.appendChild(openTOC);
+    });
+
     (function(loading) {
         loading.setAttribute("id", "loading");
         loading.innerHTML = '<div id="loading-icon"><object type="image/svg+xml" data="' + baseURL + 'animated-logo.svg"></object></div>';
