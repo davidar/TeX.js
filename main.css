@@ -2,6 +2,7 @@
 @import "texgyrebonum/font-face.css";
 @import "normalize.css/normalize.css";
 @import "typebase.css/typebase.css";
+@import "highlight/src/styles/default.css";
 
 body {
     background-color: #f8f8f8;
@@ -152,10 +153,10 @@ h3 {
 #abstract h6 {
     text-align: center;
     font-size: 1rem;
-    font-weight:bold;
+    font-weight: bold;
 }
 #abstract p {
-    text-indent:2em;
+    text-indent: 2em;
 }
 
 h2.num {
@@ -197,9 +198,22 @@ p *   { text-indent: 0; }
 p.ltx_p { margin-top: 0; }
 p.readability-styled + p { text-indent: 0; }
 
-em {
-    font-style: italic;
+blockquote, q {
+    quotes: "\201C""\201D""\2018""\2019";
 }
+blockquote p:before {
+    content: open-quote " ";
+    font-weight: bold;
+    margin-left: -1ch;
+}
+blockquote p:after {
+    content: close-quote;
+    font-weight: bold;
+}
+q:before { content: open-quote }
+q:after { content: close-quote }
+blockquote,em { font-style: italic }
+blockquote em { font-style: normal }
 
 /* match hypothes.is colours */
 a, abbr[title] {
@@ -277,6 +291,16 @@ figcaption {
     line-height: 1.5rem;
     margin-top: -2px;
     margin-bottom: 0;
+}
+
+pre {
+    margin-top: 1.5rem;
+    margin-left: -1em;
+    padding-left: 1em;
+    margin-right: -2em;
+    padding-right: 2em;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 1em #f0f0f0;
 }
 
 /* http://blog.teamtreehouse.com/customize-ordered-lists-pseudo-element */

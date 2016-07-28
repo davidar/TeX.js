@@ -19,3 +19,6 @@
 [submodule "Baseline.js"]
 	path = baseline
 	url = https://github.com/davidar/Baseline.js.git
+[submodule "highlight.js"]
+	path = highlight
+	url = https://github.com/isagalaev/highlight.js.git

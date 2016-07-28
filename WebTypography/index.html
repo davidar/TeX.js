@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Elements of Typographic Style Applied to the Web: A practical guide to web typography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../main.css" type="text/css">
+<script src="../load.js"></script>
+<style>
+/* @group examples */
+#box1, #box2 { /* 2.1.1 */
+        width: 1em;
+        height: 1em;
+        border: 0.1rem solid black;
+        margin: 0.6rem auto;
+        text-align: center;
+        color: #aaa;
+        line-height: 1em;
+}
+#box1 { font-size: 1.0rem }
+#box2 { font-size: 2.5rem }
+
+.inex { /* inline example */
+        background-color: #aaa;
+}
+
+div.ex2-1-7 {
+        font-family: "univers bold condensed", impact, haettenschweiler, sans-serif;
+        font-size: 200%;
+        letter-spacing:0.1em;
+        margin-top:0.75em;
+        margin-left:0.75em;
+}
+
+div.ex2-1-8 {
+        margin-top:0.75em;
+        margin-left:0.75em;
+        font-size: 200%;
+}
+
+.ex2-1-8i {
+        letter-spacing: -0.1em;
+}
+
+div.ex2-1-9 {
+        margin-top:0.75em;
+        margin-left:0.75em;
+        font-size: 200%;
+        letter-spacing: -0.1em;
+}
+
+.ex2-1-10-toc1 {
+        margin: 0 3em 0 auto;
+}
+
+.ex2-1-10-toc1 th {
+        font-weight: normal;
+        text-align: right;
+        padding:0;
+}
+
+.ex2-1-10-toc1 td {
+        font-style: italic;
+        text-align: right;
+        padding: 0 0 0 0.5em;
+}
+
+.ex2-1-10-toc2 {
+        margin: 0 auto;
+}
+
+.ex2-1-10-toc2 th {
+        font-weight: normal;
+        text-align: right;
+        padding: 0 0.5em 0 0;
+}
+
+.ex2-1-10-toc2 td:before {
+        content: "\2022";
+        padding-right: 0.5em;
+}
+
+.ex2-1-10-toc2 td {
+        font-style: italic;
+        text-align: left;
+        padding:0;
+}
+
+.ex2-2-1ii {
+  font-size: 1.5em;
+  line-height: 0.85;
+  text-indent: -0.5em;
+  margin-top: 1.5em;
+  margin-left: 0.5em;
+}
+
+.ex2-2-1i {
+  line-height: 3;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+.ex2-2-2 {
+        margin-left: 1.5em;
+        margin-right: 3em;
+        position:relative;
+}
+
+.ex2-2-2 .basictext {
+        margin-left: 10em;
+}
+
+.ex2-2-2 .sidenote {
+        width: 9.6em;
+        position: absolute;
+        left: 0;
+        top: 0;
+        text-indent: 0;
+        font-size: 0.8333em;
+        line-height:1.8;
+}
+
+.ex2-3-2i {
+        text-indent:-1.5em;
+}
+
+.ex2-3-2ii:before {
+  content: "\2767";
+  padding-right: 0.4em;
+}
+
+.ex2-3-2iii {
+        margin-top: 1.5em;
+}
+
+#main .ex2-3-2iii p {
+        display: inline;
+        padding: 0;
+}
+.ex2-3-2iii p + p:before {
+        content: "\2761";
+        padding-right: 0.1em;
+        padding-left: 0.4em;
+}
+.ex2-3-4 {
+        margin-left:0;
+        margin-right:0;
+        font-style: normal;
+}
+
+.ex2-3-4 pre {
+        font-family: inherit;
+        display: table;
+        width: auto;
+        margin: 0 auto;
+}
+
+/* @end */
+</style>
+</head>
+<body>
+<h1 id="title">The Elements of Typographic Style<br> Applied to the Web</h1>
+<h2 id="subtitle">A practical guide to web typography</h2>
+<h3 id="authors">Richard Rutter</h3>
+<h3 id="date">December 2005</h3>
+
+<h2 class="num">Introduction</h2>
+<p>For too long typographic style and its accompanying attention to detail have been overlooked by website designers, particularly in body copy. In years gone by this could have been put down to the technology, but now the web has caught up. The advent of much improved browsers, text rendering and high resolution screens, combine to negate technology as an&nbsp;excuse.</p>
+
+<p>Robert Bringhurst’s book <cite>The Elements of Typographic Style</cite> is on many a designer’s bookshelf and is considered to be a classic in the field. Indeed the renowned typographer Hermann Zapf proclaims the book to be <q>a must for everybody in the graphic arts, and especially for our new friends entering the field.</q></p>
+
+<p>In order to allay some of the myths surrounding typography on the web, I have structured this website to step through Bringhurst’s working principles, explaining how to accomplish each using techniques available in <abbr title="HyperText Mark-up Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>. The future is considered with coverage of <abbr>CSS3</abbr>, and practicality is ever present with workarounds, alternatives and compromises for less able&nbsp;browsers.</p>
+
+<p>At the time of writing, this is a work in progress. I am adding to the site in the order presented in Bringhurst’s book, one principle at a time.</p>
+
+<p>I am excluding those principles which are not relevant to the Web or that do not require a technical explanation. Unfortunately this excludes the entire opening chapter, the Grand Design, which I heartily recommend you read as it lays down the foundations, philosophy and approach to good typography in any medium. If you were to take any working principle from the Grand Design, it would be this: <q>Give full typographical attention even to incidental details.</q></p>
+
+<p>Now start with <a href="#Rhythm &amp; Proportion">Rhythm &#38; Proportion</a> or dip into the <a href="#toc">Table of Contents</a> and enjoy pushing a few boundaries to create websites of real typographical&nbsp;worth.</p>
+
+<p style="text-align:right; margin-top:1.5rem">— Richard Rutter, Brighton, December 2005.</p>
+
+<h3>Postscript</h3>
+<p>In February 2014, I opened up the <a href="https://github.com/clagnut/webtypography">source code to this website</a> on GitHub, with <a href="http://clagnut.com/blog/2375/">an invitation</a> to web typography enthusiasts to take on the project, update the content and add the missing items. I will continue to maintain the website and update as changes are submitted.</p>
+
+<p>This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. It was <a href="http://www.clagnut.com/blog/1600/">created</a> and is maintained by <a href="http://www.clagnut.com/">Richard Rutter</a>. Please feel free to contribute by <a href="https://github.com/clagnut/webtypography">forking it on GitHub</a>.</p>
+
+<h2 class="num">Rhythm &amp; Proportion</h2>
+<h3 class="num">Horizontal Motion</h3>
+<h4 class="num">Define the word space to suit the size and natural letterfit of the font</h4>
+
+<blockquote><p>If text is set ragged right, the <em>word space</em> (the space between words) can be fixed and unchanging. If the text is <em>justified</em> (set flush left and right), the word space must be elastic. In either case the size of the ideal word space varies from one circumstance to another, depending on factors such as letterfit, type color, and size. A loosely fitted or bold face will need a larger interval between the words. At larger sizes, when letterfit is tightened, the spacing of words can be tightened as well.</p></blockquote>
+
+<p>In <abbr title="Cascading Style Sheets">CSS</abbr>, word space is set with the <code>word-spacing</code> property which has a default value of <code>normal</code>. The default word space is equivalent to approximately 0.25&nbsp;em, although the exact value will depend on information encoded within the digital font file. To change the word spacing, you should specify a length in ems. This length is added to the existing word space; that is to say <code>word-spacing</code> does not set the actual space between words, it sets an increment to the existing spacing. For&nbsp;example:</p>
+
+<pre><code>p {
+  word-spacing: 0.25em;
+}
+
+h1 {
+  word-spacing: -0.125em;
+}</code></pre>
+
+<p>In the preceding example, word space in paragraphs is increased by 0.25&nbsp;em (effectively doubling it) and the word space in top level headings is decreased by 0.125&nbsp;em (effectively halving&nbsp;it).</p>
+
+<p>While in theory you could specify <code>word-spacing</code> in pixels or any other allowable unit of length, it is important to specify <code>word-spacing</code> in ems as that is the only way to guarantee the word space changes proportionately to the text size (when readers change their default text size, for&nbsp;example).</p>
+
+<h5>An explanation of&nbsp;ems</h2>
+
+<p>Ems are so-called because they are thought to approximate the size of an uppercase letter M (and so are pronounced <q>emm</q>), although 1&nbsp;em is actually significantly larger than this. Bringhurst describes the em&nbsp;thus:</p>
+
+<blockquote><p>The em is a sliding measure. One em is a distance equal to the type size. In 6&nbsp;point type, an em is 6&nbsp;points; in 12&nbsp;point type an em is 12&nbsp;points and in 60&nbsp;point type an em is 60&nbsp;points. Thus a one em space is proportionately the same in any&nbsp;size.</p></blockquote>
+
+<p>To illustrate this principle in terms of <abbr title="Cascading Style Sheets">CSS</abbr>, consider these&nbsp;styles:</p>
+
+<pre><code>#box1 {
+  font-size: 22px;
+  width:  1em;
+  height: 1em;
+  border: 2px solid black;
+}
+
+#box2 {
+  font-size: 55px;
+  width:  1em;
+  height: 1em;
+  border: 2px solid black;
+}</code></pre>
+
+<p>These styles will render like: </p>
+
+<figure>
+<div id="box1">M</div>
+<div id="box2">M</div>
+</figure>
+
+<p>Note that both boxes have a height and width of 1&nbsp;em but because they have different font sizes, one box is bigger than the other. Box 1&nbsp;has a <code>font-size</code> of 22&nbsp;px so its width and height is also 22&nbsp;px; similarly the text of box 2&nbsp;is set to 55&nbsp;px and so its width and height are also&nbsp;55&nbsp;px.</p>
+
+<h4 class="num">Choose a comfortable measure</h4>
+
+<blockquote><p>Anything from 45&nbsp;to 75&nbsp;characters is widely regarded as a satisfactory length of line for a single-column page set in a serifed text face in a text size. The 66-character line (counting both letters and spaces) is widely regarded as ideal. For multiple column work, a better average is 40&nbsp;to 50&nbsp;characters.</p></blockquote>
+
+<p>The <em>measure</em> is the number of characters in a single line of a column of text. <abbr title="HyperText Mark-up Language">HTML</abbr> doesn’t have a concept of columns per se, instead text is held within <em>boxes</em>. In <abbr title="Cascading Style Sheets">CSS</abbr> the width of a box is set using the <code>width</code> property with any unit of length, for&nbsp;example:</p>
+
+<pre><code>#col1 {
+  width: 400px;
+}
+
+#col2 {
+  width: 50%;
+}
+
+#col3 {
+  width: 33em;
+}</code></pre>
+
+<p>When typographers set the measure and text size for printed media, those dimensions are fixed and unchangeable in their physical manifestation. In this regard, the Web as viewed on-screen is fundamentally different to print because the medium is far more under the control of your readers. In particular, if your reader wishes to change the text size or the dimensions of the ‘page’, he can&nbsp;do.</p>
+
+<p>In the preceding example, column 1&nbsp;has a fixed width: it has been set to 400&nbsp;px wide.  With text rendering at 12&nbsp;px this would result in a measure of approximately 66&nbsp;characters per line. If your reader increases the text size to 16&nbsp;px then the measure reduces to 50&nbsp;characters per line. Thus when the text size is changed, so the measure&nbsp;changes.</p>
+
+<p>Column 2&nbsp;has a liquid width: it has been set to 50% wide. Assuming your reader is browsing with a window 1000&nbsp;px wide, the box would be rendered as 500&nbsp;px wide, resulting in a measure of about 83&nbsp;characters per line. A measure of 83&nbsp;may be a little too wide for your reader, but because the box is liquid, your reader could reduce their window size to 800&nbsp;px, thus narrowing the box to 400&nbsp;px and creating a more comfortable measure of 66&nbsp;characters per&nbsp;line.</p>
+
+<p>Column 3&nbsp;has an elastic width: it has been set to 33&nbsp;em wide. On average one character takes up 0.5&nbsp;em so this box will have a measure of 66&nbsp;characters per line. If your reader increases the text size, the width of box will increase accordingly and so the measure remains at 66&nbsp;regardless of the text&nbsp;size.</p>
+
+<p>From a typographical perspective, the most appropriate method is to set box width in ems (elastic layout) as it ensures the measure is always set to the typographer’s specification. Setting box width as a percentage (liquid layout) gives the typographer approximate control over measure but also allows the reader to adjust the layout to suit his or her comfort.</p>
+
+<p>Relinquishing such control makes some designers quake in their boots, but the beauty and advantage of the Web as a medium is that readers are able to adjust their reading environment to suit their own needs. This is a concept that should be acknowledged &#38; embraced, and built into website designs from the ground&nbsp;up.</p>
+
+</body>
+</html>

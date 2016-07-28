@@ -82,13 +82,15 @@ function TeXify(baseURL) {
         'MathJax.Hub.Config({ SVG: { linebreaks: { automatic: true, width: "75%" } } });';
     document.head.appendChild(mathjaxConfig);
 
+    require(["baseline/baseline"], function() { baseline("img", lineHeight) });
+
     require([ "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG"
             , "baseline/baseline"
             ], function() {
         MathJax.Hub.Register.StartupHook("End", function () {
             document.getElementById("loading").className = "done";
             setTimeout(function() {
-                baseline("img, .MathJax_SVG_Display", lineHeight);
+                baseline(".MathJax_SVG_Display", lineHeight);
                 document.getElementById("loading").style.display = "none";
                 window.onresize();
             }, 1000);
@@ -113,6 +115,15 @@ function TeXify(baseURL) {
         openTOC.setAttribute("id", "open-toc");
         openTOC.innerHTML = '<a href="#toc" class="open-menu">&#x2630;</a>';
         document.body.appendChild(openTOC);
+    });
+
+    require([ "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"
+            , "baseline/baseline"
+    ], function(hljs) {
+        var codes = document.querySelectorAll("pre code");
+        for(var i = 0; i < codes.length; i++)
+            hljs.highlightBlock(codes[i]);
+        baseline("pre code", lineHeight);
     });
 }
 
