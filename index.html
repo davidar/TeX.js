@@ -7,21 +7,21 @@
 <script src="load.js"></script>
 </head>
 <body>
-<h1>T<span class="T_e_X">e</span>X.js</h1>
-<h1 class="subtitle">Typesetting for&nbsp;the&nbsp;Web</h1>
-<div id="authors">David A Roberts &lt;<a href="https://davidar.io/" class="url nobr">davidar.io</a>&gt;</div>
-<div id="date" class="today"></div>
-<div id="abstract">
+<h1 id="title">T<span class="T_e_X">e</span>X.js</h1>
+<h2 id="subtitle">Typesetting for&nbsp;the&nbsp;Web</h1>
+<h3 id="authors">David A Roberts &lt;<a href="https://davidar.io/" class="url nobr">davidar.io</a>&gt;</h3>
+<h3 id="date" class="today"></h3>
+<section id="abstract">
     <h6>Abstract</h6>
     <p>This page introduces <em class="nobr">T<span class="T_e_X">e</span>X.js</em>, a JavaScript library for performing high-quality typesetting within web browsers. It is designed to require only basic familiarity with Hyper-Text Markup Language (HTML) from the author &mdash; no knowledge about JavaScript or Cascading Style Sheets (CSS) is necessary. Although not as sophisticated as the T<span class="T_e_X">e</span>X typesetting engine, the output produced is of much higher quality than that which can be obtained by unstyled HTML.</p>
-</div>
+</section>
 
 <h2 class="num">Introduction</h2>
 <p>The T<span class="T_e_X">e</span>X typesetting system was released by Donald Knuth in the late 1970s, as one of the first programs for producing high-quality digital typography. In the following decade, Tim Berners-Lee initiated the World Wide Web project, releasing it to the public in the early 1990s.
 <p>Over thirty years after its release, T<span class="T_e_X">e</span>X remains the state-of-the-art for professionally publishing technical articles, whilst being accessible enough to be used directly by authors. On the other hand, although the Web became a phenomenal success for distributing and linking documents over the Internet, typographical quality was sorely lacking (see Figure 1) &mdash; a problem which remained unresolved for a number of decades after its introduction.
 
 <figure id="F1" class="num">
-<img src="WorldWideWeb_FSF_GNU.png" width="1024" height="768" alt="WorldWideWeb screenshot">
+<img src="WorldWideWeb_FSF_GNU.png">
 <figcaption><em>WorldWideWeb</em>, the first web browser. <a href="https://commons.wikimedia.org/wiki/File:WorldWideWeb_FSF_GNU.png">Source</a></figcaption>
 </figure>
 
@@ -104,9 +104,9 @@ P(E) = {n \choose k} p^k (1-p)^{ n-k}
 
 <h4 class="num">A Rogers-Ramanujan Identity</h4>
 <div class="math">\[
-1+\frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
+1+\frac{q^2}{1-q}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
     \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})},
-    \quad\quad\text{for }|q|&lt;1.
+    \quad\text{for }|q|&lt;1.
 \]</div>
 
 <h4 class="num">Maxwell's Equations</h4>

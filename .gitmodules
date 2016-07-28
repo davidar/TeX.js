@@ -16,3 +16,6 @@
 [submodule "contents"]
 	path = contents
 	url = https://github.com/gajus/contents.git
+[submodule "Baseline.js"]
+	path = baseline
+	url = https://github.com/davidar/Baseline.js.git

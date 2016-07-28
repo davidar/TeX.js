@@ -13,18 +13,18 @@ function currentDate() {
 }
 
 function TeXify(baseURL) {
-    loadCSS(baseURL + "main.css");
-
     // http://stackoverflow.com/a/1577863
-    var page = document.createElement("div");
-    page.setAttribute("class", "TeXpage");
+    var page = document.createElement("main");
+    page.setAttribute("id",    "TeXpage");
+    page.setAttribute("class", "TeXpage"
+    //                         + " grid"
+                     );
     while(document.body.children.length > 0) {
         var child = document.body.firstChild;
         page.appendChild(child);
     }
-    var footer = document.createElement("div");
-    footer.setAttribute("id", "footer");
-    footer.innerHTML = '<a href="' + baseURL + '">T<span class="T_e_X">e</span>X.js</a>';
+    var footer = document.createElement("footer");
+    footer.innerHTML = '<p><a href="' + baseURL + '">T<span class="T_e_X">e</span>X.js</a></p>';
     page.appendChild(footer);
     document.body.appendChild(page);
 
@@ -57,6 +57,14 @@ function TeXify(baseURL) {
     document.body.innerHTML = html.replace(
         /\b([A-Z][A-Z0-9]{2,})(s?)\b/g, '<abbr>$1</abbr>$2');
 
+    var loading = document.createElement("div");
+    loading.setAttribute("id", "loading");
+    loading.innerHTML = '<div id="loading-icon"><object type="image/svg+xml" data="' + baseURL + 'animated-logo.svg"></object></div>';
+    document.body.appendChild(loading);
+    document.body.style.display = "block";
+
+    var lineHeight = document.getElementsByTagName("footer")[0].offsetHeight;
+
     require(["Hyphenator/Hyphenator"], function() {
         Hyphenator.config({
             classname:'TeXpage',
@@ -74,10 +82,13 @@ function TeXify(baseURL) {
         'MathJax.Hub.Config({ SVG: { linebreaks: { automatic: true, width: "75%" } } });';
     document.head.appendChild(mathjaxConfig);
 
-    require(["//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG"], function() {
+    require([ "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG"
+            , "baseline/baseline"
+            ], function() {
         MathJax.Hub.Register.StartupHook("End", function () {
             document.getElementById("loading").className = "done";
             setTimeout(function() {
+                baseline("img, .MathJax_SVG_Display", lineHeight);
                 document.getElementById("loading").style.display = "none";
                 window.onresize();
             }, 1000);
@@ -95,7 +106,7 @@ function TeXify(baseURL) {
         nav.setAttribute("id", "toc");
         document.body.appendChild(nav);
 
-        var contents = gajus.Contents({ articles: document.querySelectorAll('h2,h3,h4,h5') });
+        var contents = new gajus.Contents();
         nav.appendChild(contents.list());
 
         var openTOC = document.createElement("div");
@@ -103,13 +114,6 @@ function TeXify(baseURL) {
         openTOC.innerHTML = '<a href="#toc" class="open-menu">&#x2630;</a>';
         document.body.appendChild(openTOC);
     });
-
-    (function(loading) {
-        loading.setAttribute("id", "loading");
-        loading.innerHTML = '<div id="loading-icon"><object type="image/svg+xml" data="' + baseURL + 'animated-logo.svg"></object></div>';
-        document.body.appendChild(loading);
-        document.body.style.display = "block";
-    })(document.createElement("div"));
 }
 
 require(['domReady', 'require'], function(domReady, _require) {
@@ -128,6 +132,7 @@ require(['domReady', 'require'], function(domReady, _require) {
                 var article = new Readability(uri, document).parse();
                 document.head.innerHTML = '<title>' + article.title + '</title>';
                 document.body.innerHTML = '<h1>' + article.title + '</h1>' + article.content;
+                loadCSS(baseURL + "main.css");
                 TeXify(baseURL);
             });
         } else {

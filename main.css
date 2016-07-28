@@ -1,3 +1,4 @@
+@import "reset.css";
 @import "texgyrebonum/font-face.css";
 @import "normalize.css/normalize.css";
 @import "typebase.css/typebase.css";
@@ -76,22 +77,30 @@ body {
     background: #f8f8f8;
 }
 
-#footer {
+footer p {
     text-align: right;
-    font-size: 60%;
+    font-size: 0.8rem;
 }
 
-.TeXpage {
+#TeXpage {
     max-width: 850px;
     padding-left: 1em;
     padding-right: 2em;
-    padding-top: 4em;
+    padding-top: 3rem;
     background-color: #fcfcfc;
     color: #222;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0 1em white;
     counter-reset: section subsection subsubsection;
+}
+
+/* http://www.gridlover.net/ */
+.grid {
+    background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, .3) 1px, transparent 1px);
+    background-position: left -1px;
+    background-repeat: repeat;
+    background-size: 1.5rem 1.5rem;
 }
 
 .T_e_X {
@@ -111,33 +120,29 @@ abbr {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
     font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
 }
-
-h1 {
+#title, #subtitle, #authors, #date {
     font-weight: normal;
     text-align: center;
-    margin: 0.5em 0 0.5em 0;
-    font-size: 2rem;
-    line-height: 3rem;
-}
-h1.subtitle {
-    font-size: 145%;
-    padding-left: 0.2em;
-    margin-left: -0.5em;
-    margin-bottom: 1em;
-    line-height: 2rem;
 }
 
-#authors {
-    text-align: center;
-    margin: 0.5em 0 0.5em 0;
-    font-size: 120%;
+/* major third (4:5) modular scale */
+h1 {
+    font-size: 1.953rem;
+    line-height: 3rem;
 }
-#date {
-    text-align:center;
-    font-size: 120%;
-    margin:0.5em 0 0.5em 0;
+h2 {
+    font-size: 1.563rem;
+    line-height: 3rem;
+}
+h3 {
+    font-size: 1.25rem;
 }
 
 #abstract {
@@ -146,20 +151,12 @@ h1.subtitle {
 }
 #abstract h6 {
     text-align: center;
-    font-size: 100%;
+    font-size: 1rem;
     font-weight:bold;
 }
 #abstract p {
     text-indent:2em;
 }
-
-h2, h3, h4 {
-    font-weight: bold;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-}
-h2 { font-size: 140% }
-h3 { font-size: 120% }
 
 h2.num {
     counter-increment: section;
@@ -200,13 +197,26 @@ p *   { text-indent: 0; }
 p.ltx_p { margin-top: 0; }
 p.readability-styled + p { text-indent: 0; }
 
+em {
+    font-style: italic;
+}
+
 /* match hypothes.is colours */
-a {
+a, abbr[title] {
     color: #bd1c2b;
     text-decoration: none;
 }
 a:hover {
     color: #84141e;
+}
+
+ol {
+    list-style: decimal outside;
+    margin-left: 3em;
+}
+ul {
+    list-style: disc outside;
+    margin-left: 3em;
 }
 
 span[data-note] {
@@ -244,6 +254,8 @@ figure {
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     font-size: 90%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 figure.num {
     counter-increment: figure;
@@ -260,6 +272,11 @@ figure.num figcaption::before {
     content: "Figure " counter(figure) ":";
     margin-right: 1em;
     font-weight: bold;
+}
+figcaption {
+    line-height: 1.5rem;
+    margin-top: -2px;
+    margin-bottom: 0;
 }
 
 /* http://blog.teamtreehouse.com/customize-ordered-lists-pseudo-element */
