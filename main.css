@@ -6,7 +6,6 @@
 
 body {
     background-color: #f8f8f8;
-    display: none; /* while loading */
     font-family: "TeX Gyre Bonum", serif;
     -webkit-font-variant-ligatures: common-ligatures;
             font-variant-ligatures: common-ligatures;
@@ -83,7 +82,7 @@ footer p {
     font-size: 0.8rem;
 }
 
-#TeXpage {
+body>main, body>div.ltx_page_main {
     max-width: 850px;
     padding-left: 1em;
     padding-right: 2em;
@@ -127,6 +126,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 0;
+    color: #bd1c2b;
 }
 #title, #subtitle, #authors, #date {
     font-weight: normal;

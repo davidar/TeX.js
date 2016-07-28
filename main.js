@@ -14,18 +14,20 @@ function currentDate() {
 
 function TeXify(baseURL) {
     // http://stackoverflow.com/a/1577863
-    var page = document.createElement("main");
-    page.setAttribute("id",    "TeXpage");
-    page.setAttribute("class", "TeXpage"
-    //                         + " grid"
-                     );
-    while(document.body.children.length > 0) {
-        var child = document.body.firstChild;
-        page.appendChild(child);
+    var page = document.getElementsByTagName("main")[0];
+    if(page === undefined) {
+        page = document.createElement("main");
+        while(document.body.children.length > 0) {
+            var child = document.body.firstChild;
+            page.appendChild(child);
+        }
     }
     var footer = document.createElement("footer");
     footer.innerHTML = '<p><a href="' + baseURL + '">T<span class="T_e_X">e</span>X.js</a></p>';
     page.appendChild(footer);
+    page.setAttribute(
+        "class", "main" // + " grid"
+    );
     document.body.appendChild(page);
 
     var date = document.getElementById("date");
@@ -57,17 +59,11 @@ function TeXify(baseURL) {
     document.body.innerHTML = html.replace(
         /\b([A-Z][A-Z0-9]{2,})(s?)\b/g, '<abbr>$1</abbr>$2');
 
-    var loading = document.createElement("div");
-    loading.setAttribute("id", "loading");
-    loading.innerHTML = '<div id="loading-icon"><object type="image/svg+xml" data="' + baseURL + 'animated-logo.svg"></object></div>';
-    document.body.appendChild(loading);
-    document.body.style.display = "block";
-
     var lineHeight = document.getElementsByTagName("footer")[0].offsetHeight;
 
     require(["Hyphenator/Hyphenator"], function() {
         Hyphenator.config({
-            classname:'TeXpage',
+            classname:'main',
             donthyphenateclassname:'math',
             urlclassname:'url',
             defaultlanguage:'en',
