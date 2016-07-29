@@ -202,19 +202,19 @@ p.readability-styled + p { text-indent: 0; }
 blockquote, q {
     quotes: "\201C""\201D""\2018""\2019";
 }
-blockquote p:before {
+blockquote p:first-child:before {
     content: open-quote " ";
     font-weight: bold;
     margin-left: -1ch;
 }
-blockquote p:after {
-    content: close-quote;
+blockquote p:last-child:after {
+    content: " " close-quote;
     font-weight: bold;
 }
 q:before { content: open-quote }
 q:after { content: close-quote }
-blockquote,em { font-style: italic }
-blockquote em { font-style: normal }
+blockquote,em,cite    { font-style: italic }
+blockquote em,cite em { font-style: normal }
 
 /* match hypothes.is colours */
 a, abbr[title] {
@@ -308,7 +308,6 @@ code {
     font-feature-settings: "calt" 1; /* Enable ligatures for IE 10+, Edge */
     text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
     white-space: pre-wrap;
-    word-break: break-all;
     background-color: #f0f0f0;
 }
 
