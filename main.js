@@ -60,6 +60,9 @@ function TeXify(baseURL) {
         /\b([A-Z][A-Z0-9]{2,})(s?)\b/g, '<abbr>$1</abbr>$2');
 
     var lineHeight = document.getElementsByTagName("footer")[0].offsetHeight;
+    require(["baseline/baseline"], function() {
+        baseline("img,p", lineHeight);
+    });
 
     require(["Hyphenator/Hyphenator"], function() {
         Hyphenator.config({
@@ -77,8 +80,6 @@ function TeXify(baseURL) {
     mathjaxConfig[(window.opera ? "innerHTML" : "text")] =
         'MathJax.Hub.Config({ SVG: { linebreaks: { automatic: true, width: "75%" } } });';
     document.head.appendChild(mathjaxConfig);
-
-    require(["baseline/baseline"], function() { baseline("img", lineHeight) });
 
     require([ "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG"
             , "baseline/baseline"

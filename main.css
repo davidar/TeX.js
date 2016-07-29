@@ -164,7 +164,7 @@ h2.num {
     counter-increment: section;
     counter-reset: subsection subsubsection;
 }
-h2.num::before {
+h2.num:before {
     content: counter(section);
     margin-right: 1em;
 }
@@ -172,14 +172,14 @@ h3.num {
     counter-increment: subsection;
     counter-reset: subsubsection;
 }
-h3.num::before {
+h3.num:before {
     content: counter(section) "." counter(subsection);
     margin-right: 1em;
 }
 h4.num {
     counter-increment: subsubsection;
 }
-h4.num::before {
+h4.num:before {
     content: counter(section) "." counter(subsection) "." counter(subsubsection);
     margin-right: 1em;
 }
@@ -240,11 +240,11 @@ span[data-note] {
     cursor: help;
 }
 
-span[data-note]::before {
+span[data-note]:before {
     content: "*";
 }
 
-span[data-note]:hover::after {
+span[data-note]:hover:after {
     /* https://developer.mozilla.org/en-US/docs/Web/CSS/%3A%3Aafter */
     content: attr(data-note);
     position: absolute;
@@ -283,10 +283,13 @@ figure:hover {
     position: relative;
     z-index: 50;
 }
-figure.num figcaption::before {
-    content: "Figure " counter(figure) ":";
+figure figcaption:before {
+    content: "Figure:";
     margin-right: 1em;
     font-weight: bold;
+}
+figure.num figcaption:before {
+    content: "Figure " counter(figure) ":";
 }
 figcaption {
     line-height: 1.5rem;
@@ -311,13 +314,17 @@ code {
     background-color: #f0f0f0;
 }
 
+dl    { margin-top:  1.5rem }
+dt,dd { line-height: 1.5rem }
+dd    { margin-left: 1.5rem }
+
 /* http://blog.teamtreehouse.com/customize-ordered-lists-pseudo-element */
 #bibliography {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-#bibliography::before {
+#bibliography:before {
     content: "References";
     display: block;
     font-size: 140%;
@@ -329,7 +336,7 @@ code {
     counter-increment: bibliography;
     margin-bottom: 10px;
 }
-#bibliography li::before {
+#bibliography li:before {
     content: "[" counter(bibliography) "]";
     margin-right: 1em;
     font-weight: bold;
