@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "texgyrebonum/font-face.css";
+@import "FiraCode/distr/fira_code.css";
 @import "normalize.css/normalize.css";
 @import "typebase.css/typebase.css";
 @import "highlight/src/styles/default.css";
@@ -301,6 +302,14 @@ pre {
     padding-right: 2em;
     background-color: #f0f0f0;
     box-shadow: 0 0 1em #f0f0f0;
+}
+code {
+    font-family: "Fira Code", monospace;
+    font-feature-settings: "calt" 1; /* Enable ligatures for IE 10+, Edge */
+    text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
+    white-space: pre-wrap;
+    word-break: break-all;
+    background-color: #f0f0f0;
 }
 
 /* http://blog.teamtreehouse.com/customize-ordered-lists-pseudo-element */
