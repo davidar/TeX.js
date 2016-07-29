@@ -84,10 +84,8 @@ function TeXify(baseURL) {
             , "baseline/baseline"
             ], function() {
         MathJax.Hub.Register.StartupHook("End", function () {
-            document.getElementById("loading").className = "done";
             setTimeout(function() {
                 baseline(".MathJax_SVG_Display", lineHeight);
-                document.getElementById("loading").style.display = "none";
                 window.onresize();
             }, 1000);
         });
