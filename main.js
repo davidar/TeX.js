@@ -104,7 +104,9 @@ function TeXify(baseURL) {
         nav.setAttribute("id", "toc");
         document.body.appendChild(nav);
 
-        var contents = new gajus.Contents();
+        var contents = new gajus.Contents({
+            articles: document.querySelectorAll('h2.num, h3.num, h4.num')
+        });
         nav.appendChild(contents.list());
 
         var openTOC = document.createElement("div");

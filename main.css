@@ -48,7 +48,7 @@ body {
     padding: 9px;
     font-family: sans-serif;
     background: #f8f8f8;
-    z-index: 97;
+    z-index: 75;
 }
 #toc {
     height: 100%;
@@ -56,26 +56,46 @@ body {
     max-width: 450px;
     position: fixed;
     top: 0;
-    left: -500px;
+    left: -600px;
     transition: left 0.3s ease;
     overflow: auto;
-    padding: 9px;
     z-index: 98;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 100px black;
 }
 #toc:target {
     left: 0;
 }
-#toc > ol {
-    background: #fff;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    padding-top:    9px;
-    padding-right:  9px;
-    padding-bottom: 9px;
+#toc ol {
+    list-style: none;
+    padding-left: 1em;
+    margin-left: 0;
+    background-color: #f8f8f8;
+}
+#toc>ol>li:nth-child(even)
+, #toc>ol>li:nth-child(odd )>ol>li:nth-child(odd )
+, #toc>ol>li:nth-child(even)>ol>li:nth-child(even)
+, #toc>ol>li:nth-child(odd )>ol>li:nth-child(odd )>ol>li:nth-child(even)
+, #toc>ol>li:nth-child(odd )>ol>li:nth-child(even)>ol>li:nth-child(odd )
+, #toc>ol>li:nth-child(even)>ol>li:nth-child(odd )>ol>li:nth-child(odd )
+, #toc>ol>li:nth-child(even)>ol>li:nth-child(even)>ol>li:nth-child(even)
+{ /* zebra stripes: http://stackoverflow.com/q/9867471 */
+    background-color: #f0f0f0;
 }
 
 #progress-wrapper {
     background: #f8f8f8;
+}
+
+header {
+    background-color: #202020;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    padding-left: 0.5em;
+    padding-right: 1.5em;
+    position: relative;
+    z-index: 80;
+    box-shadow: 0 0 1em black;
 }
 
 footer p {
@@ -87,7 +107,7 @@ body>main, body>div.ltx_page_main {
     max-width: 850px;
     padding-left: 1em;
     padding-right: 2em;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     padding-bottom: 3rem;
     background-color: #fcfcfc;
     color: #222;
@@ -130,15 +150,22 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     color: #bd1c2b;
 }
-#title, #subtitle, #authors, #date {
+#title, #subtitle, #authors {
     font-weight: normal;
     text-align: center;
+    color: #f3f3f3;
+}
+#authors, #authors a {
+    color: #ed7a0d;
+    font-style: italic;
 }
 
 /* major third (4:5) modular scale */
 h1 {
     font-size: 1.953rem;
     line-height: 3rem;
+    margin: 0 auto;
+    max-width: 850px;
 }
 h2 {
     font-size: 1.563rem;
@@ -281,7 +308,7 @@ figure.num {
 figure:hover {
     -webkit-transform: scale(1.414);
             transform: scale(1.414);
-    background-color: white;
+    background-color: #f8f8f8;
     box-shadow: 0 0 100px black;
     position: relative;
     z-index: 50;
