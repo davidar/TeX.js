@@ -1,20 +1,20 @@
 <!DOCTYPE html><html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TeX.js: Typesetting for the Web</title>
+<title>TeXify: Typesetting for the Web</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css" type="text/css">
 <script src="load.js"></script>
 </head>
 <body>
 <main>
-<h1 id="title">T<span class="T_e_X">e</span>X.js</h1>
+<h1 id="title">T<span class="T_e_X">e</span>X<em>ify</em></h1>
 <h2 id="subtitle">Typesetting for&nbsp;the&nbsp;Web</h1>
 <h3 id="authors">David A Roberts &lt;<a href="https://davidar.io/" class="url nobr">davidar.io</a>&gt;</h3>
 <h3 id="date" class="today">2016</h3>
 <section id="abstract">
     <h6>Abstract</h6>
-    <p>This page introduces <em class="nobr">T<span class="T_e_X">e</span>X.js</em>, a JavaScript library for performing high-quality typesetting within web browsers. It is designed to require only basic familiarity with Hyper-Text Markup Language (HTML) from the author &mdash; no knowledge about JavaScript or Cascading Style Sheets (CSS) is necessary. Although not as sophisticated as the T<span class="T_e_X">e</span>X typesetting engine, the output produced is of much higher quality than that which can be obtained by unstyled HTML.</p>
+    <p>This page introduces <span class="nobr">T<span class="T_e_X">e</span>X<em>ify</em></span>, a library for performing high-quality typesetting within web browsers. It is designed to require only basic familiarity with Hyper-Text Markup Language (HTML) from the author &mdash; no knowledge about JavaScript or Cascading Style Sheets (CSS) is necessary. Although not as sophisticated as the T<span class="T_e_X">e</span>X typesetting engine, the output produced is of much higher quality than that which can be obtained by unstyled HTML.</p>
 </section>
 
 <h2 class="num">Introduction</h2>
@@ -28,20 +28,21 @@
 
 <p>The Web's poor typographical support lead to the popularity of the Portable Document Format (PDF) for publishing techical articles, even in cases where fixed-format documents were not strictly required. Indeed, fixed-format PDF documents have become burdensome for the same reason the Web has been successful &mdash; flowing hyperlinked text is much easier for readers to consume across a variety of devices.
 
-<p>Fortunately, this situation has improved markedly in recent years, particularly with the introduction of CSS level 3. This has allowed web designers to compensate for the poor level of typography provided in web browsers by default. The aim of the T<span class="T_e_X">e</span>X.js project is to combine all of these individual libraries in such a way that authors merely need to include a single extra line in their HTML documents in order to take advantage of modern web typography.
+<p>Fortunately, this situation has improved markedly in recent years, particularly with the introduction of CSS level 3. This has allowed web designers to compensate for the poor level of typography provided in web browsers by default. The aim of the T<span class="T_e_X">e</span>X<em>ify</em> project is to combine all of these individual libraries in such a way that authors merely need to include a single extra line in their HTML documents in order to take advantage of modern web typography.
 
 <h2 class="num">Usage</h2>
 
 <h3 class="num">Bookmarklet</h3>
 
 <ol>
-<li>Simply click-and-drag the following link to your bookmarks bar: <a class="bookmarklet" href="javascript:(%0A(function()%7Bwindow.readability%3Dtrue%3Bvar%20s%3Ddocument.createElement(%27script%27)%3Bs.setAttribute(%27src%27%2C%27%2F%2Fdavidar.io%2FTeX.js%2Fload.js%27)%3Bdocument.body.appendChild(s)%3B%7D)())" title="TeXify">T<span class="T_e_X">e</span>X<em>ify</em></a>
+<li><p>Simply click-and-drag the following link to your bookmarks bar:
+    <p><a class="bookmarklet" href="javascript:(%0A(function()%7Bwindow.readability%3Dtrue%3Bvar%20s%3Ddocument.createElement(%27script%27)%3Bs.setAttribute(%27src%27%2C%27%2F%2Fdavidar.io%2FTeX.js%2Fload.js%27)%3Bdocument.body.appendChild(s)%3B%7D)())" title="TeXify">T<span class="T_e_X">e</span>X<em>ify</em></a>
 <li>When visiting any webpage, re-style it by clicking the &ldquo;T<span class="T_e_X">e</span>X<em>ify</em>&rdquo; button in your bookmarks bar.
 </ol>
 
 <h3 class="num">Embedding</h3>
 
-<p>T<span class="T_e_X">e</span>X.js is still experimental and not yet ready for public use. Please visit the <a href="https://github.com/davidar/TeX.js">GitHub project</a> for more information.
+<p>T<span class="T_e_X">e</span>X<em>ify</em> is still experimental and not yet ready for public use. Please visit the <a href="https://github.com/davidar/TeX.js">GitHub project</a> for more information.
 
 <h2 class="num">Examples</h2>
 

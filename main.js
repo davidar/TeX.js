@@ -23,7 +23,7 @@ function TeXify(baseURL) {
         }
     }
     var footer = document.createElement("footer");
-    footer.innerHTML = '<p><a href="' + baseURL + '">T<span class="T_e_X">e</span>X.js</a></p>';
+    footer.innerHTML = '<p><a href="' + baseURL + '">T<span class="T_e_X">e</span>X<em>ify</em></a></p>';
     page.appendChild(footer);
     page.setAttribute(
         "class", "main" // + " grid"
