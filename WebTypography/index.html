@@ -568,7 +568,7 @@ td {
   line-height: 1.25;
 }</code></pre>
 
-<p>In this example the value of <code>line-height</code> is a multiplier: 1.25 x 12 = 15 pt. This is a far more reliable method as the line-height (the distance between baselines) will always be proportional to the text size. Line height can be incorporated into the <code>font</code> property using a shorthand familiar to typographers:</p>
+<p>In this example the value of <code>line-height</code> is a multiplier: 1.25 &times; 12 = 15 pt. This is a far more reliable method as the line-height (the distance between baselines) will always be proportional to the text size. Line height can be incorporated into the <code>font</code> property using a shorthand familiar to typographers:</p>
 
 <pre><code>p {
   font: 12pt/1.25 "Minion Pro", "Minion Web", serif;
@@ -595,7 +595,7 @@ of negative leading</div>
 
 <blockquote><p>Headings, subheads, block quotations, footnotes, illustrations, captions and other intrusions into the text create syncopations and variations against the base rhythm of regularly leaded lines. These variations can and should add life to the page, but the main text should also return after each variation precisely on beat and in phase.</p></blockquote>
 
-<p>The most common addition of vertical space on a webpage is that inserted between paragraphs. If the rhythm of the page is to be maintained, the spacing of paragraphs should be related to the basic leading. For example, the text on this page is set at 22 px with a <code>line-height</code> of 1.5 em, making each line 33 px in height. In order to keep the rhythm of the text, the vertical spacing between blocks should also be 18 px. This is achieved by setting top- and bottom-margins equal to the line height.</p>
+<p>The most common addition of vertical space on a webpage is that inserted between paragraphs. If the rhythm of the page is to be maintained, the spacing of paragraphs should be related to the basic leading. For example, the text on this page is set at 22 px with a <code>line-height</code> of 1.5 em, making each line 33 px in height. In order to keep the rhythm of the text, the vertical spacing between blocks should also be 33 px. This is achieved by setting top- and bottom-margins equal to the line height.</p>
 
 <pre><code>p {
   line-height:   1.5;
@@ -760,7 +760,7 @@ p + p + p + p { top: 3.9em; }</code></pre>
 <p>Adding a gap between a block quotation and the main text is best achieved by applying a top and bottom margin to the blockquote. By default, browsers usually apply a left and right margin as well. You may wish to remove this altogether by setting the margins to zero. If you wish to retain the indent, a more consistent layout can be achieved by applying left and right margins equal to the top and bottom margins.</p>
 
 <pre><code>blockquote {
-  margin:1.5em;
+  margin: 1.5em;
 }</code></pre>
 
 <p>As explained in <a href="#2.2.2" title="Add and delete vertical space in measured intervals">&#167;2.2.2</a>, the margins should be sized so that the rhythm of the text is maintained. Where the blockquote text size is the same as the main text, the separating margins should be set equal to the line-height.</p>
@@ -842,7 +842,7 @@ Thinks in a marrow bone.</span></pre></blockquote></div>
 
 <blockquote><p>Fi-nally is a conventionally acceptable line-end hyphenation, but final-ly is not, because it takes too little of the word ahead to the next line.</p></blockquote>
 
-<p>Unlike much word processing and page-layout software, there is not yet any automatic hyphenation built into web browsers. The next best method is to insert hyphen characters manually.</p>
+<p>Unlike much word processing and page-layout software, there is not yet any automatic hyphenation built into web browsers. The next best method is to insert hyphen characters manually, or with the aid of <a href="https://github.com/mnater/Hyphenator">a JavaScript library</a>.</p>
 
 <p>Liquid layouts and resizable text mean that, on the Web, one never knows which word will be at the end of a line. To deal with this in <abbr title="HyperText Mark-up Language">HTML</abbr>, there are two types of hyphens: the plain hyphen and the soft hyphen. Browsers treat the plain hyphen as just another character. The soft hyphen tells the browser where a word break can occur, and should only be displayed when a word is being broken across two lines.</p>
 
@@ -985,20 +985,22 @@ $text = preg_replace($search,$replace,$text);</code></pre>
 <p>So choosing from the traditional scale, our final font sizing style sheet could look as follows:</p>
 
 <pre><code>body { font-size: 100%; }
-h1 { font-size: 2.25em;  /* 16x2.25=36 */ }
-h2 { font-size: 1.5em;   /* 16x1.5=24 */ }
+h1 { font-size: 2.250em; /* 16x2.250=36 */ }
+h2 { font-size: 1.500em; /* 16x1.500=24 */ }
 h3 { font-size: 1.125em; /* 16x1.125=18 */ }
 h4 { font-size: 0.875em; /* 16x0.875=14 */ }
-p  { font-size: 0.75em;  /* 16x0.75=12 */ }</code></pre>
+p  { font-size: 0.750em; /* 16x0.750=12 */ }</code></pre>
 
 <p>More details and analysis of font sizing can be found in <a href="http://www.alistapart.com/articles/howtosizetextincss/">How to Size Text in <abbr title="Cascading Style Sheets">CSS</abbr></a>.</p>
 
 <h3 class="num">Numerals, Capitals &amp; Small Caps</h3>
 <h4 class="num">Use titling figures with full caps, and text figures in all other circumstances</h4>
 
-<blockquote><p>When arabic numerals joined the roman alphabet, they too were given both lowercase and uppercase forms. Typographers call the former <cite>text figures</cite>, <cite>hanging figures</cite>, <cite>lowercase figures</cite>, or <cite>old-style figures</cite> (OSF for short) and make a point of using them whenever the surrounding text is set in lowercase letters or small caps. The alternative forms are called <cite>titling figures</cite>, <cite>ranging figures</cite> or <cite>lining figures</cite>, because they range or align with the upper case.<br />
-[…]<br />
-[Text figures] are basic parts of typographic speech, and they are a sign that dollars are not really twice as important as ideas, and numbers are not afraid to consort on an equal footing with words. […] However common it may be, the use of titling figures in running text is illiterate: it spurns the truth of letters.</p></blockquote>
+<blockquote>
+<p>When arabic numerals joined the roman alphabet, they too were given both lowercase and uppercase forms. Typographers call the former <cite>text figures</cite>, <cite>hanging figures</cite>, <cite>lowercase figures</cite>, or <cite>old-style figures</cite> (OSF for short) and make a point of using them whenever the surrounding text is set in lowercase letters or small caps. The alternative forms are called <cite>titling figures</cite>, <cite>ranging figures</cite> or <cite>lining figures</cite>, because they range or align with the upper case.</p>
+
+<p>[Text figures] are basic parts of typographic speech, and they are a sign that dollars are not really twice as important as ideas, and numbers are not afraid to consort on an equal footing with words. […] However common it may be, the use of titling figures in running text is illiterate: it spurns the truth of letters.</p>
+</blockquote>
 
 <p>Many core web fonts (indeed most digital fonts) ship with only one case of figures: Arial, Comic Sans, Helvetica, Tahoma, Times, Times New Roman, Trebuchet and Verdana all ship with titling figures only. Georgia is the sole holder of text figures (but lacks titling figures).</p>
 
@@ -1041,7 +1043,7 @@ p  { font-size: 0.75em;  /* 16x0.75=12 */ }</code></pre>
 <dd>A best practice that satisfies designers and users and works across browsers and platforms.</dd>
 <dt><a href="http://www.w3.org/WAI/GL/css2em.htm"><cite>The amazing em unit and other best practices</cite></a> </dt>
 <dd>Font sizing tutorial from the <abbr title="Worldwide Web Consortium">W3C</abbr>.</dd>
-<dt><a href="http://www.fontshop.com/fontfeed/archives/figuring-it-out-osf-lf-and-tf-explained/"><cite>Figuring It Out: <abbr>OSF</abbr>, LF, and <abbr>TF</abbr> Explained</cite></a> </dt>
+<dt><a href="http://www.fontshop.com/fontfeed/archives/figuring-it-out-osf-lf-and-tf-explained/"><cite>Figuring It Out: <abbr>OSF</abbr>, <abbr>LF</abbr>, and <abbr>TF</abbr> Explained</cite></a> </dt>
 <dd>Great explanation of lining, old-style (text) and tabular figures from FontShop.</dd>
 </dl>
 

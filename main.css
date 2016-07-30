@@ -88,6 +88,7 @@ body>main, body>div.ltx_page_main {
     padding-left: 1em;
     padding-right: 2em;
     padding-top: 3rem;
+    padding-bottom: 3rem;
     background-color: #fcfcfc;
     color: #222;
     margin-left: auto;
@@ -187,6 +188,8 @@ h4.num:before {
 p {
     word-spacing: -0.1em;
     text-align: justify;
+    -webkit-hyphens: auto;
+            hyphens: auto;
     -webkit-font-variant-numeric: oldstyle-nums;
             font-variant-numeric: oldstyle-nums;
 }
@@ -208,7 +211,7 @@ blockquote p:first-child:before {
     margin-left: -1ch;
 }
 blockquote p:last-child:after {
-    content: " " close-quote;
+    content: "\a0" close-quote;
     font-weight: bold;
 }
 q:before { content: open-quote }
@@ -312,6 +315,10 @@ code {
     text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
     white-space: pre-wrap;
     background-color: #f0f0f0;
+}
+pre code {
+    display: block;
+    padding: 0.5em;
 }
 
 dl    { margin-top:  1.5rem }

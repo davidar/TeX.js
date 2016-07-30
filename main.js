@@ -56,8 +56,9 @@ function TeXify(baseURL) {
     xhr.send(JSON.stringify(refTexts));
 
     var html = document.body.innerHTML;
-    document.body.innerHTML = html.replace(
-        /\b([A-Z][A-Z0-9]{2,})(s?)\b/g, '<abbr>$1</abbr>$2');
+    html = html.replace(/\b([A-Z][A-Z0-9]{2,})(s?)\b/g, '<abbr>$1</abbr>$2');
+    html = html.replace(/\b([0-9]+) ([a-zA-Z]{2,})\b/g, '$1&nbsp;$2');
+    document.body.innerHTML = html;
 
     var lineHeight = document.getElementsByTagName("footer")[0].offsetHeight;
     require(["baseline/baseline"], function() {
