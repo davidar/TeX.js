@@ -70,7 +70,10 @@
 .ltx_authors_1line .ltx_author_before,
 .ltx_authors_1line .ltx_author_after { display:inline;}
 .ltx_authors_1line .ltx_author_notes { display:inline-block; }
-.ltx_authors_1line .ltx_author_notes:before { content:"*"; color:blue;}
+.ltx_authors_1line .ltx_author_notes:before {
+    content: "*";
+    color: #bd1c2b;
+}
 .ltx_authors_1line .ltx_author_notes span { display:none; }
 .ltx_authors_1line .ltx_author_notes:hover span { display:block; }  
 .ltx_authors_1line .ltx_author_notes:hover > span {

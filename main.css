@@ -233,12 +233,12 @@ blockquote, q {
     quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote p:first-child:before {
-    content: open-quote " ";
+    content: open-quote;
     font-weight: bold;
-    margin-left: -1ch;
+    margin-left: -0.5em;
 }
 blockquote p:last-child:after {
-    content: "\a0" close-quote;
+    content: close-quote;
     font-weight: bold;
 }
 q:before { content: open-quote }
