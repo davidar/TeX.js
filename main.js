@@ -105,7 +105,7 @@ function TeXify(baseURL) {
         document.body.appendChild(nav);
 
         var contents = new gajus.Contents({
-            articles: document.querySelectorAll('h2.num, h3.num, h4.num')
+            articles: document.querySelectorAll('h2,h3,h4,h5,h6')
         });
         nav.appendChild(contents.list());
 

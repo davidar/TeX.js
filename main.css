@@ -141,7 +141,7 @@ abbr {
     letter-spacing: 0.05em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, header>p, header>address {
     font-weight: bold;
     font-family: inherit;
     font-size: 1rem;
@@ -150,12 +150,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     color: #bd1c2b;
 }
-#title, #subtitle, #authors {
+
+header>h1, header>p, header>address {
     font-weight: normal;
     text-align: center;
     color: #f3f3f3;
 }
-#authors, #authors a {
+header>h1 {
+    margin: 0 auto;
+    max-width: 850px;
+}
+header>address, header>address>a, header>address>a:hover {
     color: #ed7a0d;
     font-style: italic;
 }
@@ -164,14 +169,12 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 1.953rem;
     line-height: 3rem;
-    margin: 0 auto;
-    max-width: 850px;
 }
-h2 {
+h2, header>p {
     font-size: 1.563rem;
     line-height: 3rem;
 }
-h3 {
+h3, header>address {
     font-size: 1.25rem;
 }
 
