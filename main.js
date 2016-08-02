@@ -135,8 +135,13 @@ require(["domReady", "readability/Readability"], function(domReady) {
                 pathBase: location.protocol + "//" + location.host + location.pathname.substr(0, location.pathname.lastIndexOf("/") + 1)
             };
             var article = new Readability(uri, document).parse();
+            console.log(article);
             document.head.innerHTML = '<title>' + article.title + '</title>';
-            document.body.innerHTML = '<h1>' + article.title + '</h1>' + article.content;
+            var html = '<header><h1>' + article.title   + '</h1>';
+            if(article.byline)
+                html +=   '<address>' + article.byline  + '</address>';
+            html += '</header><main>' + article.content + '</main>';
+            document.body.innerHTML = html;
             loadCSS("//texify.davidar.io/main.css");
         }
         TeXify();
