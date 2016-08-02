@@ -141,6 +141,8 @@ header>address, header>address>a, header>address>a:hover {
     font-style: italic;
 }
 
+main header { display: none; }
+
 /* major third (4:5) modular scale */
 h1 {
     font-size: 1.953rem;
@@ -206,7 +208,10 @@ p + p { text-indent: 1.5em; margin-top: 0; }
 p *   { text-indent: 0; }
 
 p.ltx_p { margin-top: 0; }
-p.readability-styled + p { text-indent: 0; }
+p.readability-styled + p {
+    text-indent: 0;
+    margin-top: 1.5rem;
+}
 
 blockquote, q {
     quotes: "\201C""\201D""\2018""\2019";
@@ -306,7 +311,7 @@ figcaption {
     margin-bottom: 0;
 }
 
-pre {
+pre, blockquote {
     margin-top: 1.5rem;
     margin-left: -1em;
     padding-left: 1em;

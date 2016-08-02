@@ -12,6 +12,32 @@ function currentDate() {
     return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
 }
 
+function escapeHtml(str) {
+    return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;")
+}
+
+function mapTextNodes(parent, cb) { // http://stackoverflow.com/a/10730777/78204
+    var tag = parent.nodeName.toLowerCase();
+    if(tag === 'script' || tag === 'pre' || tag === 'code')
+        return;
+
+    var html = '';
+    for(var node = parent.firstChild; node; node = node.nextSibling) {
+        if(node.nodeType === 3) {
+            html += cb(escapeHtml(node.data));
+        } else {
+            mapTextNodes(node, cb);
+            html += node.outerHTML;
+        }
+    }
+    parent.innerHTML = html;
+}
+
 function TeXify() {
     // http://stackoverflow.com/a/1577863
     var page = document.getElementsByTagName("main")[0];
@@ -53,22 +79,30 @@ function TeXify() {
     var refTexts = [];
     for(var i = 0; i < refNodes.length; i++)
         refTexts.push(refNodes[i].textContent);
-    xhr.send(JSON.stringify(refTexts));
+    if(refTexts.length > 0)
+        xhr.send(JSON.stringify(refTexts));
 
-    var html = document.body.innerHTML;
-    html = html.replace(/\b([A-Z][A-Z0-9]{2,})(s?)\b/g, '<abbr>$1</abbr>$2');
-    html = html.replace(/\b([0-9]+) ([a-zA-Z]{2,})\b/g, '$1&nbsp;$2');
-    document.body.innerHTML = html;
+    mapTextNodes(document.body, function(text) {
+        return text
+            .replace(/\b([A-Z][A-Z0-9]{2,})(s?)\b/g, '<abbr>$1</abbr>$2')
+            .replace(/\b([0-9]+) ([a-zA-Z]{2,})\b/g, '$1&nbsp;$2')
+            .replace(/(\\\((?:(?!\\\))[\s\S])+\\\))/g,
+                    '<span class="math donthyphenate">$1</span>')
+            .replace(/(\\\[(?:(?!\\\])[\s\S])+\\\])/g,
+                    '<div  class="math donthyphenate">$1</div>')
+            .replace(/ffi/g, '&#xFB03;').replace(/ffl/g, '&#xFB04;')
+            .replace(/ff/g, '&#xFB00;').replace(/fi/g, '&#xFB01;').replace(/fl/g, '&#xFB02;')
+            .replace(/ae/g, '&aelig;').replace(/A[Ee]/g, '&AElig;')
+    });
 
     var lineHeight = document.getElementsByTagName("footer")[0].offsetHeight;
     require(["baseline/baseline"], function() {
-        baseline("img,p", lineHeight);
+        baseline("img", lineHeight);
     });
 
     require(["Hyphenator/Hyphenator"], function() {
         Hyphenator.config({
             classname:'main',
-            donthyphenateclassname:'math',
             urlclassname:'url',
             defaultlanguage:'en',
             intermediatestate:'visible',
@@ -137,7 +171,7 @@ require(["domReady", "readability/Readability"], function(domReady) {
             var article = new Readability(uri, document).parse();
             console.log(article);
             document.head.innerHTML = '<title>' + article.title + '</title>';
-            var html = '<header><h1>' + article.title   + '</h1>';
+            var html = '<header><h1>' + article.title.replace(/ (-|\|) .*/, '') + '</h1>';
             if(article.byline)
                 html +=   '<address>' + article.byline  + '</address>';
             html += '</header><main>' + article.content + '</main>';
