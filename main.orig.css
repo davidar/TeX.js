@@ -1,0 +1,379 @@
+@import "reset.css";
+@import "texgyrebonum/font-face.css";
+@import "FiraCode/distr/fira_code.css";
+@import "normalize.css/normalize.css";
+@import "typebase.css/typebase.css";
+@import "highlight/src/styles/default.css";
+
+body {
+    background-color: #f8f8f8;
+    font-family: "TeX Gyre Bonum", serif;
+    -webkit-font-variant-ligatures: common-ligatures;
+            font-variant-ligatures: common-ligatures;
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "frac", "ordn";
+            font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "frac", "ordn";
+    -webkit-font-kerning: normal;
+            font-kerning: normal;
+}
+
+/* https://css-tricks.com/off-canvas-menu-with-css-target */
+#open-toc {
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    padding: 9px;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    z-index: 75;
+}
+#toc {
+    height: 100%;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    left: -600px;
+    transition: left 0.3s ease;
+    overflow: auto;
+    z-index: 98;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 100px black;
+}
+#toc:target {
+    left: 0;
+}
+#toc ol {
+    list-style: none;
+    padding-left: 1em;
+    margin-left: 0;
+    background-color: #f8f8f8;
+}
+#toc>ol>li:nth-child(even)
+, #toc>ol>li:nth-child(odd )>ol>li:nth-child(odd )
+, #toc>ol>li:nth-child(even)>ol>li:nth-child(even)
+, #toc>ol>li:nth-child(odd )>ol>li:nth-child(odd )>ol>li:nth-child(even)
+, #toc>ol>li:nth-child(odd )>ol>li:nth-child(even)>ol>li:nth-child(odd )
+, #toc>ol>li:nth-child(even)>ol>li:nth-child(odd )>ol>li:nth-child(odd )
+, #toc>ol>li:nth-child(even)>ol>li:nth-child(even)>ol>li:nth-child(even)
+{ /* zebra stripes: http://stackoverflow.com/q/9867471 */
+    background-color: #f0f0f0;
+}
+
+#progress-wrapper {
+    background: #f8f8f8;
+}
+
+header {
+    background-color: #202020;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    padding-left: 0.5em;
+    padding-right: 1.5em;
+    position: relative;
+    z-index: 80;
+    box-shadow: 0 0 1em black;
+}
+
+footer p {
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+body>main, body>div.ltx_page_main {
+    max-width: 850px;
+    padding-left: 1em;
+    padding-right: 2em;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    background-color: #fcfcfc;
+    color: #222;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 1em white;
+    counter-reset: section subsection subsubsection;
+}
+
+/* http://www.gridlover.net/ */
+.grid {
+    background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, .3) 1px, transparent 1px);
+    background-position: left -1px;
+    background-repeat: repeat;
+    background-size: 1.5rem 1.5rem;
+}
+
+.T_e_X {
+    display: inline-block;
+    vertical-align: -0.5ex;
+    text-transform: uppercase;
+    margin-left: -0.18em;
+    margin-right: -0.12em;
+    margin-bottom: -0.5ex;
+}
+
+abbr {
+    font-variant-caps: all-small-caps;
+    -webkit-font-feature-settings: "smcp", "c2sc";
+            font-feature-settings: "smcp", "c2sc";
+    letter-spacing: 0.05em;
+}
+
+h1, h2, h3, h4, h5, h6, header>p, header>address {
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    color: #bd1c2b;
+}
+
+header>h1, header>p, header>address {
+    font-weight: normal;
+    text-align: center;
+    color: #f3f3f3;
+}
+header>h1 {
+    margin: 0 auto;
+    max-width: 850px;
+}
+header>address, header>address>a, header>address>a:hover {
+    color: #ed7a0d;
+    font-style: italic;
+}
+
+/* major third (4:5) modular scale */
+h1 {
+    font-size: 1.953rem;
+    line-height: 3rem;
+}
+h2, header>p {
+    font-size: 1.563rem;
+    line-height: 3rem;
+}
+h3, header>address {
+    font-size: 1.25rem;
+}
+
+#abstract {
+    margin-left: 4em;
+    margin-right: 4em;
+}
+#abstract h6 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#abstract p {
+    text-indent: 2em;
+}
+
+h2.num {
+    counter-increment: section;
+    counter-reset: subsection subsubsection;
+}
+h2.num:before {
+    content: counter(section);
+    margin-right: 1em;
+}
+h3.num {
+    counter-increment: subsection;
+    counter-reset: subsubsection;
+}
+h3.num:before {
+    content: counter(section) "." counter(subsection);
+    margin-right: 1em;
+}
+h4.num {
+    counter-increment: subsubsection;
+}
+h4.num:before {
+    content: counter(section) "." counter(subsection) "." counter(subsubsection);
+    margin-right: 1em;
+}
+
+p {
+    word-spacing: -0.1em;
+    text-align: justify;
+    -webkit-hyphens: auto;
+            hyphens: auto;
+    -webkit-font-variant-numeric: oldstyle-nums;
+            font-variant-numeric: oldstyle-nums;
+}
+
+/* http://www.w3.org/Style/Examples/007/indent.en.html */
+p     { text-indent: 0;  margin-bottom: 0; }
+p + p { text-indent: 1.5em; margin-top: 0; }
+p *   { text-indent: 0; }
+
+p.ltx_p { margin-top: 0; }
+p.readability-styled + p { text-indent: 0; }
+
+blockquote, q {
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote p:first-child:before {
+    content: open-quote;
+    font-weight: bold;
+    margin-left: -0.5em;
+}
+blockquote p:last-child:after {
+    content: close-quote;
+    font-weight: bold;
+}
+q:before { content: open-quote }
+q:after { content: close-quote }
+blockquote,em,cite    { font-style: italic }
+blockquote em,cite em { font-style: normal }
+
+/* match hypothes.is colours */
+a, abbr[title] {
+    color: #bd1c2b;
+    text-decoration: none;
+}
+a:hover {
+    color: #84141e;
+}
+
+ol {
+    list-style: decimal outside;
+    margin-left: 3em;
+}
+ul {
+    list-style: disc outside;
+    margin-left: 3em;
+}
+
+span[data-note] {
+    position: relative;
+    color: #00f;
+    cursor: help;
+}
+
+span[data-note]:before {
+    content: "*";
+}
+
+span[data-note]:hover:after {
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/%3A%3Aafter */
+    content: attr(data-note);
+    position: absolute;
+    left: 0;
+    top: 24px;
+    z-index: 1;
+    display: block;
+    text-align: justify;
+    min-width: 20em;
+    /* http://cbracco.me/a-simple-css-tooltip/ */
+    margin-bottom: 5px;
+    margin-left: -10em;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+}
+
+figure {
+    text-align: center;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    font-size: 90%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+figure.num {
+    counter-increment: figure;
+}
+figure:hover {
+    -webkit-transform: scale(1.414);
+            transform: scale(1.414);
+    background-color: #f8f8f8;
+    box-shadow: 0 0 100px black;
+    position: relative;
+    z-index: 50;
+}
+figure figcaption:before {
+    content: "Figure:";
+    margin-right: 1em;
+    font-weight: bold;
+}
+figure.num figcaption:before {
+    content: "Figure " counter(figure) ":";
+}
+figcaption {
+    line-height: 1.5rem;
+    margin-top: -2px;
+    margin-bottom: 0;
+}
+
+pre {
+    margin-top: 1.5rem;
+    margin-left: -1em;
+    padding-left: 1em;
+    margin-right: -2em;
+    padding-right: 2em;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 1em #f0f0f0;
+}
+code {
+    font-family: "Fira Code", monospace;
+    font-feature-settings: "calt" 1; /* Enable ligatures for IE 10+, Edge */
+    text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
+    white-space: pre-wrap;
+    background-color: #f0f0f0;
+}
+pre code {
+    display: block;
+    padding: 0.5em;
+}
+
+dl    { margin-top:  1.5rem }
+dt,dd { line-height: 1.5rem }
+dd    { margin-left: 1.5rem }
+
+/* http://blog.teamtreehouse.com/customize-ordered-lists-pseudo-element */
+#bibliography {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#bibliography:before {
+    content: "References";
+    display: block;
+    font-size: 140%;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+#bibliography li {
+    counter-increment: bibliography;
+    margin-bottom: 10px;
+}
+#bibliography li:before {
+    content: "[" counter(bibliography) "]";
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nobr {
+    white-space: nowrap;
+}
+
+div.math {
+    overflow: auto;
+}
+
+.bookmarklet {
+    cursor: move;
+}
+
+/* responsiveness for phones */
+@media screen and (max-width:768px) {
+    body { font-size: 94%; }
+    #abstract { margin: 0; }
+}

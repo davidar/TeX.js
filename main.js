@@ -12,7 +12,7 @@ function currentDate() {
     return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
 }
 
-function TeXify(baseURL) {
+function TeXify() {
     // http://stackoverflow.com/a/1577863
     var page = document.getElementsByTagName("main")[0];
     if(page === undefined) {
@@ -23,7 +23,7 @@ function TeXify(baseURL) {
         }
     }
     var footer = document.createElement("footer");
-    footer.innerHTML = '<p><a href="' + baseURL + '">T<span class="T_e_X">e</span>X<em>ify</em></a></p>';
+    footer.innerHTML = '<p><a href="//texify.davidar.io/">T<span class="T_e_X">e</span>X<em>ify</em></a></p>';
     page.appendChild(footer);
     page.setAttribute(
         "class", "main" // + " grid"
@@ -115,9 +115,7 @@ function TeXify(baseURL) {
         document.body.appendChild(openTOC);
     });
 
-    require([ "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"
-            , "baseline/baseline"
-    ], function(hljs) {
+    require(["highlight.min", "baseline/baseline"], function(hljs) {
         var codes = document.querySelectorAll("pre code");
         for(var i = 0; i < codes.length; i++)
             hljs.highlightBlock(codes[i]);
@@ -125,27 +123,22 @@ function TeXify(baseURL) {
     });
 }
 
-require(['domReady', 'require'], function(domReady, _require) {
+require(["domReady", "readability/Readability"], function(domReady) {
     domReady(function() {
-        var baseURL = _require.toUrl('./');
         if(window.readability) {
-            require([_require.toUrl("./readability/Readability.js")], function() {
-                var location = document.location;
-                var uri = {
-                    spec: location.href,
-                    host: location.host,
-                    prePath: location.protocol + "//" + location.host,
-                    scheme: location.protocol.substr(0, location.protocol.indexOf(":")),
-                    pathBase: location.protocol + "//" + location.host + location.pathname.substr(0, location.pathname.lastIndexOf("/") + 1)
-                };
-                var article = new Readability(uri, document).parse();
-                document.head.innerHTML = '<title>' + article.title + '</title>';
-                document.body.innerHTML = '<h1>' + article.title + '</h1>' + article.content;
-                loadCSS(baseURL + "main.css");
-                TeXify(baseURL);
-            });
-        } else {
-            TeXify(baseURL);
+            var location = document.location;
+            var uri = {
+                spec: location.href,
+                host: location.host,
+                prePath: location.protocol + "//" + location.host,
+                scheme: location.protocol.substr(0, location.protocol.indexOf(":")),
+                pathBase: location.protocol + "//" + location.host + location.pathname.substr(0, location.pathname.lastIndexOf("/") + 1)
+            };
+            var article = new Readability(uri, document).parse();
+            document.head.innerHTML = '<title>' + article.title + '</title>';
+            document.body.innerHTML = '<h1>' + article.title + '</h1>' + article.content;
+            loadCSS("//texify.davidar.io/main.css");
         }
+        TeXify();
     });
 });

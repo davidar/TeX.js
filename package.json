@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "clean-css": "*",
+    "requirejs": "*"
+  }
+}
