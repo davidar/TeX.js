@@ -42,6 +42,17 @@ body {
 #toc:target {
     left: 0;
 }
+#toc>p {
+    margin-top: 0;
+    padding: 0.5em 1em;
+    text-align: center;
+    background-color: #202020;
+    color: #f3f3f3;
+    box-shadow: 0 0 0.5em black;
+}
+#toc>ol {
+    margin-top: 0.5em;
+}
 #toc ol {
     list-style: none;
     padding-left: 1em;

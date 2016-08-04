@@ -25,3 +25,6 @@
 [submodule "FiraCode"]
 	path = FiraCode
 	url = https://github.com/tonsky/FiraCode.git
+[submodule "string.js"]
+	path = string.js
+	url = https://github.com/jprichardson/string.js.git

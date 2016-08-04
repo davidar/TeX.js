@@ -136,13 +136,22 @@ function TeXify () {
     scrollProgress.set({ color: '#84141e' })
   })
 
-  require(['contents/dist/browser/contents'], function () {
+  require(['string.js/lib/string', 'contents/dist/browser/contents'], function (S) {
     var nav = document.createElement('nav')
+    var title = document.getElementsByTagName('h1')[0].innerHTML
+    var subtitle = document.querySelector('header>p')
+    if (subtitle) {
+      title += ':&#8194;<em>' + subtitle.innerHTML + '</em>'
+    }
     nav.setAttribute('id', 'toc')
+    nav.innerHTML = '<p>' + title + '</p>'
     document.body.appendChild(nav)
 
     var contents = new gajus.Contents({
-      articles: document.querySelectorAll('h2,h3,h4,h5,h6')
+      articles: document.querySelectorAll('h2,h3,h4,h5,h6'),
+      articleId: function (articleName, element) {
+        return element.id || S(articleName).slugify().s
+      }
     })
     nav.appendChild(contents.list())
 
