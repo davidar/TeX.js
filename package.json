@@ -1,6 +1,17 @@
 {
   "devDependencies": {
     "clean-css": "*",
-    "requirejs": "*"
+    "requirejs": "*",
+    "standard": "*"
+  },
+  "standard": {
+    "globals": [
+      "baseline",
+      "gajus",
+      "Hyphenator",
+      "MathJax",
+      "Readability",
+      "XMLHttpRequest"
+    ]
   }
 }
