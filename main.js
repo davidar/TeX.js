@@ -6,25 +6,24 @@ function loadCSS (path) {
   document.getElementsByTagName('head')[0].appendChild(link)
 }
 
-function currentDate () {
-  var months = [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]
-  var date = new Date()
-  return date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear()
-}
-
 function escapeHtml (str) {
   return String(str)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;')
+}
+
+function hasClass (e, cls) {
+  if (e.classList === undefined) {
+    return false
+  }
+  return e.classList.contains(cls)
 }
 
 function mapTextNodes (parent, cb) { // http://stackoverflow.com/a/10730777/78204
   var tag = parent.nodeName.toLowerCase()
   if (tag === 'script' || tag === 'pre' || tag === 'code' ||
-      parent.classList.contains('donthyphenate')) {
+      hasClass(parent, 'donthyphenate')) {
     return
   }
   var html = ''
@@ -40,6 +39,8 @@ function mapTextNodes (parent, cb) { // http://stackoverflow.com/a/10730777/7820
 }
 
 function TeXify () {
+  var i
+
   // http://stackoverflow.com/a/1577863
   var page = document.getElementsByTagName('main')[0]
   if (page === undefined) {
@@ -56,11 +57,6 @@ function TeXify () {
     'class', 'main' // + " grid"
   )
   document.body.appendChild(page)
-
-  var date = document.getElementById('date')
-  if (date && date.classList.contains('today')) {
-    date.innerHTML = currentDate()
-  }
 
   var refNodes = document.getElementsByClassName('ltx_bibblock')
   var xhr = new XMLHttpRequest()
@@ -79,11 +75,17 @@ function TeXify () {
     }
   }
   var refTexts = []
-  for (var i = 0; i < refNodes.length; i++) {
+  for (i = 0; i < refNodes.length; i++) {
     refTexts.push(refNodes[i].textContent)
   }
   if (refTexts.length > 0) {
     xhr.send(JSON.stringify(refTexts))
+  }
+
+  var mathImages = document.querySelectorAll('img.tex, img.latex')
+  for (i = 0; i < mathImages.length; i++) {
+    var math = mathImages[i].getAttribute('alt')
+    mathImages[i].outerHTML = '\\(' + math + '\\)'
   }
 
   mapTextNodes(document.body, function (text) {
@@ -92,6 +94,11 @@ function TeXify () {
         '<span class="math donthyphenate">$1</span>')
       .replace(/(\\\[(?:(?!\\\])[\s\S])+\\\])/g,
         '<div  class="math donthyphenate">$1</div>')
+  })
+
+  mapTextNodes(document.body, function (text) {
+    return text.replace(/\b([A-Z][^a-z&]{9,})\b/g,
+                        '<span class="caps">$1</span>')
   })
 
   require(['typogr/typogr'], function (typogr) {
