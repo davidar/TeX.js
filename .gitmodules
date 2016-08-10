@@ -31,3 +31,6 @@
 [submodule "normalize-opentype.css"]
 	path = normalize-opentype.css
 	url = https://github.com/kennethormandy/normalize-opentype.css.git
+[submodule "typogr.js"]
+	path = typogr
+	url = https://github.com/ekalinin/typogr.js.git

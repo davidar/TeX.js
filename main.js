@@ -23,7 +23,8 @@ function escapeHtml (str) {
 
 function mapTextNodes (parent, cb) { // http://stackoverflow.com/a/10730777/78204
   var tag = parent.nodeName.toLowerCase()
-  if (tag === 'script' || tag === 'pre' || tag === 'code') {
+  if (tag === 'script' || tag === 'pre' || tag === 'code' ||
+      parent.classList.contains('donthyphenate')) {
     return
   }
   var html = ''
@@ -87,15 +88,21 @@ function TeXify () {
 
   mapTextNodes(document.body, function (text) {
     return text
-      .replace(/\b([A-Z][A-Z0-9]{2,})(s?)\b/g, '<abbr>$1</abbr>$2')
-      .replace(/\b([0-9]+) ([a-zA-Z]{2,})\b/g, '$1&nbsp;$2')
       .replace(/(\\\((?:(?!\\\))[\s\S])+\\\))/g,
         '<span class="math donthyphenate">$1</span>')
       .replace(/(\\\[(?:(?!\\\])[\s\S])+\\\])/g,
         '<div  class="math donthyphenate">$1</div>')
-      .replace(/ffi/g, '&#xFB03;').replace(/ffl/g, '&#xFB04;')
-      .replace(/ff/g, '&#xFB00;').replace(/fi/g, '&#xFB01;').replace(/fl/g, '&#xFB02;')
-      .replace(/ae/g, '&aelig;').replace(/A[Ee]/g, '&AElig;')
+  })
+
+  require(['typogr/typogr'], function (typogr) {
+    mapTextNodes(document.body, function (text) {
+      return typogr.typogrify(text)
+        .replace(/\b([A-Z][A-Z0-9]{2,})(s?)\b/g, '<abbr>$1</abbr>$2')
+        .replace(/\b([0-9]+) ([a-zA-Z]{2,})\b/g, '$1&nbsp;$2')
+        .replace(/ffi/g, '&#xFB03;').replace(/ffl/g, '&#xFB04;')
+        .replace(/ff/g, '&#xFB00;').replace(/fi/g, '&#xFB01;').replace(/fl/g, '&#xFB02;')
+        .replace(/ae/g, '&aelig;').replace(/A[Ee]/g, '&AElig;')
+    })
   })
 
   var lineHeight = document.getElementsByTagName('footer')[0].offsetHeight
