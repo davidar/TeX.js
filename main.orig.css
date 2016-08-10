@@ -2,6 +2,7 @@
 @import "texgyrebonum/font-face.css";
 @import "FiraCode/distr/fira_code.css";
 @import "normalize.css/normalize.css";
+@import "normalize-opentype.css/normalize-opentype.css";
 @import "typebase.css/typebase.css";
 @import "highlight/src/styles/default.css";
 
@@ -10,8 +11,6 @@ body {
     font-family: "TeX Gyre Bonum", serif;
     -webkit-font-variant-ligatures: common-ligatures;
             font-variant-ligatures: common-ligatures;
-    -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "frac", "ordn";
-            font-feature-settings: "kern", "liga", "clig", "calt", "dlig", "frac", "ordn";
     -webkit-font-kerning: normal;
             font-kerning: normal;
 }
@@ -123,8 +122,6 @@ body>main, body>div.ltx_page_main {
 
 abbr {
     font-variant-caps: all-small-caps;
-    -webkit-font-feature-settings: "smcp", "c2sc";
-            font-feature-settings: "smcp", "c2sc";
     letter-spacing: 0.05em;
 }
 
@@ -333,7 +330,6 @@ pre, blockquote {
 }
 code {
     font-family: "Fira Code", monospace;
-    font-feature-settings: "calt" 1; /* Enable ligatures for IE 10+, Edge */
     text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
     white-space: pre-wrap;
     background-color: #f0f0f0;

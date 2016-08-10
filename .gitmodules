@@ -28,3 +28,6 @@
 [submodule "string.js"]
 	path = string.js
 	url = https://github.com/jprichardson/string.js.git
+[submodule "normalize-opentype.css"]
+	path = normalize-opentype.css
+	url = https://github.com/kennethormandy/normalize-opentype.css.git
