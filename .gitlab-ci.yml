@@ -1,0 +1,15 @@
+image: node:4.2.2
+
+pages:
+  cache:
+    paths:
+    - node_modules
+  script:
+  - git submodule update --init
+  - npm install
+  - npm run build
+  artifacts:
+    paths:
+    - .
+  only:
+  - master

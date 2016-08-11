@@ -4,6 +4,9 @@
     "requirejs": "*",
     "standard": "*"
   },
+  "scripts": {
+    "build": "make all"
+  },
   "standard": {
     "globals": [
       "baseline",
