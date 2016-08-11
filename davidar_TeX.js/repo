@@ -11,7 +11,7 @@ Repo
   , repoPrivate = False
   , repoCloneUrl = Just "https://github.com/davidar/TeX.js.git"
   , repoSize = Just 3717
-  , repoUpdatedAt = Just 2016 (-07) (-30) 08 : 29 : 07 UTC
+  , repoUpdatedAt = Just 2016 (-08) (-11) 05 : 22 : 30 UTC
   , repoWatchers = Just 25
   , repoOwner =
       SimpleOwner
@@ -29,7 +29,7 @@ Repo
   , repoId = Id 44042517
   , repoUrl = "https://api.github.com/repos/davidar/TeX.js"
   , repoOpenIssues = Just 8
-  , repoHasWiki = Just True
+  , repoHasWiki = Just False
   , repoHasIssues = Just True
   , repoHasDownloads = Just True
   , repoParent = Nothing
