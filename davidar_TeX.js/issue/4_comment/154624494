@@ -1,0 +1,19 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-11) (-07) 05 : 26 : 18 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/154624494"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/4#issuecomment-154624494"
+  , issueCommentCreatedAt = 2015 (-11) (-07) 05 : 26 : 18 UTC
+  , issueCommentBody = "@michal-h21 Thanks, I'll have a look"
+  , issueCommentId = 154624494
+  }

@@ -1,0 +1,40 @@
+Repo
+  { repoSshUrl = Just "git@github.com:davidar/TeX.js.git"
+  , repoDescription = Just "TeXify: Typesetting for the Web"
+  , repoCreatedAt = Just 2015 (-10) (-11) 07 : 03 : 11 UTC
+  , repoHtmlUrl = "https://github.com/davidar/TeX.js"
+  , repoSvnUrl = Just "https://github.com/davidar/TeX.js"
+  , repoForks = Just 0
+  , repoHomepage = Just "https://TeXify.davidar.io/"
+  , repoFork = Just False
+  , repoGitUrl = Just "git://github.com/davidar/TeX.js.git"
+  , repoPrivate = False
+  , repoCloneUrl = Just "https://github.com/davidar/TeX.js.git"
+  , repoSize = Just 3717
+  , repoUpdatedAt = Just 2016 (-07) (-30) 08 : 29 : 07 UTC
+  , repoWatchers = Just 25
+  , repoOwner =
+      SimpleOwner
+        { simpleOwnerId = Id 24291
+        , simpleOwnerLogin = N "davidar"
+        , simpleOwnerUrl = "https://api.github.com/users/davidar"
+        , simpleOwnerAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleOwnerType = OwnerUser
+        }
+  , repoName = N "TeX.js"
+  , repoLanguage = Just (Language "HTML")
+  , repoMasterBranch = Nothing
+  , repoPushedAt = Just 2016 (-08) (-10) 10 : 01 : 52 UTC
+  , repoId = Id 44042517
+  , repoUrl = "https://api.github.com/repos/davidar/TeX.js"
+  , repoOpenIssues = Just 8
+  , repoHasWiki = Just True
+  , repoHasIssues = Just True
+  , repoHasDownloads = Just True
+  , repoParent = Nothing
+  , repoSource = Nothing
+  , repoHooksUrl =
+      "https://api.github.com/repos/davidar/TeX.js/hooks"
+  , repoStargazersCount = 25
+  }

@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-02) (-27) 21 : 44 : 02 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 348975
+        , simpleUserLogin = N "dginev"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/348975?v=3"
+        , simpleUserUrl = "https://api.github.com/users/dginev"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/189734488"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-189734488"
+  , issueCommentCreatedAt = 2016 (-02) (-27) 21 : 44 : 02 UTC
+  , issueCommentBody =
+      "Awesome, sounds like it is almost ready to be tried on our arXiv HTML docs. \r\n\r\nI would still wish there was a simple CDN inclusion mechanism though (the way I would include bootstrap for example), as bundling the TeX.js repository under my own repo could be overly messy. \r\n\r\nIs there hope that tex.js could be reduced to something like the very common:\r\n```html\r\n<link rel='stylesheet' type='text/css' href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css\">\r\n<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js\"></script>\r\n```\r\n\r\nIf that setup existed, it would also be trivial to include tex.js during a latexml conversion btw, e.g. as\r\n```\r\nlatexmlc --css=tex.css --javascript=tex.js  ...[further args]...\r\n```\r\n\r\nwhich is the original purpose of this GH issue."
+  , issueCommentId = 189734488
+  }

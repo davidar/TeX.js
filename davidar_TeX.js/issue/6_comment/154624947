@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-11) (-07) 05 : 32 : 11 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/154624947"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/6#issuecomment-154624947"
+  , issueCommentCreatedAt = 2015 (-11) (-07) 05 : 32 : 11 UTC
+  , issueCommentBody =
+      "> I am not DOM nor JS expert\r\n\r\nMe either :/. I suspect this issue will have to wait until I'm able to convince a real web dev to look at it\r\n\r\nCC: @dignifiedquire ;)"
+  , issueCommentId = 154624947
+  }

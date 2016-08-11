@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-20) 07 : 13 : 37 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/149458409"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/7#issuecomment-149458409"
+  , issueCommentCreatedAt = 2015 (-10) (-20) 07 : 13 : 37 UTC
+  , issueCommentBody =
+      "@rht Hmm, interesting. That also kind of ties into my idea of extracting definitions from papers. I wonder which parts of a paper could be generally considered \"standalone\" as-is, and how much could be converted into a standalone form after some analysis? Also see http://deepdive.stanford.edu/"
+  , issueCommentId = 149458409
+  }

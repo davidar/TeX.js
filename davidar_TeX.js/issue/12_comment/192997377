@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-03) (-06) 21 : 17 : 53 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 348975
+        , simpleUserLogin = N "dginev"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/348975?v=3"
+        , simpleUserUrl = "https://api.github.com/users/dginev"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/192997377"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-192997377"
+  , issueCommentCreatedAt = 2016 (-03) (-06) 21 : 15 : 30 UTC
+  , issueCommentBody =
+      "Thanks a lot! I have enabled a first preview over our arXiv HTML sources that uses TeX.js now, you can browse around by clicking on \"preview\" in the \"no problem\" category:\r\n\r\nhttp://cortex.mathweb.org/corpus/arXMLiv/tex_to_html/no_problem\r\n\r\nIt seems a bit awkward, probably due to the iframe, there is a bit too much going on in that page now. I'll consider refactoring to a separate preview page without an iframe, so that things are simpler. Another note is that originally the ```main.css``` rule for body was adding a ```display: none;``` that was never removed, which was giving me blank previews. I overwrote it by hand for now.\r\n\r\n(as reference, this is the quick patch that enabled the experimental preview: https://github.com/dginev/CorTeX/commit/8ead3d5815c2339a4c31afc2cd18ab0e8ba9317b )\r\n\r\nOh, and you should open the previews in Firefox, I haven't done the needed work for enabling MathJax in other browsers. There are issues with line heights in FF though, mostly due to inline formulas. So definitely just a first preview."
+  , issueCommentId = 192997377
+  }

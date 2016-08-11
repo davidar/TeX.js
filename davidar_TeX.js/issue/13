@@ -1,0 +1,32 @@
+Issue
+  { issueClosedAt = Just 2016 (-07) (-28) 03 : 42 : 51 UTC
+  , issueUpdatedAt = 2016 (-07) (-28) 03 : 42 : 51 UTC
+  , issueEventsUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/13/events"
+  , issueHtmlUrl = Just "https://github.com/davidar/TeX.js/issues/13"
+  , issueClosedBy = Nothing
+  , issueLabels = []
+  , issueNumber = 13
+  , issueAssignee = Nothing
+  , issueUser =
+      SimpleUser
+        { simpleUserId = Id 637415
+        , simpleUserLogin = N "sirinath"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/637415?v=3"
+        , simpleUserUrl = "https://api.github.com/users/sirinath"
+        , simpleUserType = OwnerUser
+        }
+  , issueTitle = "Way to Convert PDF to LaTeX"
+  , issuePullRequest = Nothing
+  , issueUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/13"
+  , issueCreatedAt = 2016 (-03) (-14) 08 : 28 : 17 UTC
+  , issueBody =
+      Just
+        "I am looking for a means to convert PDF to LaTeX. E.g. http://dharmafarer.org/wordpress/wp-content/uploads/2010/02/31.1-Pahana-S-s36.3-piya.pdf\r\n\r\nWondering is such functionality can be added to https://davidar.io/TeX.js/"
+  , issueState = "closed"
+  , issueId = Id 140607071
+  , issueComments = 1
+  , issueMilestone = Nothing
+  }

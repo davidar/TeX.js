@@ -1,0 +1,31 @@
+Issue
+  { issueClosedAt = Nothing
+  , issueUpdatedAt = 2016 (-07) (-27) 03 : 32 : 52 UTC
+  , issueEventsUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/6/events"
+  , issueHtmlUrl = Just "https://github.com/davidar/TeX.js/issues/6"
+  , issueClosedBy = Nothing
+  , issueLabels = []
+  , issueNumber = 6
+  , issueAssignee = Nothing
+  , issueUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueTitle = "Better text justification"
+  , issuePullRequest = Nothing
+  , issueUrl = "https://api.github.com/repos/davidar/TeX.js/issues/6"
+  , issueCreatedAt = 2015 (-10) (-16) 09 : 34 : 19 UTC
+  , issueBody =
+      Just
+        "Most browsers justify text with a dumb greedy algorithm, and [stubbornly refuse to implement anything more intelligent](https://bugzilla.mozilla.org/show_bug.cgi?id=630181). The [typeset](https://github.com/bramstein/typeset) library by @bramstein implements Knuth-Plass linebreaking, but it isn't yet production-ready ([demo](https://ipfs.io/ipfs/QmdC4sh51AkV9v9dam58TBrXL7cmT8v4sjdpzYsdkK3raA/examples/flatland/)). Also see ipfs/apps#5"
+  , issueState = "open"
+  , issueId = Id 111795892
+  , issueComments = 3
+  , issueMilestone = Nothing
+  }

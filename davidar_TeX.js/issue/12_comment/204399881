@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-04) (-01) 13 : 40 : 14 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 348975
+        , simpleUserLogin = N "dginev"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/348975?v=3"
+        , simpleUserUrl = "https://api.github.com/users/dginev"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/204399881"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-204399881"
+  , issueCommentCreatedAt = 2016 (-04) (-01) 13 : 40 : 14 UTC
+  , issueCommentBody =
+      "Ok, I think I have something. For reasons I won't go into, I need to dynamically render articles via ZIP archives, where I manage each asset as a Blob and render the main HTML page in JS.\r\n\r\nI managed to get this done via a ```document.write``` and manually firing (a couple of times) the ```DOMContentLoaded``` event after the write, so that TeX.js felt comfortable to do its magic.\r\n\r\nIf you arm yourself with patience and click on any of the \"preview\" buttons in the arXMLiv showcase, you should see a nice TeX.js typeset arXiv article, once it finally renders:\r\n\r\nhttp://cortex.mathweb.org/corpus/arXMLiv/tex_to_html/no_problem\r\n\r\nLet me know if it looks OK to you, feedback is welcome. I'm happy we now have a wonderful joint project showcase, where each effort can show its merits :-)"
+  , issueCommentId = 204399881
+  }

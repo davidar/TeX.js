@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-04) (-02) 10 : 28 : 21 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/204668523"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-204668523"
+  , issueCommentCreatedAt = 2016 (-04) (-02) 07 : 54 : 16 UTC
+  , issueCommentBody =
+      "@dginev looking good :)\r\n\r\n> If I could have a wish for a TeX.js improvement, it would be to become independent of any of the ready events, so that I can just add it after a dynamically loaded set of assets and tell it \"render this\".\r\n\r\n~~Sure, let me see what I can do.~~ Actually, you should already be able to do this --- just call\r\n\r\n```js\r\nTeXify(\"https://davidar.io/TeX.js/\") // the URL is the location of the TeX.js installation\r\n```\r\n\r\n> feedback is welcome.\r\n\r\nA couple of suggestions:\r\n\r\n- convert figures to SVG rather than PNG (where possible) for better resolution-independent rendering (and often smaller file sizes, or can even be embedded directly into HTML5) --- I think you're supposed to be able to use `latexmlpost --svg` to do this, although I recall having to muck around with it a little bit to make it work properly (can't remember exactly how)\r\n\r\n- [modify the URL](http://spoiledmilk.com/blog/html5-changing-the-browser-url-without-refreshing-page/) so that each article has a unique URL --- all the articles having the same URL is confusing hypothes.is (eg. I highlighted the word \"the\" for one of the articles, and it's been transferred to *every* article).\r\n\r\n> I'm happy we now have a wonderful joint project showcase, where each effort can show its merits :-)\r\n\r\n:tada: "
+  , issueCommentId = 204668523
+  }

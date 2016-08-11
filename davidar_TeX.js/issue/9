@@ -1,0 +1,31 @@
+Issue
+  { issueClosedAt = Nothing
+  , issueUpdatedAt = 2015 (-10) (-28) 15 : 48 : 42 UTC
+  , issueEventsUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/9/events"
+  , issueHtmlUrl = Just "https://github.com/davidar/TeX.js/issues/9"
+  , issueClosedBy = Nothing
+  , issueLabels = []
+  , issueNumber = 9
+  , issueAssignee = Nothing
+  , issueUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueTitle = "Replace MathJax with KaTeX"
+  , issuePullRequest = Nothing
+  , issueUrl = "https://api.github.com/repos/davidar/TeX.js/issues/9"
+  , issueCreatedAt = 2015 (-10) (-16) 11 : 26 : 22 UTC
+  , issueBody =
+      Just
+        "KaTeX is much faster, but MathJax is more mature. Need to evaluate when it will make sense to switch. A hybrid approach could be possible in the short-term.\r\n\r\n- http://www.intmath.com/cg5/katex-mathjax-comparison.php\r\n- http://www.intmath.com/blog/mathematics/katex-with-asciimathml-input-and-mathjax-fallback-9456\r\n\r\nCC: @jbenet\r\nBlocked by: Khan/KaTeX#61"
+  , issueState = "open"
+  , issueId = Id 111812266
+  , issueComments = 3
+  , issueMilestone = Nothing
+  }

@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-04) (-01) 11 : 47 : 42 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 348975
+        , simpleUserLogin = N "dginev"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/348975?v=3"
+        , simpleUserUrl = "https://api.github.com/users/dginev"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/204362185"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-204362185"
+  , issueCommentCreatedAt = 2016 (-04) (-01) 11 : 47 : 42 UTC
+  , issueCommentBody =
+      "I think my iframe experiments are a [lost cause](http://stackoverflow.com/questions/26497988/is-it-possible-to-use-require-js-on-a-dynamically-built-page-with-iframe). Will have to redesign to use a static page."
+  , issueCommentId = 204362185
+  }

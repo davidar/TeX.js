@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-12) (-19) 13 : 04 : 12 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/165982714"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-165982714"
+  , issueCommentCreatedAt = 2015 (-12) (-19) 13 : 02 : 40 UTC
+  , issueCommentBody =
+      "@dginev sorry, just realised I hadn't replied to this yet\r\n\r\n> Or if you want to work with any HTML document,\r\n\r\nYes\r\n\r\n> use `<body>` instead.\r\n\r\nI don't think I can do the \"thin strip of paper down the middle of the page\" style without a div wrapper, but would be very happy to be proved wrong.\r\n\r\nAlso note that I plan to add the div wrapper automatically in the future, but I haven't worked out how to do this without introducing bugs yet"
+  , issueCommentId = 165982714
+  }

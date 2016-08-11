@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-29) 10 : 11 : 54 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 395821
+        , simpleUserLogin = N "rht"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/395821?v=3"
+        , simpleUserUrl = "https://api.github.com/users/rht"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/152135466"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/11#issuecomment-152135466"
+  , issueCommentCreatedAt = 2015 (-10) (-29) 10 : 11 : 54 UTC
+  , issueCommentBody =
+      "Apologize if unclear.\r\nExplanation: \9424 is a unicode symbol for open access (much like copyright or trademark). To unpack, this is an example request for an open access paper which citations are open access papers, which citations are open access papers, all the way down (even so, the issue title captures what I meant better).\r\n\r\nSurely a cluster of oa papers can be found, though not common. For example a paper with one or two or no citations."
+  , issueCommentId = 152135466
+  }

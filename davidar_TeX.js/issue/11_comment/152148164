@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-29) 13 : 40 : 27 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 395821
+        , simpleUserLogin = N "rht"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/395821?v=3"
+        , simpleUserUrl = "https://api.github.com/users/rht"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/152148164"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/11#issuecomment-152148164"
+  , issueCommentCreatedAt = 2015 (-10) (-29) 11 : 07 : 37 UTC
+  , issueCommentBody =
+      "Hmm...Isn't it relevant for the case of rendering the citation links?\r\nIt would be better if the example is *an* oa paper with oa citations.\r\n\r\nWhat is out of scope, is distilling out all the connected oa papers from arxiv."
+  , issueCommentId = 152148164
+  }

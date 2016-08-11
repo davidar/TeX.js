@@ -1,0 +1,31 @@
+Issue
+  { issueClosedAt = Nothing
+  , issueUpdatedAt = 2015 (-10) (-29) 13 : 40 : 27 UTC
+  , issueEventsUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/11/events"
+  , issueHtmlUrl = Just "https://github.com/davidar/TeX.js/issues/11"
+  , issueClosedBy = Nothing
+  , issueLabels = []
+  , issueNumber = 11
+  , issueAssignee = Nothing
+  , issueUser =
+      SimpleUser
+        { simpleUserId = Id 395821
+        , simpleUserLogin = N "rht"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/395821?v=3"
+        , simpleUserUrl = "https://api.github.com/users/rht"
+        , simpleUserType = OwnerUser
+        }
+  , issueTitle =
+      "[example] A connected citation graph of open access papers"
+  , issuePullRequest = Nothing
+  , issueUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/11"
+  , issueCreatedAt = 2015 (-10) (-19) 14 : 06 : 11 UTC
+  , issueBody = Just ""
+  , issueState = "open"
+  , issueId = Id 112151667
+  , issueComments = 5
+  , issueMilestone = Nothing
+  }

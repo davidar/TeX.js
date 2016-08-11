@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-17) 03 : 08 : 33 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 395821
+        , simpleUserLogin = N "rht"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/395821?v=3"
+        , simpleUserUrl = "https://api.github.com/users/rht"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/148881116"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/9#issuecomment-148881116"
+  , issueCommentCreatedAt = 2015 (-10) (-17) 03 : 08 : 23 UTC
+  , issueCommentBody =
+      "The math envs in arxiv corpus can be a specimen to compare the coverage of KaTeX vs MathJax."
+  , issueCommentId = 148881116
+  }

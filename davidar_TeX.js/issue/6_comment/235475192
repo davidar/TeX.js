@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-07) (-27) 03 : 32 : 52 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/235475192"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/6#issuecomment-235475192"
+  , issueCommentCreatedAt = 2016 (-07) (-27) 03 : 32 : 52 UTC
+  , issueCommentBody =
+      "- http://caniuse.com/css-text-justify\r\n- http://webtypography.net/2.4.3"
+  , issueCommentId = 235475192
+  }

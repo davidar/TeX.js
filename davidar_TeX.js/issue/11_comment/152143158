@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-29) 10 : 41 : 52 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/152143158"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/11#issuecomment-152143158"
+  , issueCommentCreatedAt = 2015 (-10) (-29) 10 : 41 : 52 UTC
+  , issueCommentBody =
+      "Yes, that would be cool. I don't think it's relevant to this project, but I would like to do something with citation graphs in the future, so will keep this in mind :)"
+  , issueCommentId = 152143158
+  }

@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-28) 15 : 48 : 42 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 395821
+        , simpleUserLogin = N "rht"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/395821?v=3"
+        , simpleUserUrl = "https://api.github.com/users/rht"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/151888908"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/9#issuecomment-151888908"
+  , issueCommentCreatedAt = 2015 (-10) (-28) 15 : 48 : 42 UTC
+  , issueCommentBody =
+      "The state of KaTeX vs MathJax on sep 16 2014:\r\nhttp://meta.math.stackexchange.com/questions/16809/a-mathjax-alternative-from-khan-academy\r\n~250 vs ~800\r\n\r\n'Current' (resolved to oct 28 2015) state:\r\n```\r\n$ curl https://raw.githubusercontent.com/wiki/Khan/KaTeX/Function-Support-in-KaTeX.md | grep '\\\\' | wc -l\r\n271\r\n```\r\n\r\nMathjax, http://docs.mathjax.org/en/latest/tex.html#supported-latex-commands (https://ipfs.io/ipfs/QmVGLiCbhV6GYEngAJrR3F19tCxgfmz9Nod3FdNBPafZ1W), has 778 commands, 481 if AMS* and non-standard are excluded.\r\n\r\n271 vs 481-778.\r\nI suppose because it is currently tailored specific to Khan Academy's usage (instead of arxiv).\r\nThere is no explicit roadmap for feature parity with mathjax that I know of.\r\n"
+  , issueCommentId = 151888908
+  }

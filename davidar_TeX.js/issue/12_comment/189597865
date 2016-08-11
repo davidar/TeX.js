@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-02) (-27) 07 : 09 : 34 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/189597865"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-189597865"
+  , issueCommentCreatedAt = 2016 (-02) (-27) 07 : 09 : 34 UTC
+  , issueCommentBody =
+      "> Also note that I plan to add the div wrapper automatically in the future, but I haven't worked out how to do this without introducing bugs yet\r\n\r\nI've fixed this now (I hope!), so you no longer need to add the div wrapper manually :)"
+  , issueCommentId = 189597865
+  }

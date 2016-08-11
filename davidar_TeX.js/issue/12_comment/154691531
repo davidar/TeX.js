@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-11) (-07) 11 : 07 : 05 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/154691531"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-154691531"
+  , issueCommentCreatedAt = 2015 (-11) (-07) 11 : 07 : 05 UTC
+  , issueCommentBody =
+      "Personally I find the output of LaTeXML to be a bit nicer (as it directly translates high-level LaTeX constructs rather than compiling down to lower-level TeX commands first), but I think it would be reasonable to support tex4ht too. They both have their own strengths and weaknesses."
+  , issueCommentId = 154691531
+  }

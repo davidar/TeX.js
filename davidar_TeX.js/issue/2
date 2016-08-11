@@ -1,0 +1,32 @@
+Issue
+  { issueClosedAt = Nothing
+  , issueUpdatedAt = 2015 (-10) (-29) 06 : 08 : 51 UTC
+  , issueEventsUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/2/events"
+  , issueHtmlUrl = Just "https://github.com/davidar/TeX.js/issues/2"
+  , issueClosedBy = Nothing
+  , issueLabels = []
+  , issueNumber = 2
+  , issueAssignee = Nothing
+  , issueUser =
+      SimpleUser
+        { simpleUserId = Id 395821
+        , simpleUserLogin = N "rht"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/395821?v=3"
+        , simpleUserUrl = "https://api.github.com/users/rht"
+        , simpleUserType = OwnerUser
+        }
+  , issueTitle =
+      "[notes] list of open access journals with pdf and html and their state"
+  , issuePullRequest = Nothing
+  , issueUrl = "https://api.github.com/repos/davidar/TeX.js/issues/2"
+  , issueCreatedAt = 2015 (-10) (-14) 00 : 44 : 45 UTC
+  , issueBody =
+      Just
+        "Unjustified text:\r\n\r\n1. http://bmjopen.bmj.com/content/5/10/e008948.full\r\n1. http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=7113786\r\n1. http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001886\r\n1. http://quod.lib.umich.edu/e/ergo/12405314.0002.022?view=text;rgn=main\r\n1. http://journals.aps.org/prd/abstract/10.1103/PhysRevD.74.063002#fulltext\r\n1. http://www.cell.com/cell/fulltext/S0092-8674(15)01196-4\r\n1. http://www.scholarpedia.org/article/Faddeev-Popov_ghosts (a wiki)\r\n\r\nJustified text:\r\n\r\n1. http://file.scirp.org/Html/5-1650562_58643.htm\r\n1. https://www.authorea.com/users/2/articles/19261/_show_article\r\n\r\nAll have clickable references."
+  , issueState = "open"
+  , issueId = Id 111300033
+  , issueComments = 0
+  , issueMilestone = Nothing
+  }

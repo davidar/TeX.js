@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-04) (-01) 13 : 52 : 20 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 348975
+        , simpleUserLogin = N "dginev"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/348975?v=3"
+        , simpleUserUrl = "https://api.github.com/users/dginev"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/204403939"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-204403939"
+  , issueCommentCreatedAt = 2016 (-04) (-01) 13 : 52 : 20 UTC
+  , issueCommentBody =
+      "If I could have a wish for a TeX.js improvement, it would be to become independent of any of the ready events, so that I can just add it after a dynamically loaded set of assets and tell it \"render this\". MathJax has evolved over time to have a \"Rerender()\" method, among others, exactly to facilitate dynamic use cases. But I'm already happy I have the rendering working well!\r\n\r\nFWIW, the reason I mentioned patience with loading was that 1) I am using a throttled Starbucks wifi connection and 2) I seem to need to fire a ready event twice by hand, before the full TeX.js dependency chain gets loaded. "
+  , issueCommentId = 204403939
+  }

@@ -1,0 +1,32 @@
+Issue
+  { issueClosedAt = Nothing
+  , issueUpdatedAt = 2015 (-10) (-17) 10 : 58 : 13 UTC
+  , issueEventsUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/10/events"
+  , issueHtmlUrl = Just "https://github.com/davidar/TeX.js/issues/10"
+  , issueClosedBy = Nothing
+  , issueLabels = []
+  , issueNumber = 10
+  , issueAssignee = Nothing
+  , issueUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueTitle = "Ability to embed in plaintext"
+  , issuePullRequest = Nothing
+  , issueUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/10"
+  , issueCreatedAt = 2015 (-10) (-17) 10 : 58 : 13 UTC
+  , issueBody =
+      Just
+        "It would be neat if TeX.js could be embedded directly into (simple) LaTeX source files, markdown documents, etc\r\n\r\n- http://casual-effects.com/markdeep/\r\n- https://github.com/davidar/markup.rocks"
+  , issueState = "open"
+  , issueId = Id 111957169
+  , issueComments = 0
+  , issueMilestone = Nothing
+  }

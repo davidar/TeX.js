@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-07) (-28) 03 : 42 : 50 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/235792961"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/13#issuecomment-235792961"
+  , issueCommentCreatedAt = 2016 (-07) (-28) 03 : 42 : 50 UTC
+  , issueCommentBody =
+      "@sirinath This is an interesting problem, but is outside the scope of this project. You may be interested in reading https://known.phyks.me/2016/comparison-of-tools-to-fetch-references-for-scientific-papers"
+  , issueCommentId = 235792961
+  }

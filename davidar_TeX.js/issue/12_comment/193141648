@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-03) (-07) 07 : 54 : 10 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/193141648"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-193141648"
+  , issueCommentCreatedAt = 2016 (-03) (-07) 07 : 54 : 10 UTC
+  , issueCommentBody =
+      "> I have enabled a first preview over our arXiv HTML sources that uses TeX.js now\r\n\r\nAwesome! :D\r\n\r\n> It seems a bit awkward, probably due to the iframe, there is a bit too much going on in that page now. I'll consider refactoring to a separate preview page without an iframe, so that things are simpler. Another note is that originally the main.css rule for body was adding a display: none; that was never removed, which was giving me blank previews. I overwrote it by hand for now.\r\n\r\nHmm, it looks like TeX.js isn't loading properly. I suspect it isn't interacting well with the way you're dynamically loading the content. Would you be able to generate the previews server-side? Otherwise I can try to work out how to make TeX.js play nicer."
+  , issueCommentId = 193141648
+  }

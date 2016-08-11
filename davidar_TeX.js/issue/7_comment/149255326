@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-19) 15 : 50 : 15 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 395821
+        , simpleUserLogin = N "rht"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/395821?v=3"
+        , simpleUserUrl = "https://api.github.com/users/rht"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/149255326"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/7#issuecomment-149255326"
+  , issueCommentCreatedAt = 2015 (-10) (-19) 15 : 49 : 56 UTC
+  , issueCommentBody =
+      "This is like the [internet of code](http://www.haskellforall.com/2015/05/the-internet-of-code.html) but for scientific hypothesis/proposition/fact."
+  , issueCommentId = 149255326
+  }

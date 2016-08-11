@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-29) 15 : 28 : 06 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 504800
+        , simpleUserLogin = N "michal-h21"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/504800?v=3"
+        , simpleUserUrl = "https://api.github.com/users/michal-h21"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/152215020"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/6#issuecomment-152215020"
+  , issueCommentCreatedAt = 2015 (-10) (-29) 15 : 28 : 06 UTC
+  , issueCommentBody =
+      "there is also [Calzone](https://github.com/michal-h21/calzone), which unfortunately doesn't preserve formatting. I've [forked it](https://github.com/michal-h21/calzone), removed jQuery dependency, so it is faster now and tried to preserve the formatting. It works sometimes, sometimes it fails. I am not DOM nor JS expert, so I don't really know what's the issue, maybe you might have better luck?"
+  , issueCommentId = 152215020
+  }

@@ -1,0 +1,30 @@
+Issue
+  { issueClosedAt = Nothing
+  , issueUpdatedAt = 2015 (-10) (-13) 05 : 52 : 02 UTC
+  , issueEventsUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/1/events"
+  , issueHtmlUrl = Just "https://github.com/davidar/TeX.js/issues/1"
+  , issueClosedBy = Nothing
+  , issueLabels = []
+  , issueNumber = 1
+  , issueAssignee = Nothing
+  , issueUser =
+      SimpleUser
+        { simpleUserId = Id 395821
+        , simpleUserLogin = N "rht"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/395821?v=3"
+        , simpleUserUrl = "https://api.github.com/users/rht"
+        , simpleUserType = OwnerUser
+        }
+  , issueTitle =
+      "Create list to track progress of where TeX/LaTeX can fill the gaps in http://stateofwebtype.com/"
+  , issuePullRequest = Nothing
+  , issueUrl = "https://api.github.com/repos/davidar/TeX.js/issues/1"
+  , issueCreatedAt = 2015 (-10) (-13) 02 : 54 : 15 UTC
+  , issueBody = Just ""
+  , issueState = "open"
+  , issueId = Id 111093274
+  , issueComments = 1
+  , issueMilestone = Nothing
+  }

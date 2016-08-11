@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-29) 11 : 55 : 32 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/152156809"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/11#issuecomment-152156809"
+  , issueCommentCreatedAt = 2015 (-10) (-29) 11 : 55 : 32 UTC
+  , issueCommentBody =
+      "Ah, indeed. A little more description in the OP would have helped ;)"
+  , issueCommentId = 152156809
+  }

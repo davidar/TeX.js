@@ -1,0 +1,201 @@
+[ SimpleUser
+    { simpleUserId = Id 20818
+    , simpleUserLogin = N "tilgovi"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/20818?v=3"
+    , simpleUserUrl = "https://api.github.com/users/tilgovi"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 24291
+    , simpleUserLogin = N "davidar"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/24291?v=3"
+    , simpleUserUrl = "https://api.github.com/users/davidar"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 43209
+    , simpleUserLogin = N "BigBlueHat"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/43209?v=3"
+    , simpleUserUrl = "https://api.github.com/users/BigBlueHat"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 91271
+    , simpleUserLogin = N "ben-simmons"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/91271?v=3"
+    , simpleUserUrl = "https://api.github.com/users/ben-simmons"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 109033
+    , simpleUserLogin = N "zignig"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/109033?v=3"
+    , simpleUserUrl = "https://api.github.com/users/zignig"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 111202
+    , simpleUserLogin = N "cryptix"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/111202?v=3"
+    , simpleUserUrl = "https://api.github.com/users/cryptix"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 138401
+    , simpleUserLogin = N "jbenet"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/138401?v=3"
+    , simpleUserUrl = "https://api.github.com/users/jbenet"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 173025
+    , simpleUserLogin = N "sidorares"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/173025?v=3"
+    , simpleUserUrl = "https://api.github.com/users/sidorares"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 309908
+    , simpleUserLogin = N "wetneb"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/309908?v=3"
+    , simpleUserUrl = "https://api.github.com/users/wetneb"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 348975
+    , simpleUserLogin = N "dginev"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/348975?v=3"
+    , simpleUserUrl = "https://api.github.com/users/dginev"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 395821
+    , simpleUserLogin = N "rht"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/395821?v=3"
+    , simpleUserUrl = "https://api.github.com/users/rht"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 504800
+    , simpleUserLogin = N "michal-h21"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/504800?v=3"
+    , simpleUserUrl = "https://api.github.com/users/michal-h21"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 595509
+    , simpleUserLogin = N "parmentf"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/595509?v=3"
+    , simpleUserUrl = "https://api.github.com/users/parmentf"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 637415
+    , simpleUserLogin = N "sirinath"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/637415?v=3"
+    , simpleUserUrl = "https://api.github.com/users/sirinath"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 778766
+    , simpleUserLogin = N "newliver"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/778766?v=3"
+    , simpleUserUrl = "https://api.github.com/users/newliver"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 790842
+    , simpleUserLogin = N "dignifiedquire"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/790842?v=3"
+    , simpleUserUrl = "https://api.github.com/users/dignifiedquire"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 889879
+    , simpleUserLogin = N "rameshvarun"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/889879?v=3"
+    , simpleUserUrl = "https://api.github.com/users/rameshvarun"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 1192684
+    , simpleUserLogin = N "srigsby"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/1192684?v=3"
+    , simpleUserUrl = "https://api.github.com/users/srigsby"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 1898912
+    , simpleUserLogin = N "tadev"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/1898912?v=3"
+    , simpleUserUrl = "https://api.github.com/users/tadev"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 1913638
+    , simpleUserLogin = N "Planeshifter"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/1913638?v=3"
+    , simpleUserUrl = "https://api.github.com/users/Planeshifter"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 2643044
+    , simpleUserLogin = N "kgryte"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/2643044?v=3"
+    , simpleUserUrl = "https://api.github.com/users/kgryte"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 4292951
+    , simpleUserLogin = N "trampi"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/4292951?v=3"
+    , simpleUserUrl = "https://api.github.com/users/trampi"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 9295750
+    , simpleUserLogin = N "dohliam"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/9295750?v=3"
+    , simpleUserUrl = "https://api.github.com/users/dohliam"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 10380759
+    , simpleUserLogin = N "xhs"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/10380759?v=3"
+    , simpleUserUrl = "https://api.github.com/users/xhs"
+    , simpleUserType = OwnerUser
+    }
+, SimpleUser
+    { simpleUserId = Id 12041390
+    , simpleUserLogin = N "rjmk"
+    , simpleUserAvatarUrl =
+        "https://avatars.githubusercontent.com/u/12041390?v=3"
+    , simpleUserUrl = "https://api.github.com/users/rjmk"
+    , simpleUserType = OwnerUser
+    }
+]

@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-11) (-07) 09 : 33 : 20 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 504800
+        , simpleUserLogin = N "michal-h21"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/504800?v=3"
+        , simpleUserUrl = "https://api.github.com/users/michal-h21"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/154678393"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-154678393"
+  , issueCommentCreatedAt = 2015 (-11) (-07) 09 : 33 : 20 UTC
+  , issueCommentBody =
+      "Do you have some examples how `tex4ht` sacrifices the semantic structure of source TeX? In my opinion, this is one of its main aims, so we can try to fix these issues. \r\n\r\nIt is true that it creates HTML and not XHTML by default with default conversion script, but you can switch that with `xhtml` option, or use some alternative conversion script, such as [make4ht](https://www.ctan.org/pkg/make4ht?lang=en)"
+  , issueCommentId = 154678393
+  }

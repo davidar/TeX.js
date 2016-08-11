@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-12) (-05) 02 : 17 : 32 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/162132207"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-162132207"
+  , issueCommentCreatedAt = 2015 (-12) (-05) 02 : 17 : 32 UTC
+  , issueCommentBody =
+      "> I would be quite interested to use TeX.js to present our batch conversion results from arXiv.org, and it could give you an interesting set of documents to explore and test on.\r\n\r\n@dginev Yes, that would be fantastic :)\r\n\r\nWhen I say manually edit the file, I mean adding [a few lines](https://github.com/davidar/TeX.js/blob/master/arXiv/1104.2778/index.html#L8-L12) into `<head>`, and wrapping the body with `<div id=\"TeXpage\" class=\"TeXpage\">`"
+  , issueCommentId = 162132207
+  }

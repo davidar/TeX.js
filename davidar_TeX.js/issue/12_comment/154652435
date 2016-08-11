@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-11) (-07) 08 : 00 : 24 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 395821
+        , simpleUserLogin = N "rht"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/395821?v=3"
+        , simpleUserUrl = "https://api.github.com/users/rht"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/154652435"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-154652435"
+  , issueCommentCreatedAt = 2015 (-11) (-07) 07 : 59 : 03 UTC
+  , issueCommentBody =
+      "`tex4ht` is more robust, but it sacrifices the semantic structure of the source tex.\r\nI thought one aim of `TeX.js` is to get beautiful output while at the same time parseable (unlike pdf)?"
+  , issueCommentId = 154652435
+  }

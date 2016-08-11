@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-29) 13 : 00 : 45 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 504800
+        , simpleUserLogin = N "michal-h21"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/504800?v=3"
+        , simpleUserUrl = "https://api.github.com/users/michal-h21"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/152173232"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/4#issuecomment-152173232"
+  , issueCommentCreatedAt = 2015 (-10) (-29) 13 : 00 : 45 UTC
+  , issueCommentBody =
+      "I've done something similar for tex4ht: \r\n\r\n- https://github.com/michal-h21/tex4ht-enhanced-web\r\n- and some explanation of the process: http://tex.stackexchange.com/a/239944/2891"
+  , issueCommentId = 152173232
+  }

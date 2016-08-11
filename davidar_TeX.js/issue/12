@@ -1,0 +1,32 @@
+Issue
+  { issueClosedAt = Nothing
+  , issueUpdatedAt = 2016 (-04) (-02) 10 : 28 : 21 UTC
+  , issueEventsUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/12/events"
+  , issueHtmlUrl = Just "https://github.com/davidar/TeX.js/issues/12"
+  , issueClosedBy = Nothing
+  , issueLabels = []
+  , issueNumber = 12
+  , issueAssignee = Nothing
+  , issueUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueTitle = "Conversion"
+  , issuePullRequest = Nothing
+  , issueUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/12"
+  , issueCreatedAt = 2015 (-10) (-29) 07 : 07 : 34 UTC
+  , issueBody =
+      Just
+        "The current workflow is to manually run LaTeXML and edit the output to load TeX.js. This should be wrapped in a script to do everything in a single step without requiring user intervention."
+  , issueState = "open"
+  , issueId = Id 113993454
+  , issueComments = 23
+  , issueMilestone = Nothing
+  }

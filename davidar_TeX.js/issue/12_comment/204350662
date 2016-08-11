@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-04) (-01) 11 : 10 : 30 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/204350662"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-204350662"
+  , issueCommentCreatedAt = 2016 (-04) (-01) 11 : 10 : 30 UTC
+  , issueCommentBody =
+      "@dginev another thing you could try is moving the TeX.js `script` from the `head` to the end of the `body`"
+  , issueCommentId = 204350662
+  }

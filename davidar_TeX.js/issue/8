@@ -1,0 +1,31 @@
+Issue
+  { issueClosedAt = Just 2016 (-02) (-07) 06 : 08 : 30 UTC
+  , issueUpdatedAt = 2016 (-02) (-07) 06 : 08 : 30 UTC
+  , issueEventsUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/8/events"
+  , issueHtmlUrl = Just "https://github.com/davidar/TeX.js/issues/8"
+  , issueClosedBy = Nothing
+  , issueLabels = []
+  , issueNumber = 8
+  , issueAssignee = Nothing
+  , issueUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueTitle = "Optimise for mobile devices"
+  , issuePullRequest = Nothing
+  , issueUrl = "https://api.github.com/repos/davidar/TeX.js/issues/8"
+  , issueCreatedAt = 2015 (-10) (-16) 09 : 56 : 03 UTC
+  , issueBody =
+      Just
+        "See https://en.m.wikipedia.org/wiki/Wikipedia or https://vismor.com/ for inspiration."
+  , issueState = "closed"
+  , issueId = Id 111799421
+  , issueComments = 0
+  , issueMilestone = Nothing
+  }

@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-17) 03 : 12 : 44 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/148881261"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/9#issuecomment-148881261"
+  , issueCommentCreatedAt = 2015 (-10) (-17) 03 : 12 : 44 UTC
+  , issueCommentBody =
+      "@rht Yeah, that's what I was thinking too, so we'll delay making a decision on this until arXiv+TeX.js gets going"
+  , issueCommentId = 148881261
+  }

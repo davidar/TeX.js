@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-29) 14 : 40 : 12 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 504800
+        , simpleUserLogin = N "michal-h21"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/504800?v=3"
+        , simpleUserUrl = "https://api.github.com/users/michal-h21"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/152200558"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-152200558"
+  , issueCommentCreatedAt = 2015 (-10) (-29) 14 : 40 : 12 UTC
+  , issueCommentBody =
+      "In `tex4ht`, support for `TeX.js` can be added with a following configuration:\r\n\r\n    \\Preamble{xhtml,mathml}\r\n    \\Configure{VERSION}{}\r\n    \\Configure{DOCTYPE}{\\HCode{<!DOCTYPE html>\\Hnewline}}\r\n    \\Configure{HTML}{\\HCode{<html lang=\"en\">\\Hnewline}}{\\HCode{\\Hnewline</html>}}\r\n    \\Configure{@HEAD}{\\HCode{<link rel=\"stylesheet\" href=\"main.css\" type=\"text/css\">}}\r\n    \\Configure{@HEAD}{\\HCode{<script data-main=\"main\" src=\"//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.min.js\"></script>}}\r\n    \\Configure{BODY}{\\HCode{<body>\\Hnewline<div  id=\"TeXpage\" class=\"TeXpage\">}}{\\HCode{</div>\\Hnewline</body>}}{}\r\n    \\begin{document}\r\n    \\EndPreamble\r\n"
+  , issueCommentId = 152200558
+  }

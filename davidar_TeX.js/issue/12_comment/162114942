@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-12) (-05) 00 : 10 : 02 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 348975
+        , simpleUserLogin = N "dginev"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/348975?v=3"
+        , simpleUserUrl = "https://api.github.com/users/dginev"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/162114942"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-162114942"
+  , issueCommentCreatedAt = 2015 (-12) (-05) 00 : 10 : 02 UTC
+  , issueCommentBody =
+      "Hi @davidar! As they say, \"I love what you've done with the place\" with beautifying the results of LaTeXML.\r\n\r\nI would be quite interested to use TeX.js to present our batch conversion results from arXiv.org, and it could give you an interesting set of documents to explore and test on.\r\n\r\nIs there a reason why you need to edit LaTeXML's output to style it? You said:\r\n> The current workflow is to manually run LaTeXML and edit the output to load TeX.js. \r\n\r\nWhat is missing in the LaTeXML class hooks for styling to work \"out-of-the-box\"?"
+  , issueCommentId = 162114942
+  }

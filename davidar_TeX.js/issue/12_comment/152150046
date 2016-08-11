@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-10) (-29) 11 : 22 : 22 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 395821
+        , simpleUserLogin = N "rht"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/395821?v=3"
+        , simpleUserUrl = "https://api.github.com/users/rht"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/152150046"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-152150046"
+  , issueCommentCreatedAt = 2015 (-10) (-29) 11 : 19 : 01 UTC
+  , issueCommentBody =
+      "If this is meant as a web .tex loader, isn't this #10 ?\r\n\r\nOne way is to use pandoc+ghcjs for a small subset of tex+latex, but it looks like you already excluded this one due to its limited coverage. As in, pandoc is less likely to render arxiv than latexml does."
+  , issueCommentId = 152150046
+  }

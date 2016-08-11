@@ -1,0 +1,31 @@
+Issue
+  { issueClosedAt = Just 2016 (-07) (-27) 02 : 18 : 53 UTC
+  , issueUpdatedAt = 2016 (-07) (-27) 02 : 18 : 53 UTC
+  , issueEventsUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/5/events"
+  , issueHtmlUrl = Just "https://github.com/davidar/TeX.js/issues/5"
+  , issueClosedBy = Nothing
+  , issueLabels = []
+  , issueNumber = 5
+  , issueAssignee = Nothing
+  , issueUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueTitle = "Spatial recall clues"
+  , issuePullRequest = Nothing
+  , issueUrl = "https://api.github.com/repos/davidar/TeX.js/issues/5"
+  , issueCreatedAt = 2015 (-10) (-16) 09 : 24 : 48 UTC
+  , issueBody =
+      Just
+        "- http://www.businessinsider.com.au/you-remember-books-better-than-ebooks-2014-6\r\n\r\n> When trying to remember a piece of information, people recall where in a book the info appeared.\r\n\r\n- [ ] research/experiment with ways to improve the ability to *subconsciously recall* the location in a document where you read something --- the digital equivalent of \"bottom of the left-hand page, two-thirds through the book\"\r\n  - subtly changing background colours/patterns?"
+  , issueState = "closed"
+  , issueId = Id 111794311
+  , issueComments = 0
+  , issueMilestone = Nothing
+  }

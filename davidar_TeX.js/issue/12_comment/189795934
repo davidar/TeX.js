@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-02) (-28) 06 : 31 : 10 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 24291
+        , simpleUserLogin = N "davidar"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/24291?v=3"
+        , simpleUserUrl = "https://api.github.com/users/davidar"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/189795934"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-189795934"
+  , issueCommentCreatedAt = 2016 (-02) (-28) 06 : 31 : 10 UTC
+  , issueCommentBody =
+      "@dginev Ok, now you should be able to just include https://davidar.io/TeX.js/load.js and https://davidar.io/TeX.js/LaTeXML/ltx-article.css (or https://davidar.io/TeX.js/LaTeXML/ltx-book.css --- let me know if you need other document classes)\r\n\r\nYou might also want to include the magic\r\n\r\n```html\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n```\r\n\r\nline so that the webpage is mobile-friendly.\r\n"
+  , issueCommentId = 189795934
+  }

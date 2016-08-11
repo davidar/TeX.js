@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2015 (-12) (-05) 19 : 16 : 01 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 348975
+        , simpleUserLogin = N "dginev"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/348975?v=3"
+        , simpleUserUrl = "https://api.github.com/users/dginev"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/162238700"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-162238700"
+  , issueCommentCreatedAt = 2015 (-12) (-05) 19 : 16 : 01 UTC
+  , issueCommentBody =
+      "Adding CSS and JS sounds quite reasonable, but the extra div wrapper seems unnecessary. Why not just use the ```<div class=\"ltx_page_main\">``` that LaTeXML comes with? Or if you want to work with *any* HTML document, use ```<body>``` instead.\r\n\r\nCurious about the motivation."
+  , issueCommentId = 162238700
+  }

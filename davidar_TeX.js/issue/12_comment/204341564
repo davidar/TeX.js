@@ -1,0 +1,20 @@
+IssueComment
+  { issueCommentUpdatedAt = 2016 (-04) (-01) 10 : 26 : 28 UTC
+  , issueCommentUser =
+      SimpleUser
+        { simpleUserId = Id 348975
+        , simpleUserLogin = N "dginev"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/348975?v=3"
+        , simpleUserUrl = "https://api.github.com/users/dginev"
+        , simpleUserType = OwnerUser
+        }
+  , issueCommentUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/comments/204341564"
+  , issueCommentHtmlUrl =
+      "https://github.com/davidar/TeX.js/issues/12#issuecomment-204341564"
+  , issueCommentCreatedAt = 2016 (-04) (-01) 10 : 26 : 28 UTC
+  , issueCommentBody =
+      "I did some troubleshooting, and indeed the issue seems to be with using TeX.js from within an iframe. Loading as you suggested on a static page works well.\r\n\r\nI will see if there is a simple way for me to switch to serving the page without the extra infrastructure, there are some annoying privacy reasons why I had the current complicated way of loading previews."
+  , issueCommentId = 204341564
+  }

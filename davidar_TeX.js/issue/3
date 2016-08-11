@@ -1,0 +1,31 @@
+Issue
+  { issueClosedAt = Just 2015 (-10) (-15) 12 : 12 : 57 UTC
+  , issueUpdatedAt = 2015 (-10) (-15) 12 : 12 : 57 UTC
+  , issueEventsUrl =
+      "https://api.github.com/repos/davidar/TeX.js/issues/3/events"
+  , issueHtmlUrl = Just "https://github.com/davidar/TeX.js/issues/3"
+  , issueClosedBy = Nothing
+  , issueLabels = []
+  , issueNumber = 3
+  , issueAssignee = Nothing
+  , issueUser =
+      SimpleUser
+        { simpleUserId = Id 790842
+        , simpleUserLogin = N "dignifiedquire"
+        , simpleUserAvatarUrl =
+            "https://avatars.githubusercontent.com/u/790842?v=3"
+        , simpleUserUrl = "https://api.github.com/users/dignifiedquire"
+        , simpleUserType = OwnerUser
+        }
+  , issueTitle = "Improve loading experience"
+  , issuePullRequest = Nothing
+  , issueUrl = "https://api.github.com/repos/davidar/TeX.js/issues/3"
+  , issueCreatedAt = 2015 (-10) (-14) 12 : 08 : 18 UTC
+  , issueBody =
+      Just
+        "At the moment there is an initial view of not properly rendered details before everything is loaded"
+  , issueState = "closed"
+  , issueId = Id 111384249
+  , issueComments = 0
+  , issueMilestone = Nothing
+  }
