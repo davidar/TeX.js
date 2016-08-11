@@ -1,9 +1,18 @@
-all: main.css load.js
+ASSETS := \
+	public/main.css \
+	public/LaTeXML/ltx-article.css \
+	public/LaTeXML/ltx-book.css \
+	public/load.js
 
-%.css: %.orig.css
+all: $(ASSETS)
+
+clean:
+	rm -f $(ASSETS)
+
+public/%.css: %.css
 	cleancss $< > $@
 
-load.js: main.js
+public/load.js: main.js
 	standard $<
 	r.js -o baseUrl=. paths.requirejs=node_modules/requirejs/require \
 		generateSourceMaps=true preserveLicenseComments=false \

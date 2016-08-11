@@ -23,7 +23,7 @@
 	path = highlight
 	url = https://github.com/isagalaev/highlight.js.git
 [submodule "FiraCode"]
-	path = FiraCode
+	path = public/FiraCode
 	url = https://github.com/tonsky/FiraCode.git
 [submodule "string.js"]
 	path = string.js
