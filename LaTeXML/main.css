@@ -1,0 +1,180 @@
+@import "../main.css";
+
+.ltx_page_footer { display:none }
+
+.ltx_runin { display:inline }
+.ltx_runin:after { content:" " }
+.ltx_runin + .ltx_para,
+.ltx_runin + .ltx_para p,
+.ltx_runin + p { display:inline }
+
+.ltx_outdent { margin-left:-1em }
+
+.ltx_creator { margin-right:1em }
+
+.ltx_author_before { display:none }
+
+.ltx_author_notes, .ltx_note { display:inline-block }
+.ltx_author_notes:before { content:"*" }
+.ltx_author_notes:before, .ltx_note_mark { color:#bd1c2b }
+.ltx_author_notes > span, .ltx_note_content { display:none }
+.ltx_author_notes:hover > span,
+.ltx_note:hover .ltx_note_content {
+    /* http://cbracco.me/a-simple-css-tooltip/ */
+    display: block;
+    position: absolute;
+    z-index: 10;
+    text-align: left;
+    max-width: 20em;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+}
+.ltx_note_type { font-weight:bold }
+
+td.ltx_subfigure, td.ltx_subtable, td.ltx_subfloat { width:50% }
+.ltx_tag_figure { font-weight:bold }
+
+.ltx_align_left       { text-align:left }
+.ltx_align_right      { text-align:right }
+.ltx_align_center     { text-align:center }
+.ltx_align_justify    { text-align:justify }
+.ltx_align_top        { vertical-align:top }
+.ltx_align_bottom     { vertical-align:bottom }
+.ltx_align_middle     { vertical-align:middle }
+.ltx_align_baseline   { vertical-align:baseline }
+.ltx_align_floatleft  { float:left }
+.ltx_align_floatright { float:right }
+.ltx_inline-block     { display:inline-block }
+
+table.ltx_equation, table.ltx_equationgroup {
+    width: 100%;
+    display: block;
+    overflow: auto;
+    margin: 1.5rem 0;
+}
+td.ltx_eqn_eqno.ltx_align_right .ltx_tag { float:right }
+tr > td.ltx_eqn_center_padleft,
+tr > td.ltx_eqn_center_padright { width:50% }
+tr > td.ltx_eqn_left_padleft,
+tr > td.ltx_eqn_right_padright { min-width:2em }
+tr > td.ltx_eqn_left_padright,
+tr > td.ltx_eqn_right_padleft { width:100% }
+
+li.ltx_item > .ltx_tag, .ltx_bibtag {
+    display: inline-block;
+    margin-left: -2em;
+    min-width: 2em;
+    text-align: right;
+}
+.ltx_item .ltx_tag + .ltx_para,
+.ltx_item .ltx_tag + .ltx_para .ltx_p  { display:inline }
+
+.ltx_theorem  { margin:1.5rem 0 }
+
+.ltx_bibitem { list-style-type:none }
+.ltx_bibtag { font-weight:bold }
+
+.ltx_indexlist li { list-style-type:none }
+
+.ltx_listing td.ltx_linenumber,
+.ltx_listingblock td.ltx_linenumber {
+    width: 3em;
+    text-align: right;
+}
+
+.ltx_parbox { text-indent:0 }
+
+.ltx_transformed_outer {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: visible;
+}
+.ltx_transformed_inner {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ltx_transformed_inner > .ltx_p {
+    text-indent: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.ltx_para + .ltx_para>p:first-child {
+    text-indent: 1.5em;
+    margin-top: 0;
+}
+.ltx_noindent>p:first-child {
+    text-indent: 0;
+    margin-top: 1.5rem;
+}
+
+.ltx_tabular { overflow:auto }
+span.ltx_tabular { display:inline-table }
+
+.ltx_framed    { border:1px solid }
+.ltx_border_t  { border-top:1px solid }
+.ltx_border_r  { border-right:1px solid }
+.ltx_border_b  { border-bottom:1px solid }
+.ltx_border_l  { border-left:1px solid }
+.ltx_border_tt { border-top:3px double }
+.ltx_border_rr { border-right:3px double }
+.ltx_border_bb { border-bottom:3px double }
+.ltx_border_ll { border-left:3px double }
+
+.ltx_font_serif      { font-family:serif }
+.ltx_font_sansserif  { font-family:sans-serif }
+.ltx_font_typewriter { font-family:monospace }
+.ltx_font_bold       { font-weight:bold }
+.ltx_font_medium     { font-weight:normal }
+.ltx_font_italic     { font-style:italic }
+.ltx_font_upright    { font-style:normal }
+.ltx_font_slanted    { font-style:oblique }
+.ltx_font_smallcaps  { font-variant:small-caps }
+
+cite.ltx_cite { font-style:normal }
+
+.ltx_title_document, .ltx_authors, .ltx_date, .ltx_title_abstract {
+    text-align: center;
+    font-weight: normal;
+    margin: 1.5rem 0;
+}
+.ltx_role_author .ltx_personname .caps { font-feature-settings:inherit }
+
+.ltx_title_abstract { font-weight:bold }
+.ltx_abstract { margin:0 4em }
+.ltx_abstract p { text-indent:1.5em }
+.ltx_title_acknowledgements, .ltx_title_keywords, .ltx_title_classification { font-weight:bold }
+.ltx_title_classification, .ltx_classification { display:inline }
+
+#contents, #contents + .ltx_toclist { display:none }
+
+.ltx_title_paragraph, .ltx_title_subparagraph {
+    font-size: 100%;
+    font-weight: bold;
+    display: inline; 
+    margin-right: 1em;
+}
+.ltx_title_subparagraph { margin-left:2em }
+.ltx_paragraph .ltx_title,
+.ltx_paragraph .ltx_title + .ltx_para,
+.ltx_paragraph .ltx_title + .ltx_para > .ltx_p,
+.ltx_subparagraph .ltx_title,
+.ltx_subparagraph .ltx_title + .ltx_para,
+.ltx_subparagraph .ltx_title + .ltx_para > .ltx_p { display:inline }
+
+.ltx_theorem .ltx_title + .ltx_para,
+.ltx_theorem .ltx_title + .ltx_para .ltx_p,
+.ltx_theorem .ltx_title + .ltx_p  { margin-top:0 }
+
+/* responsiveness for phones */
+@media screen and (max-width:768px) {
+    .ltx_abstract { margin:0 }
+}
