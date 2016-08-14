@@ -22,7 +22,7 @@ function hasClass (e, cls) {
 
 function mapTextNodes (parent, cb) { // http://stackoverflow.com/a/10730777/78204
   var tag = parent.nodeName.toLowerCase()
-  if (tag === 'script' || tag === 'pre' || tag === 'code' ||
+  if (tag === 'script' || tag === 'pre' || tag === 'code' || tag === 'math' ||
       hasClass(parent, 'donthyphenate')) {
     return
   }
@@ -54,7 +54,7 @@ function TeXify () {
   footer.innerHTML = '<p><a href="//texify.davidar.io/">T<span class="T_e_X">e</span>X<em>ify</em></a></p>'
   page.appendChild(footer)
   page.setAttribute(
-    'class', 'main' // + " grid"
+    'class', 'main' // + ' grid'
   )
   document.body.appendChild(page)
 
@@ -112,9 +112,9 @@ function TeXify () {
     })
   })
 
-  var lineHeight = document.getElementsByTagName('footer')[0].offsetHeight
+  var lineHeight = document.querySelector('main>footer').offsetHeight
   require(['baseline/baseline'], function () {
-    baseline('img', lineHeight)
+    baseline('img,table', lineHeight)
   })
 
   require(['Hyphenator/Hyphenator'], function () {
@@ -139,7 +139,7 @@ function TeXify () {
     MathJax.Hub.Register.StartupHook('End', function () {
       setTimeout(function () {
         baseline('.MathJax_SVG_Display', lineHeight)
-        window.onresize()
+        window.dispatchEvent(new Event('resize'))
       }, 1000)
     })
   })

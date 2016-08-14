@@ -164,7 +164,7 @@ h2, header>p {
     font-size: 1.563rem;
     line-height: 3rem;
 }
-h3, header>address {
+h3, header>address, .ltx_authors {
     font-size: 1.25rem;
 }
 
@@ -178,7 +178,7 @@ h3, header>address {
     font-weight: bold;
 }
 #abstract p {
-    text-indent: 2em;
+    text-indent: 1.5em;
 }
 
 h2.num {
@@ -219,7 +219,6 @@ p     { text-indent: 0;  margin-bottom: 0; }
 p + p { text-indent: 1.5em; margin-top: 0; }
 p *   { text-indent: 0; }
 
-p.ltx_p { margin-top: 0; }
 p.readability-styled + p {
     text-indent: 0;
     margin-top: 1.5rem;
@@ -321,6 +320,9 @@ figure figcaption:before {
 figure.num figcaption:before {
     content: "Figure " counter(figure) ":";
 }
+figure.ltx_figure figcaption:before {
+    display: none;
+}
 figcaption {
     line-height: 1.5rem;
     margin-top: -2px;
@@ -385,12 +387,21 @@ img {
     height: auto;
 }
 
+table {
+    border-collapse: separate;
+}
+
 .nobr {
     white-space: nowrap;
 }
 
 div.math {
     overflow: auto;
+    margin-top: 1.5rem;
+}
+
+.MathJax_SVG_Display {
+    margin: 0 !important;
 }
 
 .bookmarklet {
