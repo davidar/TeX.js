@@ -10,7 +10,7 @@ clean:
 	rm -f $(ASSETS)
 
 public/%.css: %.css main.css
-	cleancss $< > $@
+	cleancss --source-map --source-map-inline-sources $< -o $@
 
 public/load.js: main.js
 	standard $<

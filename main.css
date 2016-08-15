@@ -321,7 +321,8 @@ figure figcaption:before {
 figure.num figcaption:before {
     content: "Figure " counter(figure) ":";
 }
-figure.ltx_figure figcaption:before {
+figure.ltx_figure figcaption:before,
+figure.ltx_table  figcaption:before {
     display: none;
 }
 figcaption {

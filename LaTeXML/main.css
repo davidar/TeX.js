@@ -37,7 +37,7 @@
 .ltx_note_type { font-weight:bold }
 
 td.ltx_subfigure, td.ltx_subtable, td.ltx_subfloat { width:50% }
-.ltx_tag_figure { font-weight:bold }
+.ltx_tag_figure, .ltx_tag_table { font-weight:bold }
 
 .ltx_align_left       { text-align:left }
 .ltx_align_right      { text-align:right }
