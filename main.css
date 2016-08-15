@@ -19,9 +19,9 @@ body {
 /* https://css-tricks.com/off-canvas-menu-with-css-target */
 #open-toc {
     position: fixed;
-    bottom: 5px;
+    bottom: 0;
     left: 0;
-    padding: 9px;
+    padding: 0.5em;
     font-family: sans-serif;
     background: #f8f8f8;
     z-index: 75;
@@ -72,6 +72,7 @@ body {
 
 #progress-wrapper {
     background: #f8f8f8;
+    z-index: 77;
 }
 
 header {
@@ -381,18 +382,21 @@ dd    { margin-left: 1.5rem }
     margin-right: 1em;
     font-weight: bold;
 }
+#bibliography li:target, .references li:target, .ltx_bibitem:target {
+    position: fixed;
+    z-index: 70;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    padding: 0.5em 2em;
+    text-align: center;
+    box-shadow: 0 0 1em black;
+}
 
 img {
     max-width: 100%;
     height: auto;
-}
-
-table {
-    border-collapse: separate;
-}
-
-.nobr {
-    white-space: nowrap;
 }
 
 div.math {
@@ -400,16 +404,14 @@ div.math {
     margin-top: 1.5rem;
 }
 
-.MathJax_SVG_Display {
-    margin: 0 !important;
-}
-
-.bookmarklet {
-    cursor: move;
-}
+table { border-collapse:separate }
+.nobr { white-space:nowrap }
+.MathJax_SVG_Display { margin:0 !important }
+.bookmarklet { cursor:move }
+.mw-editsection,.mw-cite-backlink { display:none }
 
 /* responsiveness for phones */
 @media screen and (max-width:768px) {
-    body { font-size: 94%; }
-    #abstract { margin: 0; }
+    body { font-size:94% }
+    #abstract { margin:0 }
 }

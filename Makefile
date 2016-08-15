@@ -9,7 +9,7 @@ all: $(ASSETS)
 clean:
 	rm -f $(ASSETS)
 
-public/%.css: %.css
+public/%.css: %.css main.css
 	cleancss $< > $@
 
 public/load.js: main.js
