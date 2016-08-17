@@ -6,6 +6,13 @@
 @import "typebase.css/typebase.css";
 @import "highlight/src/styles/default.css";
 
+@font-face {
+    font-family: "Baroque Initials";
+    src: url('yinit.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: #f8f8f8;
     font-family: "TeX Gyre Bonum", serif;
@@ -223,6 +230,15 @@ p *   { text-indent: 0; }
 p.readability-styled + p {
     text-indent: 0;
     margin-top: 1.5rem;
+}
+
+span.dropcap {
+    font-family: "Baroque Initials", "TeX Gyre Bonum", serif;
+    color: #bd1c2b;
+    float: left;
+    font-size: 3.75rem !important;
+    padding-right: 0.25rem !important;
+    margin-top: 10px;
 }
 
 font[face] {

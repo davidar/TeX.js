@@ -10,6 +10,7 @@
   "standard": {
     "globals": [
       "baseline",
+      "Dropcap",
       "Event",
       "gajus",
       "Hyphenator",

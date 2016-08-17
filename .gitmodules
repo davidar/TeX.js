@@ -34,3 +34,6 @@
 [submodule "typogr.js"]
 	path = typogr
 	url = https://github.com/ekalinin/typogr.js.git
+[submodule "dropcap.js"]
+	path = dropcap
+	url = https://github.com/adobe-webplatform/dropcap.js.git

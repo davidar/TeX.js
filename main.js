@@ -182,6 +182,10 @@ function TeXify () {
     }
     baseline('pre code', lineHeight)
   })
+
+  require(['dropcap/dropcap'], function () {
+    Dropcap.layout(document.querySelectorAll('span.dropcap'), 3)
+  })
 }
 
 require(['domReady', 'readability/Readability'], function (domReady) {
