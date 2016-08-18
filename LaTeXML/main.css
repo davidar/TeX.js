@@ -146,6 +146,7 @@ cite.ltx_cite { font-style:normal }
     font-weight: normal;
     margin: 1.5rem 0;
 }
+.ltx_title_document { text-shadow: 2px 2px 0 #fcfcfc, 3px 3px 0 #eee }
 .ltx_role_author .ltx_personname .caps { font-feature-settings:inherit }
 
 .ltx_title_abstract { font-weight:bold }

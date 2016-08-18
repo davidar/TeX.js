@@ -58,6 +58,16 @@ function TeXify () {
   )
   document.body.appendChild(page)
 
+  var nav = document.createElement('nav')
+  var title = document.getElementsByTagName('h1')[0].innerHTML
+  var subtitle = document.querySelector('header>p')
+  if (subtitle) {
+    title += ':&ensp;<em>' + subtitle.innerHTML + '</em>'
+  }
+  nav.setAttribute('id', 'toc')
+  nav.innerHTML = '<p>' + title + '</p>'
+  document.body.appendChild(nav)
+
   var refNodes = document.getElementsByClassName('ltx_bibblock')
   var xhr = new XMLHttpRequest()
   xhr.open('POST', 'https://search.crossref.org/links', true)
@@ -67,11 +77,19 @@ function TeXify () {
     for (var i = 0; i < results.length; i++) {
       var result = results[i]
       var refNode = refNodes[i]
+      var url
       if (result.match) {
         var doi = result.doi.replace('http://dx.doi.org/', '')
-        var html = refNode.innerHTML
-        refNode.innerHTML = '<a href="http://doai.io/' + doi + '">' + html + '</a>'
+        url = 'http://doai.io/' + doi
+      } else {
+        var query = encodeURIComponent(refNode.textContent.trim())
+        url = 'https://searx.me/?categories=science&q=' + query
       }
+      var refEntry = document.createElement('p')
+      refEntry.setAttribute('class', 'elide')
+      refEntry.innerHTML = refNode.innerHTML =
+        '<a href="' + url + '">' + refNode.innerHTML + '</a>'
+      document.getElementById('toc').appendChild(refEntry)
     }
   }
   var refTexts = []
@@ -151,23 +169,13 @@ function TeXify () {
   })
 
   require(['string.js/lib/string', 'contents/dist/browser/contents'], function (S) {
-    var nav = document.createElement('nav')
-    var title = document.getElementsByTagName('h1')[0].innerHTML
-    var subtitle = document.querySelector('header>p')
-    if (subtitle) {
-      title += ':&#8194;<em>' + subtitle.innerHTML + '</em>'
-    }
-    nav.setAttribute('id', 'toc')
-    nav.innerHTML = '<p>' + title + '</p>'
-    document.body.appendChild(nav)
-
     var contents = new gajus.Contents({
       articles: document.querySelectorAll('h2,h3,h4,h5,h6'),
       articleId: function (articleName, element) {
         return element.id || S(articleName).slugify().s
       }
     })
-    nav.appendChild(contents.list())
+    document.getElementById('toc').appendChild(contents.list())
 
     var openTOC = document.createElement('div')
     openTOC.setAttribute('id', 'open-toc')
