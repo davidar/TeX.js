@@ -37,3 +37,6 @@
 [submodule "dropcap.js"]
 	path = dropcap
 	url = https://github.com/adobe-webplatform/dropcap.js.git
+[submodule "public/Font-Awesome"]
+	path = public/Font-Awesome
+	url = https://github.com/FortAwesome/Font-Awesome.git

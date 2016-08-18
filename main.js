@@ -171,7 +171,7 @@ function TeXify () {
 
     var openTOC = document.createElement('div')
     openTOC.setAttribute('id', 'open-toc')
-    openTOC.innerHTML = '<a href="#toc" class="open-menu">&#x2630;</a>'
+    openTOC.innerHTML = '<a href="#toc" class="open-menu"><i class="fa fa-navicon"></i></a>'
     document.body.appendChild(openTOC)
   })
 
