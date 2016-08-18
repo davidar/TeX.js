@@ -175,7 +175,7 @@ function TeXify () {
     document.body.appendChild(openTOC)
   })
 
-  require(['highlight.min', 'baseline/baseline'], function (hljs) {
+  require(['highlight/build/highlight.min', 'baseline/baseline'], function (hljs) {
     var codes = document.querySelectorAll('pre code')
     for (var i = 0; i < codes.length; i++) {
       hljs.highlightBlock(codes[i])

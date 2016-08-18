@@ -19,9 +19,6 @@
 [submodule "Baseline.js"]
 	path = baseline
 	url = https://github.com/davidar/Baseline.js.git
-[submodule "highlight.js"]
-	path = highlight
-	url = https://github.com/isagalaev/highlight.js.git
 [submodule "FiraCode"]
 	path = public/FiraCode
 	url = https://github.com/tonsky/FiraCode.git
@@ -40,3 +37,6 @@
 [submodule "public/Font-Awesome"]
 	path = public/Font-Awesome
 	url = https://github.com/FortAwesome/Font-Awesome.git
+[submodule "highlightjs/cdn-release"]
+	path = highlight
+	url = https://github.com/highlightjs/cdn-release.git

@@ -5,7 +5,7 @@
 @import "normalize.css/normalize.css";
 @import "normalize-opentype.css/normalize-opentype.css";
 @import "typebase.css/typebase.css";
-@import "highlight/src/styles/default.css";
+@import "highlight/build/styles/default.min.css";
 
 @font-face {
     font-family: "Baroque Initials";
