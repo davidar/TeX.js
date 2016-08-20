@@ -216,7 +216,7 @@ require(['domReady', 'readability/Readability'], function (domReady) {
       }
       html += '</header><main>' + article.content + '</main>'
       document.body.innerHTML = html
-      loadCSS('https://crossorigin.me/https://texify.davidar.io/main.css')
+      loadCSS('https://texify.davidar.io/main.css')
     }
     TeXify()
   })

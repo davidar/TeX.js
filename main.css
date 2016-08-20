@@ -1,18 +1,9 @@
 @import "reset.css";
-@import "texgyrebonum/font-face.css";
-@import "FiraCode/distr/fira_code.css";
-@import "Font-Awesome/css/font-awesome.css";
+@import "fonts.min.css";
 @import "normalize.css/normalize.css";
 @import "normalize-opentype.css/normalize-opentype.css";
 @import "typebase.css/typebase.css";
 @import "highlight/build/styles/default.min.css";
-
-@font-face {
-    font-family: "Baroque Initials";
-    src: url('yinit.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 body {
     background-color: #f8f8f8;
@@ -235,7 +226,7 @@ p.readability-styled + p {
 }
 
 span.dropcap {
-    font-family: "Baroque Initials", "TeX Gyre Bonum", serif;
+    font-family: Yinit, "TeX Gyre Bonum", serif;
     color: #bd1c2b;
     float: left;
     font-size: 3.75rem !important;
