@@ -702,6 +702,28 @@
 .fa-fa:before,.fa-font-awesome:before{content:"\f2b4"}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 .sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}
+@font-face{font-family:MathJax_AMS;src:url(https://davidar.io/texfonts/MathJax/MathJax_AMS-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Caligraphic;src:url(https://davidar.io/texfonts/MathJax/MathJax_Caligraphic-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Caligraphic;src:url(https://davidar.io/texfonts/MathJax/MathJax_Caligraphic-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Fraktur;src:url(https://davidar.io/texfonts/MathJax/MathJax_Fraktur-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Fraktur;src:url(https://davidar.io/texfonts/MathJax/MathJax_Fraktur-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Main;src:url(https://davidar.io/texfonts/MathJax/MathJax_Main-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Main;src:url(https://davidar.io/texfonts/MathJax/MathJax_Main-Italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:MathJax_Main;src:url(https://davidar.io/texfonts/MathJax/MathJax_Main-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Math;src:url(https://davidar.io/texfonts/MathJax/MathJax_Math-BoldItalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
+@font-face{font-family:MathJax_Math;src:url(https://davidar.io/texfonts/MathJax/MathJax_Math-Italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:MathJax_Math;src:url(https://davidar.io/texfonts/MathJax/MathJax_Math-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_SansSerif;src:url(https://davidar.io/texfonts/MathJax/MathJax_SansSerif-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_SansSerif;src:url(https://davidar.io/texfonts/MathJax/MathJax_SansSerif-Italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:MathJax_SansSerif;src:url(https://davidar.io/texfonts/MathJax/MathJax_SansSerif-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Script;src:url(https://davidar.io/texfonts/MathJax/MathJax_Script-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Size1;src:url(https://davidar.io/texfonts/MathJax/MathJax_Size1-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Size2;src:url(https://davidar.io/texfonts/MathJax/MathJax_Size2-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Size3;src:url(https://davidar.io/texfonts/MathJax/MathJax_Size3-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Size4;src:url(https://davidar.io/texfonts/MathJax/MathJax_Size4-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Typewriter;src:url(https://davidar.io/texfonts/MathJax/MathJax_Typewriter-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_WinChrome;src:url(https://davidar.io/texfonts/MathJax/MathJax_WinChrome-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_WinIE6;src:url(https://davidar.io/texfonts/MathJax/MathJax_WinIE6-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
 @font-face{font-family:"TeX Gyre Adventor";src:url(https://davidar.io/texfonts/tex-gyre/texgyreadventor-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
 @font-face{font-family:"TeX Gyre Adventor";src:url(https://davidar.io/texfonts/tex-gyre/texgyreadventor-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
 @font-face{font-family:"TeX Gyre Adventor";src:url(https://davidar.io/texfonts/tex-gyre/texgyreadventor-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}

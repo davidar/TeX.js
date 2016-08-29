@@ -34,3 +34,6 @@
 [submodule "highlightjs/cdn-release"]
 	path = highlight
 	url = https://github.com/highlightjs/cdn-release.git
+[submodule "KaTeX"]
+	path = KaTeX
+	url = https://github.com/Khan/KaTeX.git

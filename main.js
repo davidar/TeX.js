@@ -149,11 +149,27 @@ function TeXify () {
   var mathjaxConfig = document.createElement('script')
   mathjaxConfig.type = 'text/x-mathjax-config'
   mathjaxConfig[(window.opera ? 'innerHTML' : 'text')] =
-    'MathJax.Hub.Config({ SVG: { linebreaks: { automatic: true, width: "75%" } } });'
+    'MathJax.Hub.Config({"HTML-CSS": {' +
+      'linebreaks: { automatic: true, width: "75%" },' +
+      'availableFonts: [], preferredFont: null, imageFont: null' +
+      '}});'
   document.head.appendChild(mathjaxConfig)
 
-  require(['//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_SVG',
-           'baseline/baseline'], function () {
+  require(['KaTeX/dist/katex.min',
+           '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML',
+           'baseline/baseline'], function (katex) {
+    var maths = document.getElementsByClassName('math')
+    for (i = 0; i < maths.length; i++) {
+      var isBlock = maths[i].nodeName.toLowerCase() === 'div'
+      var latex = maths[i].textContent.slice(2, -2)
+      try {
+        var html = katex.renderToString(latex,
+            { displayMode: isBlock, throwOnError: true })
+        maths[i].innerHTML = html
+      } catch (e) {}
+    }
+    baseline('.katex-display', lineHeight)
+
     MathJax.Hub.Register.StartupHook('End', function () {
       setTimeout(function () {
         baseline('.MathJax_SVG_Display', lineHeight)
