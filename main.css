@@ -246,6 +246,9 @@ font[face] {
 blockquote, q {
     quotes: "\201C""\201D""\2018""\2019";
 }
+blockquote p {
+    overflow: visible;
+}
 blockquote p:first-child:before {
     content: open-quote;
     font-weight: bold;
