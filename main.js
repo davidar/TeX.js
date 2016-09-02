@@ -38,10 +38,7 @@ function mapTextNodes (parent, cb) { // http://stackoverflow.com/a/10730777/7820
   parent.innerHTML = html
 }
 
-function TeXify () {
-  var i
-
-  // http://stackoverflow.com/a/1577863
+function wrapPage () {
   var page = document.getElementsByTagName('main')[0]
   if (page === undefined) {
     page = document.createElement('main')
@@ -57,7 +54,9 @@ function TeXify () {
     'class', 'main' // + ' grid'
   )
   document.body.appendChild(page)
+}
 
+function makeNav () {
   var nav = document.createElement('nav')
   var title = document.getElementsByTagName('h1')[0].innerHTML
   var subtitle = document.querySelector('header>p')
@@ -67,7 +66,9 @@ function TeXify () {
   nav.setAttribute('id', 'toc')
   nav.innerHTML = '<p>' + title + '</p>'
   document.body.appendChild(nav)
+}
 
+function processRefs () {
   var refNodes = document.getElementsByClassName('ltx_bibblock')
   var xhr = new XMLHttpRequest()
   xhr.open('POST', 'https://search.crossref.org/links', true)
@@ -93,19 +94,23 @@ function TeXify () {
     }
   }
   var refTexts = []
-  for (i = 0; i < refNodes.length; i++) {
+  for (var i = 0; i < refNodes.length; i++) {
     refTexts.push(refNodes[i].textContent)
   }
   if (refTexts.length > 0) {
     xhr.send(JSON.stringify(refTexts))
   }
+}
 
+function extractMath () {
   var mathImages = document.querySelectorAll('img.tex, img.latex')
-  for (i = 0; i < mathImages.length; i++) {
+  for (var i = 0; i < mathImages.length; i++) {
     var math = mathImages[i].getAttribute('alt')
     mathImages[i].outerHTML = '\\(' + math + '\\)'
   }
+}
 
+function replaceText () {
   mapTextNodes(document.body, function (text) {
     return text
       .replace(/(\\\((?:(?!\\\))[\s\S])+\\\))/g,
@@ -129,12 +134,16 @@ function TeXify () {
         .replace(/ae/g, '&aelig;').replace(/A[Ee]/g, '&AElig;')
     })
   })
+}
 
-  var lineHeight = document.querySelector('main>footer').offsetHeight
+function fixBaseline () {
   require(['baseline/baseline'], function () {
+    var lineHeight = document.querySelector('main>footer').offsetHeight
     baseline('img,table', lineHeight)
   })
+}
 
+function hyphenate () {
   require(['Hyphenator/Hyphenator'], function () {
     Hyphenator.config({
       classname: 'main',
@@ -145,7 +154,9 @@ function TeXify () {
     })
     Hyphenator.run()
   })
+}
 
+function processMath () {
   var mathjaxConfig = document.createElement('script')
   mathjaxConfig.type = 'text/x-mathjax-config'
   mathjaxConfig[(window.opera ? 'innerHTML' : 'text')] =
@@ -158,7 +169,7 @@ function TeXify () {
            '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML',
            'baseline/baseline'], function (katex) {
     var maths = document.getElementsByClassName('math')
-    for (i = 0; i < maths.length; i++) {
+    for (var i = 0; i < maths.length; i++) {
       var isBlock = maths[i].nodeName.toLowerCase() === 'div'
       var latex = maths[i].textContent.slice(2, -2)
       try {
@@ -167,22 +178,18 @@ function TeXify () {
         maths[i].innerHTML = html
       } catch (e) {}
     }
-    baseline('.katex-display', lineHeight)
+    baseline('.katex-display')
 
     MathJax.Hub.Register.StartupHook('End', function () {
       setTimeout(function () {
-        baseline('.MathJax_SVG_Display', lineHeight)
+        baseline('.MathJax_SVG_Display')
         window.dispatchEvent(new Event('resize'))
       }, 1000)
     })
   })
+}
 
-  require(['//hypothes.is/embed.js'])
-
-  require(['scrollProgress/dist/scrollProgress'], function (scrollProgress) {
-    scrollProgress.set({ color: '#84141e' })
-  })
-
+function makeTOC () {
   require(['string.js/lib/string', 'contents/dist/browser/contents'], function (S) {
     var contents = new gajus.Contents({
       articles: document.querySelectorAll('h2,h3,h4,h5,h6'),
@@ -197,18 +204,39 @@ function TeXify () {
     openTOC.innerHTML = '<a href="#toc" class="open-menu"><i class="fa fa-navicon"></i></a>'
     document.body.appendChild(openTOC)
   })
+}
 
+function highlight () {
   require(['highlight/build/highlight.min', 'baseline/baseline'], function (hljs) {
     var codes = document.querySelectorAll('pre code')
     for (var i = 0; i < codes.length; i++) {
       hljs.highlightBlock(codes[i])
     }
-    baseline('pre code', lineHeight)
+    baseline('pre code')
   })
+}
 
+function fixDropcap () {
   require(['dropcap/dropcap'], function () {
     Dropcap.layout(document.querySelectorAll('span.dropcap'), 3)
   })
+}
+
+function TeXify () {
+  wrapPage()
+  makeNav()
+  processRefs()
+  extractMath()
+  replaceText()
+  fixBaseline()
+  hyphenate()
+  processMath()
+  makeTOC()
+  highlight()
+  fixDropcap()
+
+  require(['scrollProgress/dist/scrollProgress'], function (s) { s.set() })
+  require(['//hypothes.is/embed.js'])
 }
 
 require(['domReady', 'readability/Readability'], function (domReady) {

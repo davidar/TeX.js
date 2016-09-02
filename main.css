@@ -75,6 +75,9 @@ body {
     background: #f8f8f8;
     z-index: 77;
 }
+#progress-element {
+    background: #84141e !important;
+}
 
 header {
     background-color: #202020;
