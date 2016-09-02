@@ -150,7 +150,6 @@ function TeXify () {
   mathjaxConfig.type = 'text/x-mathjax-config'
   mathjaxConfig[(window.opera ? 'innerHTML' : 'text')] =
     'MathJax.Hub.Config({"HTML-CSS": {' +
-      'linebreaks: { automatic: true, width: "75%" },' +
       'availableFonts: [], preferredFont: null, imageFont: null' +
       '}});'
   document.head.appendChild(mathjaxConfig)

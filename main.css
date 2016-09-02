@@ -214,6 +214,7 @@ p {
             hyphens: auto;
     -webkit-font-variant-numeric: oldstyle-nums;
             font-variant-numeric: oldstyle-nums;
+    overflow: hidden;
 }
 
 /* http://www.w3.org/Style/Examples/007/indent.en.html */
