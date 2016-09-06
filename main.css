@@ -313,22 +313,12 @@ span[data-note]:hover:after {
 
 figure {
     text-align: center;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
     font-size: 90%;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 figure.num {
     counter-increment: figure;
-}
-figure:hover {
-    -webkit-transform: scale(1.414);
-            transform: scale(1.414);
-    background-color: #f8f8f8;
-    box-shadow: 0 0 100px black;
-    position: relative;
-    z-index: 50;
 }
 figure figcaption:before {
     content: "Figure:";
