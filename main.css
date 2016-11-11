@@ -239,9 +239,8 @@ span.dropcap {
     margin-top: 10px;
 }
 
-font[face] {
-    font-family: inherit;
-}
+font[face] { font-family:inherit }
+font[size] { font-size:inherit }
 
 blockquote, q {
     quotes: "\201C""\201D""\2018""\2019";

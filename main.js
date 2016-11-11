@@ -117,6 +117,8 @@ function replaceText () {
         '<span class="math donthyphenate">$1</span>')
       .replace(/(\\\[(?:(?!\\\])[\s\S])+\\\])/g,
         '<div  class="math donthyphenate">$1</div>')
+      .replace(/(\$\$(?:(?!\$\$)[\s\S])+\$\$)/g,
+        '<div  class="math donthyphenate">$1</div>')
   })
 
   mapTextNodes(document.body, function (text) {
