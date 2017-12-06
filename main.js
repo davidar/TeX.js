@@ -168,8 +168,8 @@ function processMath () {
   document.head.appendChild(mathjaxConfig)
 
   require(['KaTeX/dist/katex.min',
-           '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML',
-           'baseline/baseline'], function (katex) {
+    '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML',
+    'baseline/baseline'], function (katex) {
     var maths = document.getElementsByClassName('math')
     for (var i = 0; i < maths.length; i++) {
       var isBlock = maths[i].nodeName.toLowerCase() === 'div'
