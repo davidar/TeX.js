@@ -168,7 +168,7 @@ function processMath () {
   document.head.appendChild(mathjaxConfig)
 
   require(['KaTeX/dist/katex.min',
-           '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML',
+           '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML',
            'baseline/baseline'], function (katex) {
     var maths = document.getElementsByClassName('math')
     for (var i = 0; i < maths.length; i++) {
