@@ -24,18 +24,23 @@ function mapTextNodes (parent, cb) { // http://stackoverflow.com/a/10730777/7820
   var tag = parent.nodeName.toLowerCase()
   if (tag === 'script' || tag === 'pre' || tag === 'code' || tag === 'math' ||
       hasClass(parent, 'donthyphenate')) {
-    return
+    return parent.outerHTML
+  }
+  if (tag === 'p' && parent.innerHTML.trim() === '') {
+    return ''
   }
   var html = ''
-  for (var node = parent.firstChild; node; node = node.nextSibling) {
-    if (node.nodeType === 3) {
+  var children = parent.childNodes
+  for (var i = 0; i < children.length; i++) {
+    var node = children[i]
+    if (node.nodeType === window.Node.TEXT_NODE) {
       html += cb(escapeHtml(node.data))
-    } else {
-      mapTextNodes(node, cb)
-      html += node.outerHTML
+    } else if (node.nodeType !== window.Node.COMMENT_NODE) {
+      html += mapTextNodes(node, cb)
     }
   }
   parent.innerHTML = html
+  return parent.outerHTML
 }
 
 function wrapPage () {
