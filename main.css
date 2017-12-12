@@ -257,6 +257,18 @@ blockquote p:last-child:after {
     content: close-quote;
     font-weight: bold;
 }
+blockquote p:last-child cite:last-child {
+    float: right;
+    text-align: right;
+}
+blockquote p:last-child cite:last-child:before {
+    content: "\2014  ";
+}
+blockquote:after { /* http://cssmojo.com/the-very-latest-clearfix-reloaded/ */
+    content: "";
+    display: block;
+    clear: both;
+}
 q:before { content: open-quote }
 q:after { content: close-quote }
 blockquote,em,cite,i  { font-style: italic }
@@ -356,6 +368,8 @@ code {
     text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
     white-space: pre-wrap;
     background-color: #f0f0f0;
+    vertical-align: baseline;
+    font-size: 80%;
 }
 pre code {
     display: block;
