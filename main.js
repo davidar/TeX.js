@@ -214,12 +214,24 @@ function makeTOC () {
 }
 
 function highlight () {
+  var whitelist = ['1c', 'abnf', 'accesslog', 'actionscript', 'ada', 'apache', 'applescript', 'arduino', 'armasm', 'asciidoc', 'aspectj', 'autohotkey', 'autoit', 'avrasm', 'awk', 'axapta', 'bash', 'basic', 'bnf', 'brainfuck', 'cal', 'capnproto', 'ceylon', 'clean', 'clojure', 'clojure-repl', 'cmake', 'coffeescript', 'coq', 'cos', 'cpp', 'crmsh', 'crystal', 'cs', 'csp', 'css', 'dart', 'delphi', 'diff', 'django', 'd', 'dns', 'dockerfile', 'dos', 'dsconfig', 'dts', 'dust', 'ebnf', 'elixir', 'elm', 'erb', 'erlang', 'erlang-repl', 'excel', 'fix', 'flix', 'fortran', 'fsharp', 'gams', 'gauss', 'gcode', 'gherkin', 'glsl', 'golo', 'go', 'gradle', 'groovy', 'haml', 'handlebars', 'haskell', 'haxe', 'hsp', 'htmlbars', 'http', 'hy', 'inform7', 'ini', 'irpf90', 'java', 'javascript', 'jboss-cli', 'json', 'julia', 'julia-repl', 'kotlin', 'lasso', 'ldif', 'leaf', 'less', 'lisp', 'livecodeserver', 'livescript', 'llvm', 'lsl', 'lua', 'makefile', 'markdown', 'mathematica', 'matlab', 'maxima', 'mel', 'mercury', 'mipsasm', 'mizar', 'mojolicious', 'monkey', 'moonscript', 'n1ql', 'nginx', 'nimrod', 'nix', 'nsis', 'objectivec', 'ocaml', 'openscad', 'oxygene', 'parser3', 'perl', 'pf', 'php', 'pony', 'powershell', 'processing', 'profile', 'prolog', 'protobuf', 'puppet', 'purebasic', 'python', 'q', 'qml', 'rib', 'r', 'roboconf', 'routeros', 'rsl', 'ruby', 'ruleslanguage', 'rust', 'scala', 'scheme', 'scilab', 'scss', 'shell', 'smali', 'smalltalk', 'sml', 'sqf', 'sql', 'stan', 'stata', 'step21', 'stylus', 'subunit', 'swift', 'taggerscript', 'tap', 'tcl', 'tex', 'thrift', 'tp', 'twig', 'typescript', 'vala', 'vbnet', 'vbscript-html', 'vbscript', 'verilog', 'vhdl', 'vim', 'x86asm', 'xl', 'xml', 'xquery', 'yaml', 'zephir']
   require(['highlight/build/highlight.min', 'baseline/baseline'], function (hljs) {
     var codes = document.querySelectorAll('pre code')
+    var langs = []
     for (var i = 0; i < codes.length; i++) {
-      hljs.highlightBlock(codes[i])
+      var code = codes[i]
+      code.firstChild.data = code.firstChild.data.replace(/^\n+|\n+$/g, '')
+      var lang = code.getAttribute('class')
+      if (!hljs.getLanguage(lang) && whitelist.indexOf(lang) !== -1) {
+        langs.push('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/' + lang + '.min.js')
+      }
     }
-    baseline('pre code')
+    require(langs, function () {
+      for (var i = 0; i < codes.length; i++) {
+        hljs.highlightBlock(codes[i])
+      }
+      baseline('pre code')
+    })
   })
 }
 
