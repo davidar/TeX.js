@@ -1,8 +1,8 @@
 {
   "devDependencies": {
-    "clean-css-cli": "*",
-    "requirejs": "*",
-    "standard": "*"
+    "clean-css-cli": "^4.1.11",
+    "requirejs": "^2.3.5",
+    "standard": "^11.0.1"
   },
   "scripts": {
     "build": "make all"

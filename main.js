@@ -127,8 +127,7 @@ function replaceText () {
   })
 
   mapTextNodes(document.body, function (text) {
-    return text.replace(/\b([A-Z][^a-z&]{9,})\b/g,
-                        '<span class="caps">$1</span>')
+    return text.replace(/\b([A-Z][^a-z&]{9,})\b/g, '<span class="caps">$1</span>')
   })
 
   require(['typogr/typogr'], function (typogr) {
@@ -181,8 +180,7 @@ function processMath () {
       var isBlock = maths[i].nodeName.toLowerCase() === 'div'
       var latex = maths[i].textContent.slice(2, -2)
       try {
-        var html = katex.renderToString(latex,
-            { displayMode: isBlock, throwOnError: true })
+        var html = katex.renderToString(latex, {displayMode: isBlock, throwOnError: true})
         maths[i].innerHTML = html
       } catch (e) {}
     }
