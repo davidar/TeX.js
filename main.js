@@ -153,6 +153,7 @@ function fixBaseline () {
 function hyphenate () {
   require(['Hyphenator/Hyphenator'], function () {
     Hyphenator.config({
+      basePath: '//texify.davidar.io/Hyphenator/',
       classname: 'main',
       urlclassname: 'url',
       defaultlanguage: 'en',
@@ -173,7 +174,7 @@ function processMath () {
   document.head.appendChild(mathjaxConfig)
 
   require(['KaTeX/dist/katex.min',
-    '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML',
+    'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML',
     'baseline/baseline'], function (katex) {
     var maths = document.getElementsByClassName('math')
     for (var i = 0; i < maths.length; i++) {
@@ -223,7 +224,7 @@ function highlight () {
       code.firstChild.data = code.firstChild.data.replace(/^\n+|\n+$/g, '')
       var lang = code.getAttribute('class')
       if (!hljs.getLanguage(lang) && whitelist.indexOf(lang) !== -1) {
-        langs.push('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/' + lang + '.min.js')
+        langs.push('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/' + lang + '.min.js')
       }
     }
     require(langs, function () {
@@ -255,7 +256,7 @@ function TeXify () {
   fixDropcap()
 
   require(['scrollProgress/dist/scrollProgress'], function (s) { s.set() })
-  require(['//hypothes.is/embed.js'])
+  require(['https://hypothes.is/embed.js'])
 }
 
 require(['domReady', 'readability/Readability'], function (domReady) {

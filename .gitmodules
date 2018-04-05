@@ -1,6 +1,6 @@
 [submodule "Hyphenator"]
-	path = Hyphenator
-	url = https://github.com/mnater/Hyphenator.git
+	path = public/Hyphenator
+	url = https://github.com/davidar/Hyphenator.git
 [submodule "typebase.css"]
 	path = typebase.css
 	url = https://github.com/devinhunt/typebase.css.git
