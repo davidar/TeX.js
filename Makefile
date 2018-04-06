@@ -9,6 +9,9 @@ all: $(ASSETS)
 clean:
 	rm -f $(ASSETS)
 
+fonts.min.css: fonts.css
+	cleancss --inline remote --format 'breaks:afterRuleEnds=on' $< | sed 's/https://g' > $@
+
 public/%.css: %.css main.css
 	cleancss --source-map --source-map-inline-sources $< -o $@
 
