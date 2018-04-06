@@ -5,6 +5,7 @@ pages:
     paths:
     - node_modules
   script:
+  - apt-get update -qq && apt-get install -y -qq rsync
   - git submodule update --init
   - npm install
   - npm run build
