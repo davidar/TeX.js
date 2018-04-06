@@ -1,3 +1,5 @@
+var texifyURL = '//texify.davidar.io/'
+
 function loadCSS (path) {
   var link = document.createElement('link')
   link.type = 'text/css'
@@ -53,7 +55,7 @@ function wrapPage () {
     }
   }
   var footer = document.createElement('footer')
-  footer.innerHTML = '<p><a href="//texify.davidar.io/">T<span class="T_e_X">e</span>X<em>ify</em></a></p>'
+  footer.innerHTML = '<p><a href="' + texifyURL + '">T<span class="T_e_X">e</span>X<em>ify</em></a></p>'
   page.appendChild(footer)
   page.setAttribute(
     'class', 'main' // + ' grid'
@@ -152,7 +154,7 @@ function fixBaseline () {
 function hyphenate () {
   require(['Hyphenator/Hyphenator'], function () {
     Hyphenator.config({
-      basePath: '//texify.davidar.io/Hyphenator/',
+      basePath: texifyURL + 'Hyphenator/',
       classname: 'main',
       urlclassname: 'url',
       defaultlanguage: 'en',
@@ -164,16 +166,18 @@ function hyphenate () {
 }
 
 function processMath () {
+  var mathjaxConfigObject = {
+    'HTML-CSS': {availableFonts: [], preferredFont: null, imageFont: null},
+    showMathMenu: false
+  }
   var mathjaxConfig = document.createElement('script')
   mathjaxConfig.type = 'text/x-mathjax-config'
   mathjaxConfig[(window.opera ? 'innerHTML' : 'text')] =
-    'MathJax.Hub.Config({"HTML-CSS": {' +
-      'availableFonts: [], preferredFont: null, imageFont: null' +
-      '}});'
+    'MathJax.Hub.Config(' + JSON.stringify(mathjaxConfigObject) + ');'
   document.head.appendChild(mathjaxConfig)
 
   require(['KaTeX/dist/katex.min',
-    'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_HTMLorMML',
+    texifyURL + 'MathJax/MathJax.js?config=TeX-MML-AM_HTMLorMML',
     'baseline/baseline'], function (katex) {
     var maths = document.getElementsByClassName('math')
     for (var i = 0; i < maths.length; i++) {
@@ -277,7 +281,7 @@ require(['domReady', 'readability/Readability'], function (domReady) {
       }
       html += '</header><main>' + article.content + '</main>'
       document.body.innerHTML = html
-      loadCSS('https://texify.davidar.io/main.css')
+      loadCSS('https:' + texifyURL + 'main.css')
     }
     TeXify()
   })

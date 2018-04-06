@@ -1,4 +1,5 @@
 ASSETS := \
+	public/MathJax \
 	public/main.css \
 	public/LaTeXML/ltx-article.css \
 	public/LaTeXML/ltx-book.css \
@@ -7,10 +8,13 @@ ASSETS := \
 all: $(ASSETS)
 
 clean:
-	rm -f $(ASSETS)
+	rm -rf $(ASSETS)
 
 fonts.min.css: fonts.css
 	cleancss --inline remote --format 'breaks:afterRuleEnds=on' $< | sed 's/https://g' > $@
+
+public/MathJax:
+	rsync -av --include-from=MathJax.include --exclude-from=MathJax.exclude MathJax/ $@
 
 public/%.css: %.css main.css
 	cleancss --source-map --source-map-inline-sources $< -o $@

@@ -37,3 +37,6 @@
 [submodule "KaTeX"]
 	path = KaTeX
 	url = https://github.com/Khan/KaTeX.git
+[submodule "MathJax"]
+	path = MathJax
+	url = https://github.com/mathjax/MathJax.git
