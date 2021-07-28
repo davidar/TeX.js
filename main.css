@@ -322,11 +322,27 @@ span[data-note]:hover:after {
     color: #fff;
 }
 
+/* https://www.benmarshall.me/responsive-iframes/ */
+.embed-16-9 {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    position: relative;
+    margin: 1.5rem auto;
+}
+.embed-16-9 iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 figure {
     text-align: center;
     font-size: 90%;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem auto;
 }
 figure.num {
     counter-increment: figure;
