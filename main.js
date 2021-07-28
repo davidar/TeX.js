@@ -31,17 +31,19 @@ function mapTextNodes (parent, cb) { // http://stackoverflow.com/a/10730777/7820
   if (tag === 'p' && parent.innerHTML.trim() === '') {
     return ''
   }
-  var html = ''
   var children = parent.childNodes
-  for (var i = 0; i < children.length; i++) {
+  for (var i = children.length - 1; i >= 0; i--) {
     var node = children[i]
     if (node.nodeType === window.Node.TEXT_NODE) {
-      html += cb(escapeHtml(node.data))
+      var html = cb(escapeHtml(node.data))
+      var span = document.createElement('span')
+      parent.insertBefore(span, node)
+      parent.removeChild(node)
+      span.outerHTML = html
     } else if (node.nodeType !== window.Node.COMMENT_NODE) {
-      html += mapTextNodes(node, cb)
+      mapTextNodes(node, cb)
     }
   }
-  parent.innerHTML = html
   return parent.outerHTML
 }
 
@@ -53,6 +55,7 @@ function wrapPage () {
       var child = document.body.firstChild
       page.appendChild(child)
     }
+    document.body.appendChild(page)
   }
   var footer = document.createElement('footer')
   footer.innerHTML = '<p><a href="' + texifyURL + '">T<span class="T_e_X">e</span>X<em>ify</em></a></p>'
@@ -60,7 +63,6 @@ function wrapPage () {
   page.setAttribute(
     'class', 'main' // + ' grid'
   )
-  document.body.appendChild(page)
 }
 
 function makeNav () {
