@@ -1,36 +1,36 @@
-@font-face{font-family:"Fira Code";src:url(//davidar.io/texfonts/fira/FiraCode-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Code";src:url(//davidar.io/texfonts/fira/FiraCode-Light.woff);font-weight:300;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Code";src:url(//davidar.io/texfonts/fira/FiraCode-Medium.woff);font-weight:500;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Code";src:url(//davidar.io/texfonts/fira/FiraCode-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Mono";src:url(//davidar.io/texfonts/fira/FiraMono-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Mono";src:url(//davidar.io/texfonts/fira/FiraMono-Medium.woff);font-weight:500;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Mono";src:url(//davidar.io/texfonts/fira/FiraMono-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-BoldItalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-Book.woff);font-weight:350;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-BookItalic.woff);font-weight:350;font-stretch:normal;font-style:italic}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-ExtraBold.woff);font-weight:800;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-ExtraBoldItalic.woff);font-weight:800;font-stretch:normal;font-style:italic}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-ExtraLight.woff);font-weight:250;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-ExtraLightItalic.woff);font-weight:250;font-stretch:normal;font-style:italic}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-Heavy.woff);font-weight:900;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-HeavyItalic.woff);font-weight:900;font-stretch:normal;font-style:italic}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-Light.woff);font-weight:300;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-LightItalic.woff);font-weight:300;font-stretch:normal;font-style:italic}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-Medium.woff);font-weight:500;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-MediumItalic.woff);font-weight:500;font-stretch:normal;font-style:italic}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-RegularItalic.woff);font-weight:400;font-stretch:normal;font-style:italic}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-SemiBold.woff);font-weight:600;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-SemiBoldItalic.woff);font-weight:600;font-stretch:normal;font-style:italic}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-Thin.woff);font-weight:100;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-ThinItalic.woff);font-weight:100;font-stretch:normal;font-style:italic}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-UltraLight.woff);font-weight:200;font-stretch:normal;font-style:normal}
-@font-face{font-family:"Fira Sans";src:url(//davidar.io/texfonts/fira/FiraSans-UltraLightItalic.woff);font-weight:200;font-stretch:normal;font-style:italic}
+@font-face{font-family:"Fira Code";src:url(//davidar.github.io/texfonts/fira/FiraCode-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Code";src:url(//davidar.github.io/texfonts/fira/FiraCode-Light.woff);font-weight:300;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Code";src:url(//davidar.github.io/texfonts/fira/FiraCode-Medium.woff);font-weight:500;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Code";src:url(//davidar.github.io/texfonts/fira/FiraCode-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Mono";src:url(//davidar.github.io/texfonts/fira/FiraMono-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Mono";src:url(//davidar.github.io/texfonts/fira/FiraMono-Medium.woff);font-weight:500;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Mono";src:url(//davidar.github.io/texfonts/fira/FiraMono-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-BoldItalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-Book.woff);font-weight:350;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-BookItalic.woff);font-weight:350;font-stretch:normal;font-style:italic}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-ExtraBold.woff);font-weight:800;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-ExtraBoldItalic.woff);font-weight:800;font-stretch:normal;font-style:italic}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-ExtraLight.woff);font-weight:250;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-ExtraLightItalic.woff);font-weight:250;font-stretch:normal;font-style:italic}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-Heavy.woff);font-weight:900;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-HeavyItalic.woff);font-weight:900;font-stretch:normal;font-style:italic}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-Light.woff);font-weight:300;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-LightItalic.woff);font-weight:300;font-stretch:normal;font-style:italic}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-Medium.woff);font-weight:500;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-MediumItalic.woff);font-weight:500;font-stretch:normal;font-style:italic}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-RegularItalic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-SemiBold.woff);font-weight:600;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-SemiBoldItalic.woff);font-weight:600;font-stretch:normal;font-style:italic}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-Thin.woff);font-weight:100;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-ThinItalic.woff);font-weight:100;font-stretch:normal;font-style:italic}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-UltraLight.woff);font-weight:200;font-stretch:normal;font-style:normal}
+@font-face{font-family:"Fira Sans";src:url(//davidar.github.io/texfonts/fira/FiraSans-UltraLightItalic.woff);font-weight:200;font-stretch:normal;font-style:italic}
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */@font-face{font-family:FontAwesome;src:url(//davidar.io/texfonts/fontawesome/FontAwesome.woff);font-weight:400;font-stretch:normal;font-style:normal}
+ */@font-face{font-family:FontAwesome;src:url(//davidar.github.io/texfonts/fontawesome/FontAwesome.woff);font-weight:400;font-stretch:normal;font-style:normal}
 .fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .fa-lg{font-size:1.33333333em;line-height:.75em;vertical-align:-15%}
 .fa-2x{font-size:2em}
@@ -702,59 +702,59 @@
 .fa-fa:before,.fa-font-awesome:before{content:"\f2b4"}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 .sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}
-@font-face{font-family:MathJax_AMS;src:url(//davidar.io/texfonts/MathJax/MathJax_AMS-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Caligraphic;src:url(//davidar.io/texfonts/MathJax/MathJax_Caligraphic-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Caligraphic;src:url(//davidar.io/texfonts/MathJax/MathJax_Caligraphic-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Fraktur;src:url(//davidar.io/texfonts/MathJax/MathJax_Fraktur-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Fraktur;src:url(//davidar.io/texfonts/MathJax/MathJax_Fraktur-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Main;src:url(//davidar.io/texfonts/MathJax/MathJax_Main-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Main;src:url(//davidar.io/texfonts/MathJax/MathJax_Main-Italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
-@font-face{font-family:MathJax_Main;src:url(//davidar.io/texfonts/MathJax/MathJax_Main-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Math;src:url(//davidar.io/texfonts/MathJax/MathJax_Math-BoldItalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
-@font-face{font-family:MathJax_Math;src:url(//davidar.io/texfonts/MathJax/MathJax_Math-Italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
-@font-face{font-family:MathJax_Math;src:url(//davidar.io/texfonts/MathJax/MathJax_Math-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_SansSerif;src:url(//davidar.io/texfonts/MathJax/MathJax_SansSerif-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_SansSerif;src:url(//davidar.io/texfonts/MathJax/MathJax_SansSerif-Italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
-@font-face{font-family:MathJax_SansSerif;src:url(//davidar.io/texfonts/MathJax/MathJax_SansSerif-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Script;src:url(//davidar.io/texfonts/MathJax/MathJax_Script-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Size1;src:url(//davidar.io/texfonts/MathJax/MathJax_Size1-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Size2;src:url(//davidar.io/texfonts/MathJax/MathJax_Size2-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Size3;src:url(//davidar.io/texfonts/MathJax/MathJax_Size3-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Size4;src:url(//davidar.io/texfonts/MathJax/MathJax_Size4-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_Typewriter;src:url(//davidar.io/texfonts/MathJax/MathJax_Typewriter-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_WinChrome;src:url(//davidar.io/texfonts/MathJax/MathJax_WinChrome-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:MathJax_WinIE6;src:url(//davidar.io/texfonts/MathJax/MathJax_WinIE6-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Adventor";src:url(//davidar.io/texfonts/tex-gyre/texgyreadventor-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Adventor";src:url(//davidar.io/texfonts/tex-gyre/texgyreadventor-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Adventor";src:url(//davidar.io/texfonts/tex-gyre/texgyreadventor-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Adventor";src:url(//davidar.io/texfonts/tex-gyre/texgyreadventor-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Bonum";src:url(//davidar.io/texfonts/tex-gyre/texgyrebonum-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Bonum";src:url(//davidar.io/texfonts/tex-gyre/texgyrebonum-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Bonum";src:url(//davidar.io/texfonts/tex-gyre/texgyrebonum-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Bonum";src:url(//davidar.io/texfonts/tex-gyre/texgyrebonum-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Chorus";src:url(//davidar.io/texfonts/tex-gyre/texgyrechorus-mediumitalic.woff);font-weight:500;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Cursor";src:url(//davidar.io/texfonts/tex-gyre/texgyrecursor-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Cursor";src:url(//davidar.io/texfonts/tex-gyre/texgyrecursor-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Cursor";src:url(//davidar.io/texfonts/tex-gyre/texgyrecursor-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Cursor";src:url(//davidar.io/texfonts/tex-gyre/texgyrecursor-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Heros";src:url(//davidar.io/texfonts/tex-gyre/texgyreheros-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Heros";src:url(//davidar.io/texfonts/tex-gyre/texgyreheros-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Heros";src:url(//davidar.io/texfonts/tex-gyre/texgyreheros-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Heros";src:url(//davidar.io/texfonts/tex-gyre/texgyreheros-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Heros Cn";src:url(//davidar.io/texfonts/tex-gyre/texgyreheroscn-bold.woff);font-weight:700;font-stretch:condensed;font-style:normal}
-@font-face{font-family:"TeX Gyre Heros Cn";src:url(//davidar.io/texfonts/tex-gyre/texgyreheroscn-bolditalic.woff);font-weight:700;font-stretch:condensed;font-style:italic}
-@font-face{font-family:"TeX Gyre Heros Cn";src:url(//davidar.io/texfonts/tex-gyre/texgyreheroscn-italic.woff);font-weight:400;font-stretch:condensed;font-style:italic}
-@font-face{font-family:"TeX Gyre Heros Cn";src:url(//davidar.io/texfonts/tex-gyre/texgyreheroscn-regular.woff);font-weight:400;font-stretch:condensed;font-style:normal}
-@font-face{font-family:"TeX Gyre Pagella";src:url(//davidar.io/texfonts/tex-gyre/texgyrepagella-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Pagella";src:url(//davidar.io/texfonts/tex-gyre/texgyrepagella-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Pagella";src:url(//davidar.io/texfonts/tex-gyre/texgyrepagella-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Pagella";src:url(//davidar.io/texfonts/tex-gyre/texgyrepagella-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Schola";src:url(//davidar.io/texfonts/tex-gyre/texgyreschola-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Schola";src:url(//davidar.io/texfonts/tex-gyre/texgyreschola-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Schola";src:url(//davidar.io/texfonts/tex-gyre/texgyreschola-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Schola";src:url(//davidar.io/texfonts/tex-gyre/texgyreschola-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Termes";src:url(//davidar.io/texfonts/tex-gyre/texgyretermes-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
-@font-face{font-family:"TeX Gyre Termes";src:url(//davidar.io/texfonts/tex-gyre/texgyretermes-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Termes";src:url(//davidar.io/texfonts/tex-gyre/texgyretermes-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
-@font-face{font-family:"TeX Gyre Termes";src:url(//davidar.io/texfonts/tex-gyre/texgyretermes-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
-@font-face{font-family:Yinit;src:url(//davidar.io/texfonts/yinit-otf/Yinit.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_AMS;src:url(//davidar.github.io/texfonts/MathJax/MathJax_AMS-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Caligraphic;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Caligraphic-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Caligraphic;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Caligraphic-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Fraktur;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Fraktur-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Fraktur;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Fraktur-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Main;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Main-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Main;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Main-Italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:MathJax_Main;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Main-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Math;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Math-BoldItalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
+@font-face{font-family:MathJax_Math;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Math-Italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:MathJax_Math;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Math-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_SansSerif;src:url(//davidar.github.io/texfonts/MathJax/MathJax_SansSerif-Bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_SansSerif;src:url(//davidar.github.io/texfonts/MathJax/MathJax_SansSerif-Italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:MathJax_SansSerif;src:url(//davidar.github.io/texfonts/MathJax/MathJax_SansSerif-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Script;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Script-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Size1;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Size1-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Size2;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Size2-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Size3;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Size3-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Size4;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Size4-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_Typewriter;src:url(//davidar.github.io/texfonts/MathJax/MathJax_Typewriter-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_WinChrome;src:url(//davidar.github.io/texfonts/MathJax/MathJax_WinChrome-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:MathJax_WinIE6;src:url(//davidar.github.io/texfonts/MathJax/MathJax_WinIE6-Regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Adventor";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreadventor-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Adventor";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreadventor-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Adventor";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreadventor-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Adventor";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreadventor-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Bonum";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrebonum-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Bonum";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrebonum-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Bonum";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrebonum-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Bonum";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrebonum-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Chorus";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrechorus-mediumitalic.woff);font-weight:500;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Cursor";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrecursor-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Cursor";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrecursor-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Cursor";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrecursor-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Cursor";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrecursor-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Heros";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreheros-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Heros";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreheros-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Heros";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreheros-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Heros";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreheros-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Heros Cn";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreheroscn-bold.woff);font-weight:700;font-stretch:condensed;font-style:normal}
+@font-face{font-family:"TeX Gyre Heros Cn";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreheroscn-bolditalic.woff);font-weight:700;font-stretch:condensed;font-style:italic}
+@font-face{font-family:"TeX Gyre Heros Cn";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreheroscn-italic.woff);font-weight:400;font-stretch:condensed;font-style:italic}
+@font-face{font-family:"TeX Gyre Heros Cn";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreheroscn-regular.woff);font-weight:400;font-stretch:condensed;font-style:normal}
+@font-face{font-family:"TeX Gyre Pagella";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrepagella-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Pagella";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrepagella-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Pagella";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrepagella-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Pagella";src:url(//davidar.github.io/texfonts/tex-gyre/texgyrepagella-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Schola";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreschola-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Schola";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreschola-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Schola";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreschola-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Schola";src:url(//davidar.github.io/texfonts/tex-gyre/texgyreschola-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Termes";src:url(//davidar.github.io/texfonts/tex-gyre/texgyretermes-bold.woff);font-weight:700;font-stretch:normal;font-style:normal}
+@font-face{font-family:"TeX Gyre Termes";src:url(//davidar.github.io/texfonts/tex-gyre/texgyretermes-bolditalic.woff);font-weight:700;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Termes";src:url(//davidar.github.io/texfonts/tex-gyre/texgyretermes-italic.woff);font-weight:400;font-stretch:normal;font-style:italic}
+@font-face{font-family:"TeX Gyre Termes";src:url(//davidar.github.io/texfonts/tex-gyre/texgyretermes-regular.woff);font-weight:400;font-stretch:normal;font-style:normal}
+@font-face{font-family:Yinit;src:url(//davidar.github.io/texfonts/yinit-otf/Yinit.woff);font-weight:400;font-stretch:normal;font-style:normal}
